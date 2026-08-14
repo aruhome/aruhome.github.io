@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AruHome: Home Inventory - The complete home management app. Track assets, automate maintenance, and organize financial records securely.">
+    <meta name="keywords"
+        content="home inventory app, maintenance tracker, home management, warranty tracker, asset management, offline home inventory">
+    <meta name="author" content="AruHome">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#194778">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AruHome: Home Inventory & Maintenance Tracker">
+    <meta property="og:description"
+        content="Protect your largest investment. Track assets, automate maintenance, and organize financial records in one secure place.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartremotelabs.github.io/">
+    <meta property="og:image"
+        content="https://smartremotelabs.github.io/images/aruhome-preview.jpg">
+
+    <!-- JSON-LD Website Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "AruHome: Home Inventory",
+            "description": "The complete home management app designed to help you organize, maintain, and protect your home.",
+            "image": "https://smartremotelabs.github.io/images/aruhome-preview.jpg",
+            "operatingSystem": "Android",
+            "applicationCategory": "ProductivityApplication",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "url": "https://smartremotelabs.github.io/"
+        }
+    </script>
+
+    <title>AruHome: Home Inventory & Maintenance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="Icon.png">
+</head>
+
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <span class="pill"><span class="dot" style="background-color: var(--accent);"></span> Private by Design</span>
+        Your data lives on your device &mdash; Local-first & offline ready
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="site-header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <!-- Placeholder for App Icon -->
+                    <img src="Icon.png" alt="AruHome Logo" style="width: 40px; height: 40px; border-radius: 12px; margin-right: 10px;">
+                    <h1><a href="index.html">AruHome</a></h1>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#screenshots">Screenshots</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="nav-cta" aria-label="Download on Google Play">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:18px;height:18px;margin-right:6px;">
+                        <path d="M3.18 23.76c.35.2.75.24 1.13.1l12.09-6.96-2.76-2.76L3.18 23.76z" />
+                        <path d="M22.32 10.66a1.74 1.74 0 000-3.02l-2.88-1.66-3.06 3.06 3.06 3.06 2.88-1.44z" />
+                        <path d="M2.04 1.2A1.74 1.74 0 001 2.76v18.48c0 .66.36 1.26.9 1.56l.14.08 10.35-10.35L2.04 1.2z" />
+                        <path d="M16.4 5.1L4.31.14C3.93 0 3.53.04 3.18.24l10.46 10.46L16.4 5.1z" />
+                    </svg>
+                    Download App
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow reveal">Complete Home Management</span>
+                <h1 class="hero-headline reveal reveal-delay-1">
+                    Your Home’s Digital<br>
+                    <span class="accent">Owner’s Manual</span>
+                </h1>
+                <p class="hero-sub reveal reveal-delay-2">
+                    Protect your largest investment. AruHome helps you track assets, automate maintenance, and organize records in one secure place.
+                </p>
+
+                <!-- Stats Row -->
+                <div class="hero-stats reveal reveal-delay-2">
+                    <div class="hero-stat">
+                        <span class="stat-value">OCR</span>
+                        <span class="stat-label">Smart Scan</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-value">Alerts</span>
+                        <span class="stat-label">Warranties</span>
+                    </div>
+                    <div class="hero-stat accent-stat">
+                        <span class="stat-value">Local</span>
+                        <span class="stat-label">Data Privacy</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-value">PDF</span>
+                        <span class="stat-label">Export Reports</span>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hero-ctas reveal reveal-delay-3">
+                    <a href="#" class="btn-pill btn-pill-primary">
+                        Get it on Google Play
+                    </a>
+                    <a href="#features" class="btn-pill btn-pill-outline">
+                        Explore Features
+                    </a>
+                </div>
+
+                <!-- Feature Tag Pills -->
+                <div class="hero-tags reveal reveal-delay-4">
+                    <span class="hero-tag">Smart Asset Inventory</span>
+                    <span class="hero-tag">Maintenance Engine</span>
+                    <span class="hero-tag">Financial Health Insights</span>
+                    <span class="hero-tag">QR Code Integration</span>
+                </div>
+            </div>
+            <div class="hero-image reveal reveal-delay-5" style="margin-top: 4rem; text-align: center;">
+                <img src="images/Home dashboard.webp" alt="AruHome Dashboard" style="max-width: 100%; height: auto; max-height: 600px; border-radius: 24px; box-shadow: var(--shadow-lg);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Powerful Tools</span>
+                <h2>Everything for <span class="accent">Proactive Homeowners</span></h2>
+                <p>Transition from reactive repairs to proactive management.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card reveal reveal-delay-1">
+                    <h3>Smart Asset Inventory</h3>
+                    <p>Store brand, model, serial numbers, and purchase dates. Use OCR to instantly read manufacturer labels from your camera.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-2">
+                    <h3>Maintenance Engine</h3>
+                    <p>Get automated reminders to change air filters, flush water heaters, and more. Track DIY vs. professional tasks.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-3">
+                    <h3>Financial Health & Burden Ratio</h3>
+                    <p>Track repair costs against asset value. Know exactly when it's smarter to buy new than to keep fixing.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-1">
+                    <h3>Warranty Center</h3>
+                    <p>Never miss an expiration date. Get alerted 30 days, 7 days, and 1 day before warranties end.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-2">
+                    <h3>Professional PDF Reports</h3>
+                    <p>Export maintenance history to prove your home's value to buyers or send inventory to insurance adjusters.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-3">
+                    <h3>Offline & Private</h3>
+                    <p>Your data stays on your device. No forced cloud sync. Access everything even in the basement without Wi-Fi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section Placeholder -->
+    <section class="features" id="screenshots" style="background: var(--bg-elevated);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Inside the App</span>
+                <h2>Beautiful & <span class="accent">Intuitive Interface</span></h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; justify-items: center; margin-top: 3rem;">
+                <img src="images/Asset tab.webp" alt="Asset Vault" style="width: 100%; max-width: 280px; height: auto; border-radius: 20px; box-shadow: var(--shadow-md);">
+                <img src="images/Asset details.webp" alt="Asset Details" style="width: 100%; max-width: 280px; height: auto; border-radius: 20px; box-shadow: var(--shadow-md);">
+                <img src="images/Maintenance tasks.webp" alt="Maintenance Schedule" style="width: 100%; max-width: 280px; height: auto; border-radius: 20px; box-shadow: var(--shadow-md);">
+                <img src="images/Expenses tab.webp" alt="Expense Charts" style="width: 100%; max-width: 280px; height: auto; border-radius: 20px; box-shadow: var(--shadow-md);">
+                <img src="images/Asset documents.webp" alt="Documents" style="width: 100%; max-width: 280px; height: auto; border-radius: 20px; box-shadow: var(--shadow-md);">
+                <img src="images/More tab.webp" alt="More Options" style="width: 100%; max-width: 280px; height: auto; border-radius: 20px; box-shadow: var(--shadow-md);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 AruHome. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

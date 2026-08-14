@@ -1,0 +1,129 @@
+# AruHome: Home Inventory, Maintenance & Warranty Tracker
+
+Everything your home needs, in one place.
+
+Take the stress out of home ownership with AruHome—the complete home management app designed to help you organize, maintain, and protect your home.
+
+AruHome is more than a home inventory app. It is your digital home manual, maintenance assistant, warranty tracker, document vault, and expense tracker—all in one place.
+
+Know what you own. Know when it needs attention. Know when warranties expire.
+
+Whether you're a homeowner, landlord, or renter, AruHome helps you stay organized and protect the things that matter most.
+
+🏠 HOME INVENTORY & ASSET MANAGEMENT
+
+Create a complete digital inventory of everything in your home.
+
+Track:
+
+• Appliances, including refrigerators, ovens, dishwashers, and washing machines
+
+• Home systems, including HVAC equipment, water heaters, plumbing systems, and electrical equipment
+
+• Electronics, televisions, computers, and smart home devices
+
+• Furniture, collectibles, tools, and outdoor equipment
+
+Store important information, including model numbers, serial numbers, purchase dates, prices, photos, locations, receipts, and notes.
+
+Keep organized records for insurance claims, repairs, and resale purposes.
+
+🔧 HOME MAINTENANCE SCHEDULER & REMINDERS
+
+Stay ahead of maintenance and reduce unexpected repairs.
+
+Use built-in maintenance templates or create your own recurring tasks.
+
+Track:
+
+• HVAC maintenance
+
+• Air filter replacement
+
+• Gutter cleaning
+
+• Water filter replacement
+
+• Smoke detector testing
+
+• Seasonal inspections
+
+Receive reminders when maintenance is due and maintain a complete service history for every asset.
+
+📄 WARRANTY, RECEIPT & DOCUMENT TRACKER
+
+Keep important information connected to the items that matter most.
+
+Store:
+
+• Warranty information and expiration dates
+
+• Digital receipts and invoices
+
+• User manuals and PDF documents
+
+• Service records and maintenance history
+
+• Contractor and service provider information
+
+No more searching through filing cabinets, drawers, email attachments, or cloud folders.
+
+📷 OCR SCANNING & ASSET QR CODES
+
+Manage your inventory faster and more efficiently.
+
+• Scan product labels and receipts using OCR technology.
+
+• Generate QR codes for appliances and equipment.
+
+• Instantly access maintenance records, service history, documents, and warranty information.
+
+Place QR codes on appliances, HVAC systems, tools, and other equipment for quick access whenever you need it.
+
+💰 HOME EXPENSES & REPORTS
+
+Understand the true cost of home ownership.
+
+• Track maintenance and repair expenses.
+
+• Monitor the value of your assets.
+
+• Review expenses by category.
+
+• Maintain records for insurance purposes.
+
+• Prepare for future repairs and replacements.
+
+🔒 PRIVATE, SECURE & AVAILABLE OFFLINE
+
+Your home information should always be available when you need it.
+
+• Offline access
+
+• Local data storage
+
+• Data export capabilities
+
+• Dark and light themes
+
+• Fast and intuitive design
+
+🏡 THE COMPLETE HOME OWNERSHIP APP
+
+From home inventory management and maintenance scheduling to warranty tracking, document storage, expense tracking, and QR codes, AruHome brings everything together in one place.
+
+⭐ ADDITIONAL FEATURES
+
+• Home Health Score – See an overall picture of your home's maintenance status and identify areas that need attention.
+
+• Multi-Property Support – Manage your primary residence, rental properties, vacation homes, and investment properties from a single app.
+
+• Expert Maintenance Templates – Start quickly with prebuilt maintenance schedules for common household systems and appliances.
+
+• Smart Notifications – Receive reminders for maintenance tasks, warranty expirations, and important events.
+
+• Digital Document Vault – Keep receipts, manuals, invoices, and service records organized in one place.
+
+Stop relying on spreadsheets, paper files, and scattered documents.
+
+Download AruHome today and take control of your home.
