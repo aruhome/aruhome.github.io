@@ -7,7 +7,7 @@
     <meta name="description"
         content="AruHome: Home Inventory - The complete home management app. Track assets, automate maintenance, and organize financial records securely.">
     <meta name="keywords"
-        content="home inventory app, maintenance tracker, home management, warranty tracker, asset management, offline home inventory">
+        content="home inventory app, Home Maintenance Tracker, Appliance Warranty App, Home Inventory OCR, Local-first Android app, home management, offline home inventory">
     <meta name="author" content="AruHome">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#194778">
@@ -39,6 +39,13 @@
     <title>AruHome: Home Inventory & Maintenance Tracker</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="Icon.png">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
 </head>
 
 <body>
@@ -65,6 +72,8 @@
                 <ul class="nav-links" id="navLinks">
                     <li><a href="index.html#features">Features</a></li>
                     <li><a href="index.html#screenshots">Screenshots</a></li>
+                    <li><a href="maintenance-library.html">Library</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="privacy.html">Privacy</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -134,8 +143,29 @@
                     <span class="hero-tag">QR Code Integration</span>
                 </div>
             </div>
-            <div class="hero-image reveal reveal-delay-5" style="margin-top: 4rem; text-align: center;">
+            <div class="hero-image reveal reveal-delay-5" style="margin-top: 4rem; text-align: center; position: relative; max-width: 800px; margin-left: auto; margin-right: auto;">
                 <img src="images/Home dashboard.webp" alt="AruHome Dashboard" style="max-width: 100%; height: auto; max-height: 600px; border-radius: 24px; box-shadow: var(--shadow-lg);">
+                
+                <!-- Floating UI Mockup: Home Health -->
+                <div class="glass-card" style="position: absolute; top: 10%; right: -5%; padding: 15px 20px; text-align: left; background: rgba(18, 18, 30, 0.85); backdrop-filter: blur(10px); border-color: rgba(255,255,255,0.15); animation: float 6s ease-in-out infinite;">
+                    <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Home Health Score</span>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
+                        <span style="font-size: 2.2rem; font-weight: 800; color: var(--accent); line-height: 1; font-family: 'Space Grotesk', sans-serif;">92</span>
+                        <span style="color: var(--accent); font-size: 1.2rem;">&#8593;</span>
+                    </div>
+                </div>
+                
+                <!-- Floating UI Mockup: Maintenance Compliance -->
+                <div class="glass-card" style="position: absolute; bottom: 15%; left: -5%; padding: 15px 20px; text-align: left; background: rgba(18, 18, 30, 0.85); backdrop-filter: blur(10px); border-color: rgba(255,255,255,0.15); animation: float 6s ease-in-out infinite reverse; width: 220px;">
+                    <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Maintenance</span>
+                    <div style="margin-top: 8px; background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden;">
+                        <div style="width: 85%; background: var(--accent); height: 100%; border-radius: 4px;"></div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-top: 5px; font-size: 0.75rem;">
+                        <span style="color: var(--text-primary); font-weight: 500;">85% Done</span>
+                        <span style="color: var(--text-muted);">This Month</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -151,28 +181,63 @@
 
             <div class="features-grid">
                 <div class="feature-card reveal reveal-delay-1">
-                    <h3>Smart Asset Inventory</h3>
-                    <p>Store brand, model, serial numbers, and purchase dates. Use OCR to instantly read manufacturer labels from your camera.</p>
+                    <h3>Smart Asset Inventory & OCR</h3>
+                    <p>Store brand, model, serial numbers, and purchase dates. Point your camera at any appliance label and our AI uses OCR to extract the data instantly.</p>
                 </div>
                 <div class="feature-card reveal reveal-delay-2">
                     <h3>Maintenance Engine</h3>
-                    <p>Get automated reminders to change air filters, flush water heaters, and more. Track DIY vs. professional tasks.</p>
+                    <p>Access built-in Maintenance Templates (HVAC, Refrigerator) featuring difficulty ratings, step-by-step guides, checklists, and energy-saving "Why It Matters" insights.</p>
                 </div>
                 <div class="feature-card reveal reveal-delay-3">
                     <h3>Financial Health & Burden Ratio</h3>
-                    <p>Track repair costs against asset value. Know exactly when it's smarter to buy new than to keep fixing.</p>
+                    <p>A specialized feature that tracks repair costs vs. the asset's current value to calculate your Burden Ratio. Know exactly when it's smarter to stop repairing and start replacing.</p>
                 </div>
                 <div class="feature-card reveal reveal-delay-1">
                     <h3>Warranty Center</h3>
-                    <p>Never miss an expiration date. Get alerted 30 days, 7 days, and 1 day before warranties end.</p>
+                    <p>Never miss an expiration date. Get alerted 30 days, 7 days, and 1 day before warranties end so you can file claims on time.</p>
                 </div>
                 <div class="feature-card reveal reveal-delay-2">
-                    <h3>Professional PDF Reports</h3>
-                    <p>Export maintenance history to prove your home's value to buyers or send inventory to insurance adjusters.</p>
+                    <h3>QR Code Deep Linking</h3>
+                    <p>Generate deep links and stick QR codes on your appliances. Scan a code with your camera to immediately open the app and see that specific unit's history.</p>
                 </div>
                 <div class="feature-card reveal reveal-delay-3">
-                    <h3>Offline & Private</h3>
-                    <p>Your data stays on your device. No forced cloud sync. Access everything even in the basement without Wi-Fi.</p>
+                    <h3>Offline & Full Data Portability</h3>
+                    <p>Your data never leaves your device. Enjoy full data portability—you completely own your data and can export your raw JSON database at any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section" id="calculator" style="padding: 100px 0; background: var(--bg-body);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Smart Decisions</span>
+                <h2>Repair vs. <span class="accent">Replace</span></h2>
+                <p>Calculate your Burden Ratio to know exactly when it's smarter to buy new than to keep fixing.</p>
+            </div>
+            
+            <div class="calculator-card reveal reveal-delay-1" style="max-width: 600px; margin: 0 auto; background: var(--bg-card); padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-md);">
+                <form id="burdenCalculator">
+                    <div style="margin-bottom: 20px;">
+                        <label for="calcCost" style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Original Asset Cost ($)</label>
+                        <input type="number" id="calcCost" required min="1" placeholder="e.g. 1200" style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--white); font-size: 1rem; font-family: 'Inter', sans-serif;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="calcAge" style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Age of Asset (Years)</label>
+                        <input type="number" id="calcAge" required min="0" placeholder="e.g. 6" style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--white); font-size: 1rem; font-family: 'Inter', sans-serif;">
+                    </div>
+                    <div style="margin-bottom: 30px;">
+                        <label for="calcRepair" style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Current Repair Quote ($)</label>
+                        <input type="number" id="calcRepair" required min="1" placeholder="e.g. 450" style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--white); font-size: 1rem; font-family: 'Inter', sans-serif;">
+                    </div>
+                    <button type="submit" class="btn-pill btn-pill-primary" style="width: 100%; justify-content: center; font-size: 1.05rem;">Calculate Burden Ratio</button>
+                </form>
+                
+                <div id="calcResult" style="margin-top: 30px; text-align: center; display: none; padding-top: 25px; border-top: 1px solid var(--border);">
+                    <h3 style="font-size: 2.5rem; margin-bottom: 5px; font-family: 'Space Grotesk', sans-serif;" id="calcScore">0%</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">Burden Ratio</p>
+                    <p id="calcRecommendation" style="font-size: 1.15rem; font-weight: 600; color: var(--accent); margin: 0; padding: 15px; background: rgba(59, 226, 154, 0.1); border-radius: var(--radius-sm);"></p>
                 </div>
             </div>
         </div>
@@ -185,15 +250,60 @@
                 <span class="eyebrow">Inside the App</span>
                 <h2>Beautiful & <span class="accent">Intuitive Interface</span></h2>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; justify-items: center; margin-top: 3rem;">
-                <img src="images/Asset tab.webp" alt="Asset Vault" style="width: 100%; max-width: 280px; height: auto; border-radius: 20px; box-shadow: var(--shadow-md);">
-                <img src="images/Asset details.webp" alt="Asset Details" style="width: 100%; max-width: 280px; height: auto; border-radius: 20px; box-shadow: var(--shadow-md);">
-                <img src="images/Maintenance tasks.webp" alt="Maintenance Schedule" style="width: 100%; max-width: 280px; height: auto; border-radius: 20px; box-shadow: var(--shadow-md);">
-                <img src="images/Expenses tab.webp" alt="Expense Charts" style="width: 100%; max-width: 280px; height: auto; border-radius: 20px; box-shadow: var(--shadow-md);">
-                <img src="images/Asset documents.webp" alt="Documents" style="width: 100%; max-width: 280px; height: auto; border-radius: 20px; box-shadow: var(--shadow-md);">
-                <img src="images/More tab.webp" alt="More Options" style="width: 100%; max-width: 280px; height: auto; border-radius: 20px; box-shadow: var(--shadow-md);">
+            <div class="screenshot-slider-wrap">
+                <div class="screenshot-slider" id="screenshotSlider">
+                    <div class="screenshot-slide">
+                        <div class="phone-frame">
+                            <img src="images/Home dashboard.webp" alt="Home Dashboard">
+                        </div>
+                        <div class="screenshot-label">Home Dashboard</div>
+                    </div>
+                    <div class="screenshot-slide">
+                        <div class="phone-frame">
+                            <img src="images/Asset tab.webp" alt="Asset Vault">
+                        </div>
+                        <div class="screenshot-label">Asset Vault</div>
+                    </div>
+                    <div class="screenshot-slide">
+                        <div class="phone-frame">
+                            <img src="images/Asset details.webp" alt="Asset Details">
+                        </div>
+                        <div class="screenshot-label">Asset Details</div>
+                    </div>
+                    <div class="screenshot-slide">
+                        <div class="phone-frame">
+                            <img src="images/Maintenance tasks.webp" alt="Maintenance Schedule">
+                        </div>
+                        <div class="screenshot-label">Maintenance Schedule</div>
+                    </div>
+                    <div class="screenshot-slide">
+                        <div class="phone-frame">
+                            <img src="images/Expenses tab.webp" alt="Expense Charts">
+                        </div>
+                        <div class="screenshot-label">Expense Charts</div>
+                    </div>
+                    <div class="screenshot-slide">
+                        <div class="phone-frame">
+                            <img src="images/Asset documents.webp" alt="Documents">
+                        </div>
+                        <div class="screenshot-label">Documents</div>
+                    </div>
+                    <div class="screenshot-slide">
+                        <div class="phone-frame">
+                            <img src="images/More tab.webp" alt="More Options">
+                        </div>
+                        <div class="screenshot-label">More Options</div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="slider-nav">
+                <button class="slider-btn" id="sliderPrev" aria-label="Previous screenshot">
+                    <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" /></svg>
+                </button>
+                <button class="slider-btn" id="sliderNext" aria-label="Next screenshot">
+                    <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6" /></svg>
+                </button>
+            </div>
     </section>
 
     <!-- Footer -->

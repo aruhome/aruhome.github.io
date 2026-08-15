@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
     initFAQAccordion();
     initSmoothScroll();
     trackDownloadLinks();
+    initCalculator();
+    initLibrarySearch();
 });
 
 
@@ -290,3 +292,86 @@ window.addEventListener('error', function (event) {
 
 console.log('%c📺 Remote for Roku TV – Aruk', 'font-size:16px; font-weight:800; color:#2563EB;');
 console.log('%c  Free Roku remote for Android — smartremotelabs.github.io', 'font-size:12px; color:#888;');
+
+// ============================================
+// Repair vs Replace Calculator
+// ============================================
+function initCalculator() {
+    const form = document.getElementById('burdenCalculator');
+    if (!form) return;
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const cost = parseFloat(document.getElementById('calcCost').value);
+        const age = parseFloat(document.getElementById('calcAge').value);
+        const repair = parseFloat(document.getElementById('calcRepair').value);
+        
+        if (!cost || !repair) return;
+        
+        // Basic heuristic: Burden increases with age. 
+        // 10% penalty per year of age.
+        let burdenRatio = (repair / cost) * (1 + (age * 0.1)) * 100;
+        burdenRatio = Math.round(burdenRatio);
+        
+        const resultDiv = document.getElementById('calcResult');
+        const scoreEl = document.getElementById('calcScore');
+        const recEl = document.getElementById('calcRecommendation');
+        
+        scoreEl.innerText = burdenRatio + '%';
+        
+        if (burdenRatio >= 50) {
+            recEl.innerText = 'Recommendation: Replace It';
+            recEl.style.color = '#ff4d4d'; // red
+            recEl.style.background = 'rgba(255, 77, 77, 0.1)';
+            scoreEl.style.color = '#ff4d4d';
+        } else {
+            recEl.innerText = 'Recommendation: Repair It';
+            recEl.style.color = 'var(--accent)';
+            recEl.style.background = 'rgba(59, 226, 154, 0.1)';
+            scoreEl.style.color = 'var(--text-primary)';
+        }
+        
+        resultDiv.style.display = 'block';
+    });
+}
+
+// ============================================
+// Maintenance Library Search & Filter
+// ============================================
+function initLibrarySearch() {
+    const searchInput = document.getElementById('librarySearchInput');
+    const searchBtn = document.getElementById('librarySearchBtn');
+    const categoryFilter = document.getElementById('libraryCategoryFilter');
+    const difficultyFilter = document.getElementById('libraryDifficultyFilter');
+    const cards = document.querySelectorAll('.task-card-link');
+
+    if (!searchInput || !cards.length) return;
+
+    function applyFilters() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const category = categoryFilter ? categoryFilter.value : 'all';
+        const difficulty = difficultyFilter ? difficultyFilter.value : 'all';
+
+        cards.forEach(card => {
+            const title = card.dataset.title || '';
+            const cardCat = card.dataset.category || '';
+            const cardDiff = card.dataset.difficulty || '';
+
+            const matchesSearch = title.includes(searchTerm);
+            const matchesCategory = category === 'all' || cardCat === category;
+            const matchesDifficulty = difficulty === 'all' || cardDiff === difficulty;
+
+            if (matchesSearch && matchesCategory && matchesDifficulty) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    if (searchBtn) searchBtn.addEventListener('click', applyFilters);
+    searchInput.addEventListener('input', applyFilters);
+    if (categoryFilter) categoryFilter.addEventListener('change', applyFilters);
+    if (difficultyFilter) difficultyFilter.addEventListener('change', applyFilters);
+}

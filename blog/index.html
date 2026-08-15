@@ -3,415 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Remote for Roku TV – Aruk Blog - Articles and guides about controlling Roku TV, troubleshooting, and remote app tips.">
-    <meta name="keywords" content="blog, roku tips, remote control guides, roku troubleshooting, roku app">
-    <meta name="author" content="Remote for Roku TV – Aruk">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Remote for Roku TV – Aruk Blog">
-    <meta property="og:description" content="Read guides and articles about controlling your Roku TV with Remote for Roku TV – Aruk.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://smartremotelabs.github.io/blog/">
-        <meta property="og:image" content="https://smartremotelabs.github.io/images/Feature graphic.webp">
-
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Remote for Roku TV – Aruk Blog">
-        <meta name="twitter:description" content="Read guides and articles about controlling your Roku TV with Remote for Roku TV – Aruk.">
-        <meta name="twitter:image" content="https://smartremotelabs.github.io/images/roku-remote-roku-tv-auto-discovery.webp">
-
-        <!-- JSON-LD Blog -->
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Blog",
-            "url": "https://smartremotelabs.github.io/blog/",
-            "name": "Remote for Roku TV – Aruk Blog",
-            "description": "Articles and guides about controlling Roku TV."
-        }
-        </script>
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://smartremotelabs.github.io/blog/">
-    
-    <title>Blog - Remote for Roku TV – Aruk Articles and Guides</title>
+    <title>Blog - AruHome</title>
+    <!-- We link to the parent styles.css -->
     <link rel="stylesheet" href="../styles.css">
-    <link rel="icon" type="image/png" href="../Icon - round.png">
+    <link rel="icon" type="image/png" href="../Icon.png">
 </head>
 <body>
+    <!-- Header Navigation -->
+    <header id="site-header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="../Icon.png" alt="AruHome Logo" style="width: 40px; height: 40px; border-radius: 12px; margin-right: 10px;">
+                    <h1><a href="../index.html">AruHome</a></h1>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html#features">Features</a></li>
+                    <li><a href="../index.html#screenshots">Screenshots</a></li>
+                    <li><a href="../maintenance-library.html">Library</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <li><a href="../privacy.html">Privacy</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="nav-cta" aria-label="Download on Google Play">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:18px;height:18px;margin-right:6px;">
+                        <path d="M3.18 23.76c.35.2.75.24 1.13.1l12.09-6.96-2.76-2.76L3.18 23.76z" />
+                        <path d="M22.32 10.66a1.74 1.74 0 000-3.02l-2.88-1.66-3.06 3.06 3.06 3.06 2.88-1.44z" />
+                        <path d="M2.04 1.2A1.74 1.74 0 001 2.76v18.48c0 .66.36 1.26.9 1.56l.14.08 10.35-10.35L2.04 1.2z" />
+                        <path d="M16.4 5.1L4.31.14C3.93 0 3.53.04 3.18.24l10.46 10.46L16.4 5.1z" />
+                    </svg>
+                    Download App
+                </a>
+            </nav>
+        </div>
+    </header>
 
-<!-- Header Navigation -->
-<header>
-    <div class="container">
-        <nav class="nav">
-            <div class="logo">
-                <img src="../Icon - round.png" alt="Remote for Roku TV – Aruk" class="logo-icon" loading="lazy">
-                <h1><a href="../index.html">Remote for Roku TV – Aruk</a></h1>
+    <section class="blog-listing-section" style="padding-top: 150px;">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Resources & Articles</span>
+                <h2>The AruHome <span class="accent">Blog</span></h2>
+                <p>Expert tips, financial insights, and guides to protect your largest investment.</p>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="../index.html#features">Features</a></li>
-                <li><a href="../index.html#screenshots">Screenshots</a></li>
-                <li><a href="../faq.html">FAQ</a></li>
-                <li><a href="../blog/" class="active">Blog</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="https://play.google.com/store/apps/details?id=com.smartremotelabs.smartremoteforroku" target="_blank" rel="noopener noreferrer" class="nav-cta nav-play-link" aria-label="Download Remote for Roku TV – Aruk on Google Play" title="Download on Google Play">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M3.18 23.76c.35.2.75.24 1.13.1l12.09-6.96-2.76-2.76L3.18 23.76z"/>
-                            <path d="M22.32 10.66a1.74 1.74 0 000-3.02l-2.88-1.66-3.06 3.06 3.06 3.06 2.88-1.44z"/>
-                            <path d="M2.04 1.2A1.74 1.74 0 001 2.76v18.48c0 .66.36 1.26.9 1.56l.14.08 10.35-10.35L2.04 1.2z"/>
-                            <path d="M16.4 5.1L4.31.14C3.93 0 3.53.04 3.18.24l10.46 10.46L16.4 5.1z"/>
-                        </svg>
-                        Download Free
-                    </a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
 
-<!-- Blog Section -->
-<section class="blog-listing-section">
-    <div class="container">
-        <h1>Remote for Roku TV – Aruk Blog</h1>
-        <p class="section-subtitle">Articles, guides, and tips for controlling your Roku TV</p>
-        
-        <div class="blog-grid">
-            <!-- Blog Post: Clean Roku Home Screen -->
-            <article class="blog-card">
-                <div class="blog-card-content">
-                    <h2><a href="clean-roku-home-screen.html">How to Clean Your Roku Home Screen (Hide Recommendations, Sports & More)</a></h2>
-                    <div class="blog-meta">
-                        <span>Published: July 12, 2026</span>
-                        <span>Reading time: 3 minutes</span>
+            <div class="blog-grid">
+                <!-- Article 1 -->
+                <div class="blog-card reveal reveal-delay-1">
+                    <div class="blog-card-content">
+                        <span class="hero-tag" style="margin-bottom: 15px; background: rgba(59, 226, 154, 0.1); border-color: rgba(59, 226, 154, 0.3); color: var(--accent);">Financial Tips</span>
+                        <h2><a href="burden-ratio.html">The Homeowner’s "Fix or Flop" Guide: Understanding the Burden Ratio</a></h2>
+                        <div class="blog-meta">
+                            <span>August 15, 2026</span>
+                            <span>6 min read</span>
+                        </div>
+                        <p class="blog-excerpt">When your water heater breaks for the third time in two years, should you repair it or replace it? Learn how to calculate your Burden Ratio and stop throwing good money after bad.</p>
+                        <a href="burden-ratio.html" class="read-more">Read Article &rarr;</a>
                     </div>
-                    <p class="blog-excerpt">
-                        Learn how to remove clutter from your Roku home screen by hiding recommendation rows, sports, featured content, and more in under 30 seconds.
-                    </p>
-                    <a href="clean-roku-home-screen.html" class="read-more">Read More →</a>
                 </div>
-            </article>
 
-            <!-- Blog Post: Online Roku Remote Control -->
-            <article class="blog-card">
-                <div class="blog-card-content">
-                    <h2><a href="online-roku-remote-control.html">Online Roku Remote Control: Best Free App for Android (2026)</a></h2>
-                    <div class="blog-meta">
-                        <span>Published: June 21, 2026</span>
-                        <span>Reading time: 7 minutes</span>
+                <!-- Article 2 -->
+                <div class="blog-card reveal reveal-delay-2">
+                    <div class="blog-card-content">
+                        <span class="hero-tag" style="margin-bottom: 15px; background: rgba(139, 92, 246, 0.1); border-color: rgba(139, 92, 246, 0.3); color: #a78bfa;">Privacy & Tech</span>
+                        <h2><a href="local-first.html">Why Your Home’s Data Doesn’t Belong in the Cloud</a></h2>
+                        <div class="blog-meta">
+                            <span>August 12, 2026</span>
+                            <span>5 min read</span>
+                        </div>
+                        <p class="blog-excerpt">In an era of data breaches, do you really want a third-party server holding a map of your home’s assets and serial numbers? Discover the Local-First advantage.</p>
+                        <a href="local-first.html" class="read-more">Read Article &rarr;</a>
                     </div>
-                    <p class="blog-excerpt">
-                        Looking for an online Roku remote control? Learn how to control your Roku TV from your Android phone with the free Remote for Roku TV – Aruk app — no physical remote needed, no browser hacks, works with all Roku models.
-                    </p>
-                    <a href="online-roku-remote-control.html" class="read-more">Read More →</a>
                 </div>
-            </article>
 
-            <!-- Blog Post: Best Free Roku Remote Apps -->
-            <article class="blog-card">
-                <div class="blog-card-content">
-                    <h2><a href="best-free-roku-remote-apps.html">Best Free Roku Remote Apps for Android: Ad-Free vs. Ad-Heavy</a></h2>
-                    <div class="blog-meta">
-                        <span>Published: June 21, 2026</span>
-                        <span>Reading time: 5 minutes</span>
+                <!-- Article 3 -->
+                <div class="blog-card reveal reveal-delay-3">
+                    <div class="blog-card-content">
+                        <span class="hero-tag" style="margin-bottom: 15px; background: rgba(37, 99, 235, 0.1); border-color: rgba(37, 99, 235, 0.3); color: var(--primary-bright);">Real Estate</span>
+                        <h2><a href="digital-manual.html">The "Digital Manual" Advantage: How to Increase Your Home's Resale Value</a></h2>
+                        <div class="blog-meta">
+                            <span>August 8, 2026</span>
+                            <span>7 min read</span>
+                        </div>
+                        <p class="blog-excerpt">A clean home sells fast, but a well-documented home sells for more. Learn how a complete digital inventory can build buyer confidence and boost your asking price.</p>
+                        <a href="digital-manual.html" class="read-more">Read Article &rarr;</a>
                     </div>
-                    <p class="blog-excerpt">
-                        Frustrated by pop-up ads in third-party Roku remotes? Compare the best free Roku remote apps for Android and find the cleanest remote control experience.
-                    </p>
-                    <a href="best-free-roku-remote-apps.html" class="read-more">Read More →</a>
                 </div>
-            </article>
 
-            <!-- Blog Post: Control Roku TV Volume Without Remote -->
-            <article class="blog-card">
-                <div class="blog-card-content">
-                    <h2><a href="control-roku-volume-without-remote.html">How to Control Roku TV Volume Without a Remote: 4 Simple Ways</a></h2>
-                    <div class="blog-meta">
-                        <span>Published: June 20, 2026</span>
-                        <span>Reading time: 5 minutes</span>
+                <!-- Article 4 -->
+                <div class="blog-card reveal reveal-delay-1">
+                    <div class="blog-card-content">
+                        <span class="hero-tag" style="margin-bottom: 15px; background: rgba(245, 158, 11, 0.1); border-color: rgba(245, 158, 11, 0.3); color: #f59e0b;">Tech & Tools</span>
+                        <h2><a href="ocr-smart-scanning.html">Stop Hunting for Serial Numbers: The Magic of OCR Smart Scanning</a></h2>
+                        <div class="blog-meta">
+                            <span>August 5, 2026</span>
+                            <span>4 min read</span>
+                        </div>
+                        <p class="blog-excerpt">Your dishwasher is leaking and you’re upside down with a flashlight trying to read a blurry metal label. There’s a better way to build your home inventory without typing a word.</p>
+                        <a href="ocr-smart-scanning.html" class="read-more">Read Article &rarr;</a>
                     </div>
-                    <p class="blog-excerpt">
-                        Need to adjust your Roku TV volume but don't have a physical remote? Discover 4 simple ways to turn volume up or down, including apps, TV buttons, and HDMI CEC.
-                    </p>
-                    <a href="control-roku-volume-without-remote.html" class="read-more">Read More →</a>
                 </div>
-            </article>
 
-            <!-- Blog Post: Connect Roku to Hotel or Dorm Wi-Fi -->
-            <article class="blog-card">
-                <div class="blog-card-content">
-                    <h2><a href="connect-roku-hotel-wifi.html">How to Connect Roku to Hotel or Dorm Wi-Fi: Step-by-Step Guide</a></h2>
-                    <div class="blog-meta">
-                        <span>Published: June 18, 2026</span>
-                        <span>Reading time: 5 minutes</span>
+                <!-- Article 5 -->
+                <div class="blog-card reveal reveal-delay-2">
+                    <div class="blog-card-content">
+                        <span class="hero-tag" style="margin-bottom: 15px; background: rgba(59, 226, 154, 0.1); border-color: rgba(59, 226, 154, 0.3); color: var(--accent);">Seasonal Maintenance</span>
+                        <h2><a href="diy-vs-pro.html">DIY vs. Pro: Knowing Your Limits in Home Maintenance</a></h2>
+                        <div class="blog-meta">
+                            <span>August 1, 2026</span>
+                            <span>6 min read</span>
+                        </div>
+                        <p class="blog-excerpt">Some tasks save you $200; others end up costing you $2,000 in emergency repairs. How to accurately categorize tasks by skill level and prioritize safety first.</p>
+                        <a href="diy-vs-pro.html" class="read-more">Read Article &rarr;</a>
                     </div>
-                    <p class="blog-excerpt">
-                        Stuck on a hotel or college dorm login screen with your Roku? Discover how to use Roku's Hotel & Dorm Connect feature with your Android phone to get online.
-                    </p>
-                    <a href="connect-roku-hotel-wifi.html" class="read-more">Read More →</a>
                 </div>
-            </article>
-
-            <!-- Blog Post: Connect Roku to Wi-Fi Without a Remote -->
-            <article class="blog-card">
-                <div class="blog-card-content">
-                    <h2><a href="connect-roku-wifi-without-remote.html">How to Connect Roku to Wi-Fi Without a Remote: Step-by-Step Guide</a></h2>
-                    <div class="blog-meta">
-                        <span>Published: June 15, 2026</span>
-                        <span>Reading time: 6 minutes</span>
-                    </div>
-                    <p class="blog-excerpt">
-                        Lost your Roku remote and need to connect to a new Wi-Fi network? Learn the step-by-step mobile hotspot trick and other workarounds to get your Roku online.
-                    </p>
-                    <a href="connect-roku-wifi-without-remote.html" class="read-more">Read More →</a>
-                </div>
-            </article>
-
-            <!-- Blog Post: How to Program Roku Remote App -->
-            <article class="blog-card">
-                <div class="blog-card-content">
-                    <h2><a href="how-to-program-roku-remote-app.html">How to Program Your Roku Remote App to Your TV (No Code Required)</a></h2>
-                    <div class="blog-meta">
-                        <span>Published: June 12, 2026</span>
-                        <span>Reading time: 5 minutes</span>
-                    </div>
-                    <p class="blog-excerpt">
-                        Stop searching for universal remote codes. Learn how to quickly connect and "program" your Roku remote app to your TV using your home Wi-Fi network.
-                    </p>
-                    <a href="how-to-program-roku-remote-app.html" class="read-more">Read More →</a>
-                </div>
-            </article>
-            <!-- Blog Post: Roku TV Remote App -->
-            <article class="blog-card">
-                <div class="blog-card-content">
-                    <h2><a href="roku-tv-remote-app.html">Roku TV Remote App for Android: Free and No Ads Control</a></h2>
-                    <div class="blog-meta">
-                        <span>Published: June 6, 2026</span>
-                        <span>Reading time: 6 minutes</span>
-                    </div>
-                    <p class="blog-excerpt">
-                        Turn your Android phone into a powerful Roku remote—keyboard input, voice search, gesture navigation, quick actions, and more. Watch the demo and install the app.
-                    </p>
-                    <a href="roku-tv-remote-app.html" class="read-more">Read More →</a>
-                </div>
-            </article>
-            <!-- New Blog Post: Ad-free Roku Remote -->
-            <article class="blog-card">
-                <div class="blog-card-content">
-                    <h2><a href="roku-remote-no-ads.html">Roku Remote App No Ads: Why a Clean Interface Matters</a></h2>
-                    <div class="blog-meta">
-                        <span>Published: June 8, 2026</span>
-                        <span>Reading time: 5 minutes</span>
-                    </div>
-                    <p class="blog-excerpt">
-                        Learn why many Roku remote apps show ads, the benefits of ad-free remotes, and which features matter when choosing a distraction-free app.
-                    </p>
-                    <a href="roku-remote-no-ads.html" class="read-more">Read More →</a>
-                </div>
-            </article>
-            <!-- Blog Post 1 -->
-            <article class="blog-card">
-                <div class="blog-card-content">
-                    <h2><a href="connect-roku-without-remote.html">How to Connect Your Roku TV Without a Physical Remote</a></h2>
-                    <div class="blog-meta">
-                        <span>Published: May 21, 2026</span>
-                        <span>Reading time: 5 minutes</span>
-                    </div>
-                    <p class="blog-excerpt">
-                        Step-by-step guide to control your Roku TV without a physical remote. Learn how to download Remote for Roku TV – Aruk and take control of your TV from your Android phone.
-                    </p>
-                    <a href="connect-roku-without-remote.html" class="read-more">Read More →</a>
-                </div>
-            </article>
-            
-            <!-- Blog Post 2 -->
-            <article class="blog-card">
-                <div class="blog-card-content">
-                    <h2><a href="lost-roku-remote.html">Lost Your Roku Remote? Here's What to Do</a></h2>
-                    <div class="blog-meta">
-                        <span>Published: May 21, 2026</span>
-                        <span>Reading time: 6 minutes</span>
-                    </div>
-                    <p class="blog-excerpt">
-                        Comprehensive guide on what to do if you've lost your Roku remote. Explore your options, from finding it to using Remote for Roku TV – Aruk as an alternative.
-                    </p>
-                    <a href="lost-roku-remote.html" class="read-more">Read More →</a>
-                </div>
-            </article>
-            
-            <!-- Blog Post 3 -->
-            <article class="blog-card">
-                <div class="blog-card-content">
-                    <h2><a href="roku-remote-not-working.html">Roku Remote Not Working? Complete Troubleshooting Guide</a></h2>
-                    <div class="blog-meta">
-                        <span>Published: May 21, 2026</span>
-                        <span>Reading time: 7 minutes</span>
-                    </div>
-                    <p class="blog-excerpt">
-                        Troubleshooting guide for Roku remote issues. Find solutions for connection problems, unresponsive buttons, and other common issues.
-                    </p>
-                    <a href="roku-remote-not-working.html" class="read-more">Read More →</a>
-                </div>
-            </article>
-            
-            <!-- Blog Post 4 -->
-            <article class="blog-card">
-                <div class="blog-card-content">
-                    <h2><a href="roku-remote-app-not-responding.html">Roku Remote App Not Responding? Try This Roku TV Setting Fix</a></h2>
-                    <div class="blog-meta">
-                        <span>Published: May 26, 2026</span>
-                        <span>Reading time: 5 minutes</span>
-                    </div>
-                    <p class="blog-excerpt">
-                        Learn why your Roku remote app may not be responding and discover the simple Roku TV setting that often fixes the problem instantly.
-                    </p>
-                    <a href="roku-remote-app-not-responding.html" class="read-more">Read More →</a>
-                </div>
-            </article>
-            
-            <!-- Blog Post 5 -->
-            <article class="blog-card">
-                <div class="blog-card-content">
-                    <h2><a href="type-faster-on-roku.html">Roku Keyboard Guide: Fixing Onscreen Keyboard and Capitalization Issues</a></h2>
-                    <div class="blog-meta">
-                        <span>Published: May 30, 2026</span>
-                        <span>Reading time: 5 minutes</span>
-                    </div>
-                    <p class="blog-excerpt">
-                        Discover how Intelligent Keyboard Sync lets you type on your Roku TV using your smartphone keyboard—the ultimate productivity hack for faster streaming.
-                    </p>
-                    <a href="type-faster-on-roku.html" class="read-more">Read More →</a>
-                </div>
-            </article>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Newsletter Section -->
-<section class="newsletter-section">
-    <div class="container">
-        <h2>Stay Updated</h2>
-        <p>Subscribe to our newsletter for more Roku tips and app updates</p>
-        <form class="newsletter-form">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit" class="btn primary">Subscribe</button>
-        </form>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer>
-    <div class="container footer-grid">
-        <div class="footer-col">
-            <h3>Remote for Roku TV – Aruk</h3>
-            <p>
-                The fast, free, and easy way to control your Roku TV from your Android phone.
-                Download now and enjoy seamless remote control.
-            </p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 AruHome. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../privacy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                </div>
+            </div>
         </div>
-        
-        <div class="footer-col">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="../index.html#features">Features</a></li>
-                <li><a href="../faq.html">FAQ</a></li>
-                <li><a href="../blog/">Blog</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer-col">
-            <h3>Legal</h3>
-            <ul>
-                <li><a href="../privacy.html">Privacy Policy</a></li>
-                <li><a href="../terms.html">Terms of Service</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer-col">
-            <h3>Follow Us</h3>
-            <ul>
-                <li><a href="https://www.tiktok.com/@rokutvremotecontrol" target="_blank" rel="noopener noreferrer">TikTok</a></li>
-                <li><a href="https://www.youtube.com/@rokutvremotecontrol" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-                <li><a href="https://www.instagram.com/rokutvremotecontrol/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>&copy; 2026 Smart Remote Labs. All rights reserved.</p>
-        <p>Disclaimer: This application is an independent app developed by SmartRemoteLabs and is not affiliated with, endorsed by, sponsored by, or associated with Roku, Inc. Roku is a registered trademark of Roku, Inc.</p>
-    </div>
-</footer>
-
-<!-- Mobile Menu Toggle Script -->
-<script>
-  // Hamburger menu toggle for mobile
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-  
-  navToggle.addEventListener('click', function() {
-    navToggle.classList.toggle('active');
-    navLinks.classList.toggle('active');
-  });
-  
-  // Close menu when a link is clicked
-  navLinks.addEventListener('click', function(e) {
-    if (e.target.tagName === 'A') {
-      navToggle.classList.remove('active');
-      navLinks.classList.remove('active');
-    }
-  });
-</script>
-
-<!-- Make entire blog card clickable (keyboard accessible) -->
-<script>
-    (function() {
-        const cards = document.querySelectorAll('.blog-card');
-        cards.forEach(card => {
-            const titleLink = card.querySelector('h2 a');
-            if (!titleLink) return;
-            const href = titleLink.href;
-            const titleText = titleLink.textContent.trim();
-
-            // Make card focusable and announceable
-            card.setAttribute('tabindex', '0');
-            card.setAttribute('role', 'link');
-            card.setAttribute('aria-label', `Read "${titleText}"`);
-            card.style.cursor = 'pointer';
-
-            // Click handler: ignore clicks on inner interactive elements (links, buttons, inputs)
-            card.addEventListener('click', function(e) {
-                if (e.target.closest('a, button, input, textarea, select')) return;
-                window.location.href = href;
-            });
-
-            // Keyboard: open on Enter or Space
-            card.addEventListener('keydown', function(e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    window.location.href = href;
-                }
-            });
-        });
-    })();
-</script>
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
-
-<script src="../script.js"></script>
-
+    </footer>
+    <script src="../script.js"></script>
 </body>
 </html>

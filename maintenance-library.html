@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Library - AruHome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="Icon.png">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header id="site-header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="Icon.png" alt="AruHome Logo" style="width: 40px; height: 40px; border-radius: 12px; margin-right: 10px;">
+                    <h1><a href="index.html">AruHome</a></h1>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#screenshots">Screenshots</a></li>
+                    <li><a href="maintenance-library.html">Library</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="nav-cta" aria-label="Download on Google Play">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:18px;height:18px;margin-right:6px;"><path d="M3.18 23.76c.35.2.75.24 1.13.1l12.09-6.96-2.76-2.76L3.18 23.76z" /><path d="M22.32 10.66a1.74 1.74 0 000-3.02l-2.88-1.66-3.06 3.06 3.06 3.06 2.88-1.44z" /><path d="M2.04 1.2A1.74 1.74 0 001 2.76v18.48c0 .66.36 1.26.9 1.56l.14.08 10.35-10.35L2.04 1.2z" /><path d="M16.4 5.1L4.31.14C3.93 0 3.53.04 3.18.24l10.46 10.46L16.4 5.1z" /></svg>
+                    Download App
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="features" style="padding-top: 150px; text-align: left; background: var(--bg-body); padding-bottom: 80px;">
+        <div class="container" style="max-width: 1000px; margin: 0 auto; color: var(--text-secondary);">
+            <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+                <span class="eyebrow">Task Hub</span>
+                <h1 style="color: var(--text-primary); margin-bottom: 1rem; font-size: clamp(2rem, 4vw, 3rem);">Home Maintenance Library</h1>
+                <p>Browse our extensive library of home maintenance tasks. Learn what to do, why it matters, and when to call a professional.</p>
+                
+                <!-- Search Bar -->
+                <div style="margin-top: 30px; max-width: 600px; margin-left: auto; margin-right: auto; position: relative;">
+                    <input type="text" id="librarySearchInput" placeholder="Search for 'Furnace' or 'Gutters'..." style="width: 100%; padding: 15px 20px; border-radius: var(--radius-pill); border: 1px solid var(--border); background: var(--bg-card); color: var(--text-primary); font-size: 1.1rem;">
+                    <button id="librarySearchBtn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: var(--accent); border: none; padding: 10px 20px; border-radius: var(--radius-pill); color: #fff; font-weight: bold; cursor: pointer;">Search</button>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div style="display: flex; gap: 15px; margin-bottom: 30px; flex-wrap: wrap; justify-content: center;">
+                <select id="libraryCategoryFilter" style="padding: 10px 15px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--text-primary);">
+                    <option value="all">All Categories</option>
+                    <option value="kitchen appliances">Kitchen Appliances</option>
+                    <option value="hvac">HVAC</option>
+                    <option value="plumbing">Plumbing</option>
+                    <option value="exterior">Exterior</option>
+                </select>
+                <select id="libraryDifficultyFilter" style="padding: 10px 15px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--text-primary);">
+                    <option value="all">All Difficulties</option>
+                    <option value="easy">Easy</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            
+            <div class="features-grid" id="libraryGrid">
+                <!-- Task Card 1 -->
+                <a href="maintenance/clean-refrigerator-coils.html" class="task-card-link" data-title="clean refrigerator condenser coils" data-category="kitchen appliances" data-difficulty="easy" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="feature-card reveal" style="padding: 30px; transition: transform 0.3s; cursor: pointer; height: 100%; border: 1px solid var(--border);">
+                        <span class="hero-tag" style="background: rgba(59, 226, 154, 0.1); border-color: rgba(59, 226, 154, 0.3); color: var(--accent); font-size: 0.75rem; margin-bottom: 10px;">Kitchen Appliances</span>
+                        <h3 style="margin-top: 10px; font-size: 1.4rem;">Clean Refrigerator Condenser Coils</h3>
+                        <p style="font-size: 0.95rem; margin-bottom: 20px;">Dirty coils can increase energy usage by up to 30% and shorten compressor life.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                            <span style="font-size: 0.85rem; font-weight: 600; color: var(--accent);">Easy (DIY Level 1)</span>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Bi-Annual</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Task Card 2 -->
+                <a href="maintenance/flush-water-heater.html" class="task-card-link" data-title="flush water heater" data-category="plumbing" data-difficulty="moderate" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="feature-card reveal reveal-delay-1" style="padding: 30px; transition: transform 0.3s; cursor: pointer; height: 100%; border: 1px solid var(--border);">
+                        <span class="hero-tag" style="background: rgba(37, 99, 235, 0.1); border-color: rgba(37, 99, 235, 0.3); color: var(--primary-bright); font-size: 0.75rem; margin-bottom: 10px;">Plumbing</span>
+                        <h3 style="margin-top: 10px; font-size: 1.4rem;">Flush Water Heater</h3>
+                        <p style="font-size: 0.95rem; margin-bottom: 20px;">Remove sediment buildup to increase heating efficiency and prevent premature tank failure.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                            <span style="font-size: 0.85rem; font-weight: 600; color: #f59e0b;">Moderate (DIY Level 3)</span>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Annual</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Task Card 3 -->
+                <a href="maintenance/clean-gutters.html" class="task-card-link" data-title="clean gutters" data-category="exterior" data-difficulty="moderate" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="feature-card reveal" style="padding: 30px; transition: transform 0.3s; cursor: pointer; height: 100%; border: 1px solid var(--border);">
+                        <span class="hero-tag" style="background: rgba(139, 92, 246, 0.1); border-color: rgba(139, 92, 246, 0.3); color: #a78bfa; font-size: 0.75rem; margin-bottom: 10px;">Exterior</span>
+                        <h3 style="margin-top: 10px; font-size: 1.4rem;">Clean Gutters</h3>
+                        <p style="font-size: 0.95rem; margin-bottom: 20px;">Prevent roof leaks, foundational damage, and ice dams by keeping your gutters clear.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                            <span style="font-size: 0.85rem; font-weight: 600; color: #f59e0b;">Moderate (DIY Level 2)</span>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Bi-Annual</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Task Card 4 -->
+                <a href="maintenance/change-hvac-filter.html" class="task-card-link" data-title="change hvac air filter" data-category="hvac" data-difficulty="easy" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="feature-card reveal" style="padding: 30px; transition: transform 0.3s; cursor: pointer; height: 100%; border: 1px solid var(--border);">
+                        <span class="hero-tag" style="background: rgba(245, 158, 11, 0.1); border-color: rgba(245, 158, 11, 0.3); color: #f59e0b; font-size: 0.75rem; margin-bottom: 10px;">HVAC</span>
+                        <h3 style="margin-top: 10px; font-size: 1.4rem;">Change HVAC Air Filter</h3>
+                        <p style="font-size: 0.95rem; margin-bottom: 20px;">A dirty air filter restricts airflow, which makes your HVAC system work much harder.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                            <span style="font-size: 0.85rem; font-weight: 600; color: var(--accent);">Easy (DIY Level 1)</span>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Quarterly</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Task Card 5 -->
+                <a href="maintenance/clean-garbage-disposal.html" class="task-card-link" data-title="clean garbage disposal" data-category="kitchen appliances" data-difficulty="easy" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="feature-card reveal" style="padding: 30px; transition: transform 0.3s; cursor: pointer; height: 100%; border: 1px solid var(--border);">
+                        <span class="hero-tag" style="background: rgba(59, 226, 154, 0.1); border-color: rgba(59, 226, 154, 0.3); color: var(--accent); font-size: 0.75rem; margin-bottom: 10px;">Kitchen Appliances</span>
+                        <h3 style="margin-top: 10px; font-size: 1.4rem;">Clean Garbage Disposal</h3>
+                        <p style="font-size: 0.95rem; margin-bottom: 20px;">Food particles and grease can build up in the disposal, causing foul odors and clogs.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                            <span style="font-size: 0.85rem; font-weight: 600; color: var(--accent);">Easy (DIY Level 1)</span>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Monthly</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Task Card 6 -->
+                <a href="maintenance/check-sump-pump.html" class="task-card-link" data-title="check sump pump" data-category="plumbing" data-difficulty="moderate" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="feature-card reveal" style="padding: 30px; transition: transform 0.3s; cursor: pointer; height: 100%; border: 1px solid var(--border);">
+                        <span class="hero-tag" style="background: rgba(37, 99, 235, 0.1); border-color: rgba(37, 99, 235, 0.3); color: var(--primary-bright); font-size: 0.75rem; margin-bottom: 10px;">Plumbing</span>
+                        <h3 style="margin-top: 10px; font-size: 1.4rem;">Check Sump Pump</h3>
+                        <p style="font-size: 0.95rem; margin-bottom: 20px;">A failed sump pump can lead to catastrophic basement flooding during heavy rain.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                            <span style="font-size: 0.85rem; font-weight: 600; color: #f59e0b;">Moderate (DIY Level 2)</span>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Bi-Annual</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Task Card 7 -->
+                <a href="maintenance/clean-range-hood-filter.html" class="task-card-link" data-title="clean range hood filter" data-category="kitchen appliances" data-difficulty="easy" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="feature-card reveal" style="padding: 30px; transition: transform 0.3s; cursor: pointer; height: 100%; border: 1px solid var(--border);">
+                        <span class="hero-tag" style="background: rgba(59, 226, 154, 0.1); border-color: rgba(59, 226, 154, 0.3); color: var(--accent); font-size: 0.75rem; margin-bottom: 10px;">Kitchen Appliances</span>
+                        <h3 style="margin-top: 10px; font-size: 1.4rem;">Clean Range Hood Filter</h3>
+                        <p style="font-size: 0.95rem; margin-bottom: 20px;">Grease-clogged filters reduce the efficiency of your exhaust fan, leaving cooking odors.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                            <span style="font-size: 0.85rem; font-weight: 600; color: var(--accent);">Easy (DIY Level 1)</span>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Quarterly</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Task Card 8 -->
+                <a href="maintenance/inspect-roof.html" class="task-card-link" data-title="inspect roof for damage" data-category="exterior" data-difficulty="moderate" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="feature-card reveal" style="padding: 30px; transition: transform 0.3s; cursor: pointer; height: 100%; border: 1px solid var(--border);">
+                        <span class="hero-tag" style="background: rgba(139, 92, 246, 0.1); border-color: rgba(139, 92, 246, 0.3); color: #a78bfa; font-size: 0.75rem; margin-bottom: 10px;">Exterior</span>
+                        <h3 style="margin-top: 10px; font-size: 1.4rem;">Inspect Roof for Damage</h3>
+                        <p style="font-size: 0.95rem; margin-bottom: 20px;">Catching missing shingles early can prevent major water damage and costly repairs.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                            <span style="font-size: 0.85rem; font-weight: 600; color: #f59e0b;">Moderate (DIY Level 2)</span>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Annual</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="#" class="btn-pill btn-pill-outline">Load More Tasks</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 AruHome. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
