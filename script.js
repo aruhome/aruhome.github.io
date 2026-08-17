@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     trackDownloadLinks();
     initCalculator();
     initLibrarySearch();
+    initMobileNav();
 });
 
 
@@ -343,7 +344,7 @@ function initLibrarySearch() {
     const searchInput = document.getElementById('librarySearchInput');
     const searchBtn = document.getElementById('librarySearchBtn');
     const categoryFilter = document.getElementById('libraryCategoryFilter');
-    const difficultyFilter = document.getElementById('libraryDifficultyFilter');
+    const priorityFilter = document.getElementById('libraryPriorityFilter');
     const cards = document.querySelectorAll('.task-card-link');
 
     if (!searchInput || !cards.length) return;
@@ -351,18 +352,18 @@ function initLibrarySearch() {
     function applyFilters() {
         const searchTerm = searchInput.value.toLowerCase();
         const category = categoryFilter ? categoryFilter.value : 'all';
-        const difficulty = difficultyFilter ? difficultyFilter.value : 'all';
+        const priority = priorityFilter ? priorityFilter.value : 'all';
 
         cards.forEach(card => {
             const title = card.dataset.title || '';
             const cardCat = card.dataset.category || '';
-            const cardDiff = card.dataset.difficulty || '';
+            const cardPri = card.dataset.priority || '';
 
             const matchesSearch = title.includes(searchTerm);
-            const matchesCategory = category === 'all' || cardCat === category;
-            const matchesDifficulty = difficulty === 'all' || cardDiff === difficulty;
+            const matchesCategory = category === 'all' || cardCat.split(',').map(s=>s.trim()).includes(category);
+            const matchesPriority = priority === 'all' || cardPri === priority;
 
-            if (matchesSearch && matchesCategory && matchesDifficulty) {
+            if (matchesSearch && matchesCategory && matchesPriority) {
                 card.style.display = 'block';
             } else {
                 card.style.display = 'none';
@@ -373,5 +374,21 @@ function initLibrarySearch() {
     if (searchBtn) searchBtn.addEventListener('click', applyFilters);
     searchInput.addEventListener('input', applyFilters);
     if (categoryFilter) categoryFilter.addEventListener('change', applyFilters);
-    if (difficultyFilter) difficultyFilter.addEventListener('change', applyFilters);
+    if (priorityFilter) priorityFilter.addEventListener('change', applyFilters);
+}
+
+
+// ============================================
+// Mobile Navigation Toggle
+// ============================================
+function initMobileNav() {
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    }
 }
