@@ -1,44 +1,26 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="AruHome: Home Inventory - The complete home management app. Track assets, automate maintenance, and organize financial records securely.">
-    <meta name="keywords"
-        content="home inventory app, Home Maintenance Tracker, Appliance Warranty App, Home Inventory OCR, Local-first Android app, home management, offline home inventory">
-    <meta name="author" content="AruHome">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#194778">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="AruHome: Home Inventory & Maintenance Tracker">
-    <meta property="og:description"
-        content="Protect your largest investment. Track assets, automate maintenance, and organize financial records in one secure place.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://smartremotelabs.github.io/">
-    <meta property="og:image" content="https://smartremotelabs.github.io/images/aruhome-preview.jpg">
 
-    <!-- JSON-LD Website Schema -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            "name": "AruHome: Home Inventory",
-            "description": "The complete home management app designed to help you organize, maintain, and protect your home.",
-            "image": "https://smartremotelabs.github.io/images/aruhome-preview.jpg",
-            "operatingSystem": "Android",
-            "applicationCategory": "ProductivityApplication",
-            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-            "url": "https://smartremotelabs.github.io/"
-        }
-    </script>
 
-    <title>AruHome: Home Inventory & Maintenance Tracker</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="Icon.png">
-    <style>
+
+<meta content="#194778" name="theme-color"/>
+<!-- Open Graph Meta Tags -->
+
+
+
+
+
+<!-- JSON-LD Website Schema -->
+
+
+<link href="styles.css" rel="stylesheet"/>
+<link href="Icon.png" rel="icon" type="image/png"/>
+<style>
         @keyframes float {
             0% {
                 transform: translateY(0px);
@@ -53,367 +35,438 @@
             }
         }
     </style>
-</head>
 
+<title>AruHome: Home Inventory &amp; Maintenance Tracker</title>
+<meta content="Track everything in your home. Stay ahead of maintenance. Never lose a warranty, receipt, or important record." name="description"/>
+<link href="https://aruhome.github.io/" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="AruHome: Home Inventory &amp; Maintenance Tracker" property="og:title"/>
+<meta content="Track everything in your home. Stay ahead of maintenance. Never lose a warranty, receipt, or important record." property="og:description"/>
+<meta content="https://aruhome.github.io/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="AruHome" property="og:site_name"/>
+<meta content="https://aruhome.github.io/images/aruhome-preview.jpg" property="og:image"/>
+<!-- Twitter -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="AruHome: Home Inventory &amp; Maintenance Tracker" name="twitter:title"/>
+<meta content="Track everything in your home. Stay ahead of maintenance. Never lose a warranty, receipt, or important record." name="twitter:description"/>
+<meta content="https://aruhome.github.io/images/aruhome-preview.jpg" name="twitter:image"/>
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "AruHome",
+    "applicationCategory": "ProductivityApplication",
+    "operatingSystem": "Android",
+    "description": "Track everything in your home. Stay ahead of maintenance. Never lose a warranty, receipt, or important record.",
+    "url": "https://aruhome.github.io/",
+    "image": "https://aruhome.github.io/images/aruhome-preview.jpg",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AruHome",
+    "url": "https://aruhome.github.io/",
+    "logo": "https://aruhome.github.io/Icon.png"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AruHome",
+    "url": "https://aruhome.github.io/"
+  }
+]
+</script></head>
 <body>
-    <!-- Announcement Bar -->
-    <div class="announcement-bar">
-        <span class="pill"><span class="dot" style="background-color: var(--accent);"></span> Private by Design</span>
-        Your data lives on your device &mdash; Local-first & offline ready
+<!-- Announcement Bar -->
+<div class="announcement-bar">
+<span class="pill"><span class="dot" style="background-color: var(--accent);"></span> Private by Design</span>
+        Your data lives on your device — Local-first &amp; offline ready
     </div>
-
-    <!-- Header Navigation -->
-    <header id="site-header">
-        <div class="container">
-            <nav class="nav">
-                <div class="logo">
-                    <!-- Placeholder for App Icon -->
-                    <img src="Icon.png" alt="AruHome Logo"
-                        style="width: 40px; height: 40px; border-radius: 12px; margin-right: 10px;">
-                    <h1><a href="index.html">AruHome</a></h1>
-                </div>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html#features">Features</a></li>
-                    <li><a href="index.html#screenshots">Screenshots</a></li>
-                    <li><a href="maintenance-library.html">Library</a></li>
-                    <li><a href="maintenance-calendar.html">Calendar</a></li>
-                    <li><a href="blog/index.html">Blog</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="privacy.html">Privacy</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <a href="#" class="nav-cta" aria-label="Download on Google Play">
-                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
-                        style="width:18px;height:18px;margin-right:6px;">
-                        <path d="M3.18 23.76c.35.2.75.24 1.13.1l12.09-6.96-2.76-2.76L3.18 23.76z" />
-                        <path d="M22.32 10.66a1.74 1.74 0 000-3.02l-2.88-1.66-3.06 3.06 3.06 3.06 2.88-1.44z" />
-                        <path
-                            d="M2.04 1.2A1.74 1.74 0 001 2.76v18.48c0 .66.36 1.26.9 1.56l.14.08 10.35-10.35L2.04 1.2z" />
-                        <path d="M16.4 5.1L4.31.14C3.93 0 3.53.04 3.18.24l10.46 10.46L16.4 5.1z" />
-                    </svg>
-                    Download App
+<!-- Header Navigation -->
+<header id="site-header">
+<div class="container">
+<nav class="nav">
+<div class="logo">
+<!-- Placeholder for App Icon -->
+<img alt="AruHome Logo" src="Icon.png" style="width: 40px; height: 40px; border-radius: 12px; margin-right: 10px;"/>
+<h1><a href="index.html">AruHome</a></h1>
+</div>
+<button aria-label="Toggle navigation" class="nav-toggle" id="navToggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html#how-it-works">How It Works</a></li>
+<li><a href="index.html#features">Features</a></li>
+<li><a href="maintenance-library.html">Maintenance Library</a></li>
+<li><a href="blog/index.html">Blog</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+<a aria-label="Download on Google Play" class="nav-cta" href="#">
+<svg aria-hidden="true" fill="currentColor" style="width:18px;height:18px;margin-right:6px;" viewbox="0 0 24 24">
+<path d="M3.18 23.76c.35.2.75.24 1.13.1l12.09-6.96-2.76-2.76L3.18 23.76z"></path>
+<path d="M22.32 10.66a1.74 1.74 0 000-3.02l-2.88-1.66-3.06 3.06 3.06 3.06 2.88-1.44z"></path>
+<path d="M2.04 1.2A1.74 1.74 0 001 2.76v18.48c0 .66.36 1.26.9 1.56l.14.08 10.35-10.35L2.04 1.2z"></path>
+<path d="M16.4 5.1L4.31.14C3.93 0 3.53.04 3.18.24l10.46 10.46L16.4 5.1z"></path>
+</svg>
+                    Download
                 </a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-content">
-                <span class="eyebrow reveal">Complete Home Management</span>
-                <h1 class="hero-headline reveal reveal-delay-1">
-                    Your Home’s Digital<br>
-                    <span class="accent">Owner’s Manual</span>
-                </h1>
-                <p class="hero-sub reveal reveal-delay-2">
+</nav>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="container">
+<div class="hero-content">
+<span class="eyebrow reveal">Complete Home Management</span>
+<h1 class="hero-headline reveal reveal-delay-1">
+                    Your Home’s Digital<br/>
+<span class="accent">Owner’s Manual</span>
+</h1>
+<p class="hero-sub reveal reveal-delay-2">
                     Track everything in your home. Stay ahead of maintenance. Never lose a warranty, receipt, or important record.
                 </p>
-
-                <!-- CTA Buttons -->
-                <div class="hero-ctas reveal reveal-delay-3">
-                    <a href="#" class="btn-pill btn-pill-primary" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 15px 30px;">
+<!-- CTA Buttons -->
+<div class="hero-ctas reveal reveal-delay-3">
+<a class="btn-pill btn-pill-primary" href="#" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 15px 30px;">
                         Get AruHome — Free on Google Play
                     </a>
-                </div>
-
-                <!-- Feature List -->
-                <ul class="reveal reveal-delay-4" style="list-style: none; padding: 0; margin: 30px 0 0 0; text-align: left; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 1rem; color: var(--text-secondary);">
-                    <li><span style="color: var(--accent); margin-right: 8px; font-weight: bold;">✓</span> Home Inventory</li>
-                    <li><span style="color: var(--accent); margin-right: 8px; font-weight: bold;">✓</span> Maintenance Reminders</li>
-                    <li><span style="color: var(--accent); margin-right: 8px; font-weight: bold;">✓</span> Warranty Tracking</li>
-                    <li><span style="color: var(--accent); margin-right: 8px; font-weight: bold;">✓</span> Documents & Receipts</li>
-                    <li><span style="color: var(--accent); margin-right: 8px; font-weight: bold;">✓</span> Expense Tracking</li>
-                    <li><span style="color: var(--accent); margin-right: 8px; font-weight: bold;">✓</span> Works Offline</li>
-                </ul>
-            </div>
-            <div class="hero-image reveal reveal-delay-5"
-                style="margin-top: 4rem; text-align: center; position: relative; max-width: 800px; margin-left: auto; margin-right: auto;">
-                <img src="images/Home dashboard.webp" alt="AruHome Dashboard"
-                    style="max-width: 100%; height: auto; max-height: 600px; border-radius: 24px; box-shadow: var(--shadow-lg);">
-
-                <!-- Floating UI Mockup: Home Health -->
-                <div class="glass-card"
-                    style="position: absolute; top: 10%; right: -5%; padding: 15px 20px; text-align: left; background: rgba(18, 18, 30, 0.85); backdrop-filter: blur(10px); border-color: rgba(255,255,255,0.15); animation: float 6s ease-in-out infinite;">
-                    <span
-                        style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Home
+</div>
+<!-- Feature List -->
+<ul class="reveal reveal-delay-4" style="list-style: none; padding: 0; margin: 30px 0 0 0; text-align: left; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 1rem; color: var(--text-secondary);">
+<li><span style="color: var(--accent); margin-right: 8px; font-weight: bold;">✓</span> Home Inventory</li>
+<li><span style="color: var(--accent); margin-right: 8px; font-weight: bold;">✓</span> Maintenance Reminders</li>
+<li><span style="color: var(--accent); margin-right: 8px; font-weight: bold;">✓</span> Warranty Tracking</li>
+<li><span style="color: var(--accent); margin-right: 8px; font-weight: bold;">✓</span> Documents &amp; Receipts</li>
+<li><span style="color: var(--accent); margin-right: 8px; font-weight: bold;">✓</span> Expense Tracking</li>
+<li><span style="color: var(--accent); margin-right: 8px; font-weight: bold;">✓</span> Works Offline</li>
+</ul>
+</div>
+<div class="hero-image reveal reveal-delay-5" style="margin-top: 4rem; text-align: center; position: relative; max-width: 800px; margin-left: auto; margin-right: auto;">
+<img alt="AruHome Dashboard" src="images/Home dashboard.webp" style="max-width: 100%; height: auto; max-height: 600px; border-radius: 24px; box-shadow: var(--shadow-lg);"/>
+<!-- Floating UI Mockup: Home Health -->
+<div class="glass-card" style="position: absolute; top: 10%; right: -5%; padding: 15px 20px; text-align: left; background: rgba(18, 18, 30, 0.85); backdrop-filter: blur(10px); border-color: rgba(255,255,255,0.15); animation: float 6s ease-in-out infinite;">
+<span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Home
                         Health Score</span>
-                    <div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
-                        <span
-                            style="font-size: 2.2rem; font-weight: 800; color: var(--accent); line-height: 1; font-family: 'Space Grotesk', sans-serif;">92</span>
-                        <span style="color: var(--accent); font-size: 1.2rem;">&#8593;</span>
-                    </div>
-                </div>
-
-                <!-- Floating UI Mockup: Maintenance Compliance -->
-                <div class="glass-card"
-                    style="position: absolute; bottom: 15%; left: -5%; padding: 15px 20px; text-align: left; background: rgba(18, 18, 30, 0.85); backdrop-filter: blur(10px); border-color: rgba(255,255,255,0.15); animation: float 6s ease-in-out infinite reverse; width: 220px;">
-                    <span
-                        style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Maintenance</span>
-                    <div
-                        style="margin-top: 8px; background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden;">
-                        <div style="width: 85%; background: var(--accent); height: 100%; border-radius: 4px;"></div>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; margin-top: 5px; font-size: 0.75rem;">
-                        <span style="color: var(--text-primary); font-weight: 500;">85% Done</span>
-                        <span style="color: var(--text-muted);">This Month</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Use Cases Section -->
-    <section class="use-cases" id="use-cases" style="background: var(--bg-elevated); padding: 80px 0;">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="eyebrow">Built for Homeowners</span>
-                <h2>One app for every stage of <span class="accent">home ownership</span></h2>
-            </div>
-            
-            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-top: 40px;">
-                <div class="feature-card reveal reveal-delay-1" style="background: var(--bg-card); padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border);">
-                    <h3 style="color: var(--accent); margin-bottom: 15px; font-size: 1.25rem;">New Homeowner</h3>
-                    <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">Get your appliances, systems, warranties and documents organized from day one.</p>
-                </div>
-                <div class="feature-card reveal reveal-delay-2" style="background: var(--bg-card); padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border);">
-                    <h3 style="color: var(--accent); margin-bottom: 15px; font-size: 1.25rem;">Established Homeowner</h3>
-                    <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">Stay ahead of maintenance and keep a complete history of your home.</p>
-                </div>
-                <div class="feature-card reveal reveal-delay-3" style="background: var(--bg-card); padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border);">
-                    <h3 style="color: var(--accent); margin-bottom: 15px; font-size: 1.25rem;">Preparing to Sell</h3>
-                    <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">Create a professional record of your home's assets and maintenance history.</p>
-                </div>
-                <div class="feature-card reveal reveal-delay-4" style="background: var(--bg-card); padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border);">
-                    <h3 style="color: var(--accent); margin-bottom: 15px; font-size: 1.25rem;">Renters</h3>
-                    <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">Keep track of appliances, maintenance requests, documents and important records.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="eyebrow">Powerful Tools</span>
-                <h2>Everything for <span class="accent">Proactive Homeowners</span></h2>
-                <p>Transition from reactive repairs to proactive management.</p>
-            </div>
-
-            <div class="feature-showcase" style="display: flex; flex-direction: column; gap: 80px; margin-top: 60px;">
-                <!-- Feature 1: Asset Vault -->
-                <div class="showcase-row reveal" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
-                    <div class="showcase-text" style="flex: 1; min-width: 300px;">
-                        <h3 style="font-size: 2rem; margin-bottom: 15px;">Know what's in your home</h3>
-                        <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">Store brand, model, serial numbers, and purchase dates. Point your camera at any appliance label and use OCR to extract the data instantly.</p>
-                    </div>
-                    <div class="showcase-image" style="flex: 1; min-width: 300px; text-align: center;">
-                        <img src="images/Asset tab.webp" alt="Asset Vault" style="max-width: 100%; height: auto; max-height: 500px; border-radius: 24px; box-shadow: var(--shadow-lg);">
-                    </div>
-                </div>
-
-                <!-- Feature 2: Maintenance Schedule -->
-                <div class="showcase-row reveal" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; flex-direction: row-reverse;">
-                    <div class="showcase-text" style="flex: 1; min-width: 300px;">
-                        <h3 style="font-size: 2rem; margin-bottom: 15px;">Never miss maintenance</h3>
-                        <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">Access built-in Maintenance Templates (HVAC, Refrigerator) featuring difficulty ratings, step-by-step guides, checklists, and energy-saving "Why It Matters" insights.</p>
-                    </div>
-                    <div class="showcase-image" style="flex: 1; min-width: 300px; text-align: center;">
-                        <img src="images/Maintenance tasks.webp" alt="Maintenance Schedule" style="max-width: 100%; height: auto; max-height: 500px; border-radius: 24px; box-shadow: var(--shadow-lg);">
-                    </div>
-                </div>
-
-                <!-- Feature 3: Expense Charts -->
-                <div class="showcase-row reveal" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
-                    <div class="showcase-text" style="flex: 1; min-width: 300px;">
-                        <h3 style="font-size: 2rem; margin-bottom: 15px;">Know when to repair or replace</h3>
-                        <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">A specialized feature that tracks repair costs vs. the asset's current value to calculate your AruHome Burden Ratio&trade;. Know exactly when it's smarter to stop repairing and start replacing.</p>
-                    </div>
-                    <div class="showcase-image" style="flex: 1; min-width: 300px; text-align: center;">
-                        <img src="images/Expenses tab.webp" alt="Expense Charts" style="max-width: 100%; height: auto; max-height: 500px; border-radius: 24px; box-shadow: var(--shadow-lg);">
-                    </div>
-                </div>
-
-                <!-- Feature 4: Documents -->
-                <div class="showcase-row reveal" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; flex-direction: row-reverse;">
-                    <div class="showcase-text" style="flex: 1; min-width: 300px;">
-                        <h3 style="font-size: 2rem; margin-bottom: 15px;">Keep your records organized</h3>
-                        <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">Never miss an expiration date. Get alerted before warranties end so you can file claims on time. Your data never leaves your device and is fully exportable.</p>
-                    </div>
-                    <div class="showcase-image" style="flex: 1; min-width: 300px; text-align: center;">
-                        <img src="images/Asset documents.webp" alt="Documents" style="max-width: 100%; height: auto; max-height: 500px; border-radius: 24px; box-shadow: var(--shadow-lg);">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Calculator Section -->
-    <section class="calculator-section" id="calculator" style="padding: 100px 0; background: var(--bg-body);">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="eyebrow">Smart Decisions</span>
-                <h2>Repair vs. <span class="accent">Replace</span></h2>
-                <p>Calculate your AruHome Burden Ratio&trade; to know exactly when it's smarter to buy new than to keep fixing.</p>
-            </div>
-
-            <div class="calculator-card reveal reveal-delay-1"
-                style="max-width: 600px; margin: 0 auto; background: var(--bg-card); padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-md);">
-                <form id="burdenCalculator">
-                    <div style="margin-bottom: 20px;">
-                        <label for="calcCost"
-                            style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Original
+<div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
+<span style="font-size: 2.2rem; font-weight: 800; color: var(--accent); line-height: 1; font-family: 'Space Grotesk', sans-serif;">92</span>
+<span style="color: var(--accent); font-size: 1.2rem;">↑</span>
+</div>
+</div>
+<!-- Floating UI Mockup: Maintenance Compliance -->
+<div class="glass-card" style="position: absolute; bottom: 15%; left: -5%; padding: 15px 20px; text-align: left; background: rgba(18, 18, 30, 0.85); backdrop-filter: blur(10px); border-color: rgba(255,255,255,0.15); animation: float 6s ease-in-out infinite reverse; width: 220px;">
+<span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Maintenance</span>
+<div style="margin-top: 8px; background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden;">
+<div style="width: 85%; background: var(--accent); height: 100%; border-radius: 4px;"></div>
+</div>
+<div style="display: flex; justify-content: space-between; margin-top: 5px; font-size: 0.75rem;">
+<span style="color: var(--text-primary); font-weight: 500;">85% Done</span>
+<span style="color: var(--text-muted);">This Month</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="how-it-works" id="how-it-works" style="padding: 100px 0; background: var(--bg-body);">
+<div class="container">
+<div class="section-header reveal">
+<span class="eyebrow">Getting Started</span>
+<h2>How It <span class="accent">Works</span></h2>
+<p>AruHome makes it incredibly simple to digitize and manage your home in five steps.</p>
+</div>
+<div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 50px;">
+<!-- Step 1 -->
+<div class="feature-card reveal" style="background: transparent; border: none; text-align: center; padding: 20px;">
+<div style="width: 60px; height: 60px; background: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 20px auto; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);">1</div>
+<h3 style="font-size: 1.3rem; margin-bottom: 10px;">Add your home</h3>
+<p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.5;">Create your property and start adding assets.</p>
+</div>
+<!-- Step 2 -->
+<div class="feature-card reveal reveal-delay-1" style="background: transparent; border: none; text-align: center; padding: 20px;">
+<div style="width: 60px; height: 60px; background: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 20px auto; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);">2</div>
+<h3 style="font-size: 1.3rem; margin-bottom: 10px;">Scan &amp; organize</h3>
+<p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.5;">Capture appliance information with OCR and store receipts, documents and warranties.</p>
+</div>
+<!-- Step 3 -->
+<div class="feature-card reveal reveal-delay-2" style="background: transparent; border: none; text-align: center; padding: 20px;">
+<div style="width: 60px; height: 60px; background: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 20px auto; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);">3</div>
+<h3 style="font-size: 1.3rem; margin-bottom: 10px;">Stay on schedule</h3>
+<p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.5;">Use maintenance templates and reminders to stay ahead of routine maintenance.</p>
+</div>
+<!-- Step 4 -->
+<div class="feature-card reveal reveal-delay-3" style="background: transparent; border: none; text-align: center; padding: 20px;">
+<div style="width: 60px; height: 60px; background: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 20px auto; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);">4</div>
+<h3 style="font-size: 1.3rem; margin-bottom: 10px;">Know your home</h3>
+<p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.5;">Track expenses, maintenance history and asset health in one place.</p>
+</div>
+<!-- Step 5 -->
+<div class="feature-card reveal reveal-delay-4" style="background: transparent; border: none; text-align: center; padding: 20px;">
+<div style="width: 60px; height: 60px; background: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 20px auto; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);">5</div>
+<h3 style="font-size: 1.3rem; margin-bottom: 10px;">Keep your records</h3>
+<p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.5;">Export your data and generate reports whenever you need them.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Use Cases Section -->
+<section class="use-cases" id="use-cases" style="background: var(--bg-elevated); padding: 80px 0;">
+<div class="container">
+<div class="section-header reveal">
+<span class="eyebrow">Built for Homeowners</span>
+<h2>One app for every stage of <span class="accent">home ownership</span></h2>
+</div>
+<div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-top: 40px;">
+<div class="feature-card reveal reveal-delay-1" style="background: var(--bg-card); padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+<h3 style="color: var(--accent); margin-bottom: 15px; font-size: 1.25rem;">New Homeowner</h3>
+<p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">Get your appliances, systems, warranties and documents organized from day one.</p>
+</div>
+<div class="feature-card reveal reveal-delay-2" style="background: var(--bg-card); padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+<h3 style="color: var(--accent); margin-bottom: 15px; font-size: 1.25rem;">Established Homeowner</h3>
+<p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">Stay ahead of maintenance and keep a complete history of your home.</p>
+</div>
+<div class="feature-card reveal reveal-delay-3" style="background: var(--bg-card); padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+<h3 style="color: var(--accent); margin-bottom: 15px; font-size: 1.25rem;">Preparing to Sell</h3>
+<p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">Create a professional record of your home's assets and maintenance history.</p>
+</div>
+<div class="feature-card reveal reveal-delay-4" style="background: var(--bg-card); padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+<h3 style="color: var(--accent); margin-bottom: 15px; font-size: 1.25rem;">Renters</h3>
+<p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">Keep track of appliances, maintenance requests, documents and important records.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="features" id="features">
+<div class="container">
+<div class="section-header reveal">
+<span class="eyebrow">Powerful Tools</span>
+<h2>Everything for <span class="accent">Proactive Homeowners</span></h2>
+<p>Transition from reactive repairs to proactive management.</p>
+</div>
+<div class="feature-showcase" style="display: flex; flex-direction: column; gap: 80px; margin-top: 60px;">
+<!-- Feature 1: Asset Vault -->
+<div class="showcase-row reveal" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+<div class="showcase-text" style="flex: 1; min-width: 300px;">
+<h3 style="font-size: 2rem; margin-bottom: 15px;">Know what's in your home</h3>
+<p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">Store brand, model, serial numbers, and purchase dates. Point your camera at any appliance label and use OCR to extract the data instantly.</p>
+</div>
+<div class="showcase-image" style="flex: 1; min-width: 300px; text-align: center;">
+<img alt="Asset Vault" src="images/Asset tab.webp" style="max-width: 100%; height: auto; max-height: 500px; border-radius: 24px; box-shadow: var(--shadow-lg);"/>
+</div>
+</div>
+<!-- Feature 2: Maintenance Schedule -->
+<div class="showcase-row reveal" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; flex-direction: row-reverse;">
+<div class="showcase-text" style="flex: 1; min-width: 300px;">
+<h3 style="font-size: 2rem; margin-bottom: 15px;">Never miss maintenance</h3>
+<p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">Access built-in Maintenance Templates (HVAC, Refrigerator) featuring difficulty ratings, step-by-step guides, checklists, and energy-saving "Why It Matters" insights.</p>
+<a href="maintenance-calendar.html" style="color: var(--accent); font-weight: 600; text-decoration: none; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 5px;">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="width: 18px; height: 18px;" viewbox="0 0 24 24"><rect height="18" rx="2" ry="2" width="18" x="3" y="4"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                            View Maintenance Calendar →
+                        </a>
+</div>
+<div class="showcase-image" style="flex: 1; min-width: 300px; text-align: center;">
+<img alt="Maintenance Schedule" src="images/Maintenance tasks.webp" style="max-width: 100%; height: auto; max-height: 500px; border-radius: 24px; box-shadow: var(--shadow-lg);"/>
+</div>
+</div>
+<!-- Feature 3: Expense Charts -->
+<div class="showcase-row reveal" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+<div class="showcase-text" style="flex: 1; min-width: 300px;">
+<h3 style="font-size: 2rem; margin-bottom: 15px;">Know when to repair or replace</h3>
+<p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">A specialized feature that tracks repair costs vs. the asset's current value to calculate your AruHome Burden Ratio™. Know exactly when it's smarter to stop repairing and start replacing.</p>
+</div>
+<div class="showcase-image" style="flex: 1; min-width: 300px; text-align: center;">
+<img alt="Expense Charts" src="images/Expenses tab.webp" style="max-width: 100%; height: auto; max-height: 500px; border-radius: 24px; box-shadow: var(--shadow-lg);"/>
+</div>
+</div>
+<!-- Feature 4: Documents -->
+<div class="showcase-row reveal" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; flex-direction: row-reverse;">
+<div class="showcase-text" style="flex: 1; min-width: 300px;">
+<h3 style="font-size: 2rem; margin-bottom: 15px;">Keep your records organized</h3>
+<p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">Never miss an expiration date. Get alerted before warranties end so you can file claims on time. Your data never leaves your device and is fully exportable.</p>
+</div>
+<div class="showcase-image" style="flex: 1; min-width: 300px; text-align: center;">
+<img alt="Documents" src="images/Asset documents.webp" style="max-width: 100%; height: auto; max-height: 500px; border-radius: 24px; box-shadow: var(--shadow-lg);"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Renters Section -->
+<section class="renters-section" id="renters" style="padding: 100px 0; background: var(--bg-card); border-top: 1px solid var(--border);">
+<div class="container">
+<div class="showcase-row reveal" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+<div class="showcase-text" style="flex: 1; min-width: 300px;">
+<span class="eyebrow" style="background: rgba(59, 130, 246, 0.1); color: var(--accent); border-color: rgba(59, 130, 246, 0.3);">For Renters</span>
+<h2 style="margin-bottom: 20px;">Renting? AruHome <span class="accent">works for you too.</span></h2>
+<p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">Document your apartment's condition, keep appliance information organized, store important documents and maintain a record of your home.</p>
+</div>
+<div class="showcase-features" style="flex: 1; min-width: 300px;">
+<div style="background: var(--bg-elevated); padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-md);">
+<ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+<li style="display: flex; align-items: center; color: var(--text-primary); font-size: 1.05rem;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">✓</span> Appliance inventory</li>
+<li style="display: flex; align-items: center; color: var(--text-primary); font-size: 1.05rem;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">✓</span> Receipts</li>
+<li style="display: flex; align-items: center; color: var(--text-primary); font-size: 1.05rem;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">✓</span> Move-in documentation</li>
+<li style="display: flex; align-items: center; color: var(--text-primary); font-size: 1.05rem;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">✓</span> Documents</li>
+<li style="display: flex; align-items: center; color: var(--text-primary); font-size: 1.05rem;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">✓</span> Photos</li>
+<li style="display: flex; align-items: center; color: var(--text-primary); font-size: 1.05rem;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">✓</span> Property information</li>
+<li style="display: flex; align-items: center; color: var(--text-primary); font-size: 1.05rem;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">✓</span> Maintenance records</li>
+<li style="display: flex; align-items: center; color: var(--text-primary); font-size: 1.05rem;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">✓</span> Move-out records</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Calculator Section -->
+<section class="calculator-section" id="calculator" style="padding: 100px 0; background: var(--bg-body);">
+<div class="container">
+<div class="section-header reveal">
+<span class="eyebrow">Smart Decisions</span>
+<h2>Repair vs. <span class="accent">Replace</span></h2>
+<p>Calculate your AruHome Burden Ratio™ to know exactly when it's smarter to buy new than to keep fixing.</p>
+</div>
+<div class="calculator-card reveal reveal-delay-1" style="max-width: 600px; margin: 0 auto; background: var(--bg-card); padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-md);">
+<form id="burdenCalculator">
+<div style="margin-bottom: 20px;">
+<label for="calcCost" style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Original
                             Asset Cost ($)</label>
-                        <input type="number" id="calcCost" required min="1" placeholder="e.g. 1200" value="1500"
-                            style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--white); font-size: 1rem; font-family: 'Inter', sans-serif;">
-                    </div>
-                    <div style="margin-bottom: 20px;">
-                        <label for="calcAge"
-                            style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Age
+<input id="calcCost" min="1" placeholder="e.g. 1200" required="" style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--white); font-size: 1rem; font-family: 'Inter', sans-serif;" type="number" value="1500"/>
+</div>
+<div style="margin-bottom: 20px;">
+<label for="calcAge" style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Age
                             of Asset (Years)</label>
-                        <input type="number" id="calcAge" required min="0" placeholder="e.g. 6" value="8"
-                            style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--white); font-size: 1rem; font-family: 'Inter', sans-serif;">
-                    </div>
-                    <div style="margin-bottom: 30px;">
-                        <label for="calcRepair"
-                            style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Current
+<input id="calcAge" min="0" placeholder="e.g. 6" required="" style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--white); font-size: 1rem; font-family: 'Inter', sans-serif;" type="number" value="8"/>
+</div>
+<div style="margin-bottom: 30px;">
+<label for="calcRepair" style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Current
                             Repair Quote ($)</label>
-                        <input type="number" id="calcRepair" required min="1" placeholder="e.g. 450" value="650"
-                            style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--white); font-size: 1rem; font-family: 'Inter', sans-serif;">
-                    </div>
-                    <button type="submit" class="btn-pill btn-pill-primary"
-                        style="width: 100%; justify-content: center; font-size: 1.05rem;">Calculate Burden
+<input id="calcRepair" min="1" placeholder="e.g. 450" required="" style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--white); font-size: 1rem; font-family: 'Inter', sans-serif;" type="number" value="650"/>
+</div>
+<button class="btn-pill btn-pill-primary" style="width: 100%; justify-content: center; font-size: 1.05rem;" type="submit">Calculate Burden
                         Ratio</button>
-                </form>
-
-                <div id="calcResult"
-                    style="margin-top: 30px; text-align: center; display: block; padding-top: 25px; border-top: 1px solid var(--border);">
-                    <h3 style="font-size: 2.5rem; margin-bottom: 5px; font-family: 'Space Grotesk', sans-serif; color: #ff4d4d;"
-                        id="calcScore">43%</h3>
-                    <p
-                        style="font-size: 0.9rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">
-                        AruHome Burden Ratio&trade;</p>
-                    <p id="calcRecommendation"
-                        style="font-size: 1.15rem; font-weight: 600; color: #ff4d4d; margin: 0; padding: 15px; background: rgba(255, 77, 77, 0.1); border-radius: var(--radius-sm);">
-                        Consider replacing<br><span style="font-size: 0.95rem; font-weight: normal;">Your repair cost is approaching the replacement threshold.</span>
-                    </p>
-                    <a href="#" style="display: inline-block; margin-top: 20px; color: var(--accent); font-weight: 600; text-decoration: none;">Track this decision in AruHome &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Privacy Section -->
-    <section class="privacy-section" id="privacy" style="padding: 100px 0; background: var(--bg-card); border-top: 1px solid var(--border);">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="eyebrow" style="background: rgba(59, 226, 154, 0.1); color: var(--accent); border-color: rgba(59, 226, 154, 0.3);">Private by Design</span>
-                <h2>Your home data <span class="accent">stays with you</span></h2>
-            </div>
-            
-            <div class="privacy-features reveal reveal-delay-1" style="max-width: 600px; margin: 0 auto; margin-top: 40px; background: var(--bg-elevated); padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-md);">
-                <ul style="list-style: none; padding: 0; margin: 0 0 30px 0; font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8;">
-                    <li style="margin-bottom: 15px; display: flex; align-items: center;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">&check;</span> No account required.</li>
-                    <li style="margin-bottom: 15px; display: flex; align-items: center;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">&check;</span> No cloud database.</li>
-                    <li style="margin-bottom: 15px; display: flex; align-items: center;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">&check;</span> No subscription required just to access your own records.</li>
-                    <li style="margin-bottom: 15px; display: flex; align-items: center;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">&check;</span> Works offline.</li>
-                    <li style="display: flex; align-items: center;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">&check;</span> Export your data whenever you want.</li>
-                </ul>
-                <div style="text-align: center; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border);">
-                    <a href="privacy.html" style="color: var(--accent); font-weight: 600; text-decoration: none; font-size: 1.1rem; display: inline-block;">Learn about our privacy-first architecture &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Screenshots Section Placeholder -->
-    <section class="features" id="screenshots" style="background: var(--bg-elevated);">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="eyebrow">Inside the App</span>
-                <h2>Beautiful & <span class="accent">Intuitive Interface</span></h2>
-            </div>
-            <div class="screenshot-slider-wrap">
-                <div class="screenshot-slider" id="screenshotSlider">
-                    <div class="screenshot-slide">
-                        <div class="phone-frame">
-                            <img src="images/Home dashboard.webp" alt="Home Dashboard">
-                        </div>
-                        <div class="screenshot-label">Home Dashboard</div>
-                    </div>
-                    <div class="screenshot-slide">
-                        <div class="phone-frame">
-                            <img src="images/Asset tab.webp" alt="Asset Vault">
-                        </div>
-                        <div class="screenshot-label">Asset Vault</div>
-                    </div>
-                    <div class="screenshot-slide">
-                        <div class="phone-frame">
-                            <img src="images/Asset details.webp" alt="Asset Details">
-                        </div>
-                        <div class="screenshot-label">Asset Details</div>
-                    </div>
-                    <div class="screenshot-slide">
-                        <div class="phone-frame">
-                            <img src="images/Maintenance tasks.webp" alt="Maintenance Schedule">
-                        </div>
-                        <div class="screenshot-label">Maintenance Schedule</div>
-                    </div>
-                    <div class="screenshot-slide">
-                        <div class="phone-frame">
-                            <img src="images/Expenses tab.webp" alt="Expense Charts">
-                        </div>
-                        <div class="screenshot-label">Expense Charts</div>
-                    </div>
-                    <div class="screenshot-slide">
-                        <div class="phone-frame">
-                            <img src="images/Asset documents.webp" alt="Documents">
-                        </div>
-                        <div class="screenshot-label">Documents</div>
-                    </div>
-                    <div class="screenshot-slide">
-                        <div class="phone-frame">
-                            <img src="images/More tab.webp" alt="More Options">
-                        </div>
-                        <div class="screenshot-label">More Options</div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-nav">
-                <button class="slider-btn" id="sliderPrev" aria-label="Previous screenshot">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M15 18l-6-6 6-6" />
-                    </svg>
-                </button>
-                <button class="slider-btn" id="sliderNext" aria-label="Next screenshot">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M9 18l6-6-6-6" />
-                    </svg>
-                </button>
-            </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 AruHome. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+</form>
+<div id="calcResult" style="margin-top: 30px; text-align: center; display: block; padding-top: 25px; border-top: 1px solid var(--border);">
+<h3 id="calcScore" style="font-size: 2.5rem; margin-bottom: 5px; font-family: 'Space Grotesk', sans-serif; color: #ff4d4d;">43%</h3>
+<p style="font-size: 0.9rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">
+                        AruHome Burden Ratio™</p>
+<p id="calcRecommendation" style="font-size: 1.15rem; font-weight: 600; color: #ff4d4d; margin: 0; padding: 15px; background: rgba(255, 77, 77, 0.1); border-radius: var(--radius-sm);">
+                        Consider replacing<br/><span style="font-size: 0.95rem; font-weight: normal;">Your repair cost is approaching the replacement threshold.</span>
+</p>
+<a href="#" style="display: inline-block; margin-top: 20px; color: var(--accent); font-weight: 600; text-decoration: none;">Track this decision in AruHome →</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Privacy Section -->
+<section class="privacy-section" id="privacy" style="padding: 100px 0; background: var(--bg-card); border-top: 1px solid var(--border);">
+<div class="container">
+<div class="section-header reveal">
+<span class="eyebrow" style="background: rgba(59, 226, 154, 0.1); color: var(--accent); border-color: rgba(59, 226, 154, 0.3);">Private by Design</span>
+<h2>Your home data <span class="accent">stays with you</span></h2>
+</div>
+<div class="privacy-features reveal reveal-delay-1" style="max-width: 600px; margin: 0 auto; margin-top: 40px; background: var(--bg-elevated); padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-md);">
+<ul style="list-style: none; padding: 0; margin: 0 0 30px 0; font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8;">
+<li style="margin-bottom: 15px; display: flex; align-items: center;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">✓</span> No account required.</li>
+<li style="margin-bottom: 15px; display: flex; align-items: center;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">✓</span> No cloud database.</li>
+<li style="margin-bottom: 15px; display: flex; align-items: center;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">✓</span> No subscription required just to access your own records.</li>
+<li style="margin-bottom: 15px; display: flex; align-items: center;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">✓</span> Works offline.</li>
+<li style="display: flex; align-items: center;"><span style="color: var(--accent); margin-right: 12px; font-weight: bold; font-size: 1.2rem;">✓</span> Export your data whenever you want.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border);">
+<a href="privacy.html" style="color: var(--accent); font-weight: 600; text-decoration: none; font-size: 1.1rem; display: inline-block;">Learn about our privacy-first architecture →</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Screenshots Section Placeholder -->
+<section class="features" id="screenshots" style="background: var(--bg-elevated);">
+<div class="container">
+<div class="section-header reveal">
+<span class="eyebrow">Inside the App</span>
+<h2>Beautiful &amp; <span class="accent">Intuitive Interface</span></h2>
+</div>
+<div class="screenshot-slider-wrap">
+<div class="screenshot-slider" id="screenshotSlider">
+<div class="screenshot-slide">
+<div class="phone-frame">
+<img alt="Home Dashboard" src="images/Home dashboard.webp"/>
+</div>
+<div class="screenshot-label">Home Dashboard</div>
+</div>
+<div class="screenshot-slide">
+<div class="phone-frame">
+<img alt="Asset Vault" src="images/Asset tab.webp"/>
+</div>
+<div class="screenshot-label">Asset Vault</div>
+</div>
+<div class="screenshot-slide">
+<div class="phone-frame">
+<img alt="Asset Details" src="images/Asset details.webp"/>
+</div>
+<div class="screenshot-label">Asset Details</div>
+</div>
+<div class="screenshot-slide">
+<div class="phone-frame">
+<img alt="Maintenance Schedule" src="images/Maintenance tasks.webp"/>
+</div>
+<div class="screenshot-label">Maintenance Schedule</div>
+</div>
+<div class="screenshot-slide">
+<div class="phone-frame">
+<img alt="Expense Charts" src="images/Expenses tab.webp"/>
+</div>
+<div class="screenshot-label">Expense Charts</div>
+</div>
+<div class="screenshot-slide">
+<div class="phone-frame">
+<img alt="Documents" src="images/Asset documents.webp"/>
+</div>
+<div class="screenshot-label">Documents</div>
+</div>
+<div class="screenshot-slide">
+<div class="phone-frame">
+<img alt="More Options" src="images/More tab.webp"/>
+</div>
+<div class="screenshot-label">More Options</div>
+</div>
+</div>
+</div>
+<div class="slider-nav">
+<button aria-label="Previous screenshot" class="slider-btn" id="sliderPrev">
+<svg viewbox="0 0 24 24">
+<path d="M15 18l-6-6 6-6"></path>
+</svg>
+</button>
+<button aria-label="Next screenshot" class="slider-btn" id="sliderNext">
+<svg viewbox="0 0 24 24">
+<path d="M9 18l6-6-6-6"></path>
+</svg>
+</button>
+</div>
+</div></section>
+<!-- Footer -->
+<footer class="site-footer">
+<div class="container">
+<div class="footer-bottom">
+<p>© 2026 AruHome. All rights reserved.</p>
+<div class="footer-links">
+<a href="privacy.html">Privacy Policy</a>
+<a href="terms.html">Terms of Service</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
 </body>
-
 </html>

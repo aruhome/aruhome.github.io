@@ -1,17 +1,4 @@
-﻿User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /private/
-
-# Specific rules for search engines
-User-agent: Googlebot
+User-agent: *
 Allow: /
 
-User-agent: Bingbot
-Allow: /
-
-# Sitemap location
-Sitemap: https://smartremotelabs.github.io/sitemap.xml
-
-# Crawl delay (optional - 1 second between requests)
-Crawl-delay: 1
+Sitemap: https://aruhome.github.io/sitemap.xml

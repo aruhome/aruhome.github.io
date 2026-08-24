@@ -1419,3 +1419,5 @@ footer {
 /* FAQ page category */
 .faq-category { margin-bottom: 4rem; }
 .faq-category h2 { text-align: left; border-bottom: 2px solid var(--primary); padding-bottom: 1rem; margin-bottom: 2rem; }
+/ *   R e s p o n s i v e   G r i d   f o r   C o n t e n t   P a g e s   * /   . c o n t e n t - g r i d   {   d i s p l a y :   g r i d ;   g r i d - t e m p l a t e - c o l u m n s :   1 f r   3 0 0 p x ;   g a p :   4 0 p x ;   }   @ m e d i a   ( m a x - w i d t h :   9 0 0 p x )   {   . c o n t e n t - g r i d   {   g r i d - t e m p l a t e - c o l u m n s :   1 f r ;   }   a s i d e   {   m a r g i n - t o p :   4 0 p x ;   }   }   . r e l a t e d - t a s k s - f l e x   {   d i s p l a y :   f l e x ;   g a p :   2 0 p x ;   }   @ m e d i a   ( m a x - w i d t h :   6 0 0 p x )   {   . r e l a t e d - t a s k s - f l e x   {   f l e x - d i r e c t i o n :   c o l u m n ;   }   }  
+ 

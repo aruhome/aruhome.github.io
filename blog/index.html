@@ -1,143 +1,189 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - AruHome</title>
-    <!-- We link to the parent styles.css -->
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="icon" type="image/png" href="../Icon.png">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<!-- We link to the parent styles.css -->
+<link href="../styles.css" rel="stylesheet"/>
+<link href="../Icon.png" rel="icon" type="image/png"/>
+
+<title>Blog - AruHome</title>
+<meta content="Expert tips, financial insights, and guides to protect your largest investment." name="description"/>
+<link href="https://aruhome.github.io/blog/" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="Blog - AruHome" property="og:title"/>
+<meta content="Expert tips, financial insights, and guides to protect your largest investment." property="og:description"/>
+<meta content="https://aruhome.github.io/blog/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="AruHome" property="og:site_name"/>
+<meta content="https://aruhome.github.io/images/aruhome-preview.jpg" property="og:image"/>
+<!-- Twitter -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Blog - AruHome" name="twitter:title"/>
+<meta content="Expert tips, financial insights, and guides to protect your largest investment." name="twitter:description"/>
+<meta content="https://aruhome.github.io/images/aruhome-preview.jpg" name="twitter:image"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Blog - AruHome",
+  "description": "Expert tips, financial insights, and guides to protect your largest investment.",
+  "image": "https://aruhome.github.io/images/aruhome-preview.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AruHome"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AruHome",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://aruhome.github.io/Icon.png"
+    }
+  },
+  "datePublished": "August 15, 2026",
+  "dateModified": "August 15, 2026"
+}
+</script></head>
 <body>
-    <!-- Header Navigation -->
-    <header id="site-header">
-        <div class="container">
-            <nav class="nav">
-                <div class="logo">
-                    <img src="../Icon.png" alt="AruHome Logo" style="width: 40px; height: 40px; border-radius: 12px; margin-right: 10px;">
-                    <h1><a href="../index.html">AruHome</a></h1>
-                </div>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="../index.html#features">Features</a></li>
-                    <li><a href="../index.html#screenshots">Screenshots</a></li>
-                    <li><a href="../maintenance-library.html">Library</a></li>
-                    <li><a href="../maintenance-calendar.html">Calendar</a></li>
-                    <li><a href="index.html">Blog</a></li>
-                    <li><a href="../faq.html">FAQ</a></li>
-                    <li><a href="../privacy.html">Privacy</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
-                </ul>
-                <a href="#" class="nav-cta" aria-label="Download on Google Play">
-                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:18px;height:18px;margin-right:6px;">
-                        <path d="M3.18 23.76c.35.2.75.24 1.13.1l12.09-6.96-2.76-2.76L3.18 23.76z" />
-                        <path d="M22.32 10.66a1.74 1.74 0 000-3.02l-2.88-1.66-3.06 3.06 3.06 3.06 2.88-1.44z" />
-                        <path d="M2.04 1.2A1.74 1.74 0 001 2.76v18.48c0 .66.36 1.26.9 1.56l.14.08 10.35-10.35L2.04 1.2z" />
-                        <path d="M16.4 5.1L4.31.14C3.93 0 3.53.04 3.18.24l10.46 10.46L16.4 5.1z" />
-                    </svg>
-                    Download App
+<!-- Header Navigation -->
+<header id="site-header">
+<div class="container">
+<nav class="nav">
+<div class="logo">
+<img alt="AruHome Logo" src="../Icon.png" style="width: 40px; height: 40px; border-radius: 12px; margin-right: 10px;"/>
+<h1><a href="../index.html">AruHome</a></h1>
+</div>
+<button aria-label="Toggle navigation" class="nav-toggle" id="navToggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="../index.html#how-it-works">How It Works</a></li>
+<li><a href="../index.html#features">Features</a></li>
+<li><a href="../maintenance-library.html">Maintenance Library</a></li>
+<li><a href="index.html">Blog</a></li>
+<li><a href="../faq.html">FAQ</a></li>
+</ul>
+<a aria-label="Download on Google Play" class="nav-cta" href="#">
+<svg aria-hidden="true" fill="currentColor" style="width:18px;height:18px;margin-right:6px;" viewbox="0 0 24 24">
+<path d="M3.18 23.76c.35.2.75.24 1.13.1l12.09-6.96-2.76-2.76L3.18 23.76z"></path>
+<path d="M22.32 10.66a1.74 1.74 0 000-3.02l-2.88-1.66-3.06 3.06 3.06 3.06 2.88-1.44z"></path>
+<path d="M2.04 1.2A1.74 1.74 0 001 2.76v18.48c0 .66.36 1.26.9 1.56l.14.08 10.35-10.35L2.04 1.2z"></path>
+<path d="M16.4 5.1L4.31.14C3.93 0 3.53.04 3.18.24l10.46 10.46L16.4 5.1z"></path>
+</svg>
+                    Download
                 </a>
-            </nav>
-        </div>
-    </header>
-
-    <section class="blog-listing-section" style="padding-top: 150px;">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="eyebrow">Resources & Articles</span>
-                <h2>The AruHome <span class="accent">Blog</span></h2>
-                <p>Expert tips, financial insights, and guides to protect your largest investment.</p>
-            </div>
-
-            <div class="blog-grid">
-                <!-- Article 1 -->
-                <div class="blog-card reveal reveal-delay-1">
-                    <div class="blog-card-content">
-                        <span class="hero-tag" style="margin-bottom: 15px; background: rgba(59, 226, 154, 0.1); border-color: rgba(59, 226, 154, 0.3); color: var(--accent);">Financial Tips</span>
-                        <h2><a href="burden-ratio.html">The Homeowner&rsquo;s "Fix or Flop" Guide: Understanding the AruHome Burden Ratio&trade;</a></h2>
-                        <div class="blog-meta">
-                            <span>August 15, 2026</span>
-                            <span>6 min read</span>
-                        </div>
-                        <p class="blog-excerpt">When your water heater breaks for the third time in two years, should you repair it or replace it? Learn how to calculate your AruHome Burden Ratio&trade; and stop throwing good money after bad.</p>
-                        <a href="burden-ratio.html" class="read-more">Read Article &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Article 2 -->
-                <div class="blog-card reveal reveal-delay-2">
-                    <div class="blog-card-content">
-                        <span class="hero-tag" style="margin-bottom: 15px; background: rgba(139, 92, 246, 0.1); border-color: rgba(139, 92, 246, 0.3); color: #a78bfa;">Privacy & Tech</span>
-                        <h2><a href="local-first.html">Why Your Home’s Data Doesn’t Belong in the Cloud</a></h2>
-                        <div class="blog-meta">
-                            <span>August 12, 2026</span>
-                            <span>5 min read</span>
-                        </div>
-                        <p class="blog-excerpt">In an era of data breaches, do you really want a third-party server holding a map of your home’s assets and serial numbers? Discover the Local-First advantage.</p>
-                        <a href="local-first.html" class="read-more">Read Article &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Article 3 -->
-                <div class="blog-card reveal reveal-delay-3">
-                    <div class="blog-card-content">
-                        <span class="hero-tag" style="margin-bottom: 15px; background: rgba(37, 99, 235, 0.1); border-color: rgba(37, 99, 235, 0.3); color: var(--primary-bright);">Real Estate</span>
-                        <h2><a href="digital-manual.html">The "Digital Manual" Advantage: How to Increase Your Home's Resale Value</a></h2>
-                        <div class="blog-meta">
-                            <span>August 8, 2026</span>
-                            <span>7 min read</span>
-                        </div>
-                        <p class="blog-excerpt">A clean home sells fast, but a well-documented home sells for more. Learn how a complete digital inventory can build buyer confidence and boost your asking price.</p>
-                        <a href="digital-manual.html" class="read-more">Read Article &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Article 4 -->
-                <div class="blog-card reveal reveal-delay-1">
-                    <div class="blog-card-content">
-                        <span class="hero-tag" style="margin-bottom: 15px; background: rgba(245, 158, 11, 0.1); border-color: rgba(245, 158, 11, 0.3); color: #f59e0b;">Tech & Tools</span>
-                        <h2><a href="ocr-smart-scanning.html">Stop Hunting for Serial Numbers: The Magic of OCR Smart Scanning</a></h2>
-                        <div class="blog-meta">
-                            <span>August 5, 2026</span>
-                            <span>4 min read</span>
-                        </div>
-                        <p class="blog-excerpt">Your dishwasher is leaking and you’re upside down with a flashlight trying to read a blurry metal label. There’s a better way to build your home inventory without typing a word.</p>
-                        <a href="ocr-smart-scanning.html" class="read-more">Read Article &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Article 5 -->
-                <div class="blog-card reveal reveal-delay-2">
-                    <div class="blog-card-content">
-                        <span class="hero-tag" style="margin-bottom: 15px; background: rgba(59, 226, 154, 0.1); border-color: rgba(59, 226, 154, 0.3); color: var(--accent);">Seasonal Maintenance</span>
-                        <h2><a href="diy-vs-pro.html">DIY vs. Pro: Knowing Your Limits in Home Maintenance</a></h2>
-                        <div class="blog-meta">
-                            <span>August 1, 2026</span>
-                            <span>6 min read</span>
-                        </div>
-                        <p class="blog-excerpt">Some tasks save you $200; others end up costing you $2,000 in emergency repairs. How to accurately categorize tasks by skill level and prioritize safety first.</p>
-                        <a href="diy-vs-pro.html" class="read-more">Read Article &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 AruHome. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="../privacy.html">Privacy Policy</a>
-                    <a href="../terms.html">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="../script.js"></script>
+</nav>
+</div>
+</header>
+<section class="blog-listing-section" style="padding-top: 150px;">
+<div class="container">
+<div class="section-header reveal">
+<span class="eyebrow">Resources &amp; Articles</span>
+<h2>The AruHome <span class="accent">Blog</span></h2>
+<p>Expert tips, financial insights, and guides to protect your largest investment.</p>
+</div>
+<div class="blog-grid">
+<!-- Article 1 -->
+<div class="blog-card reveal reveal-delay-1">
+<div class="blog-card-content">
+<span class="hero-tag" style="margin-bottom: 15px; background: rgba(59, 226, 154, 0.1); border-color: rgba(59, 226, 154, 0.3); color: var(--accent);">Financial Tips</span>
+<h2><a href="burden-ratio.html">The Homeowner’s "Fix or Flop" Guide: Understanding the AruHome Burden Ratio™</a></h2>
+<div class="blog-meta">
+<span>August 15, 2026</span>
+<span>6 min read</span>
+</div>
+<p class="blog-excerpt">When your water heater breaks for the third time in two years, should you repair it or replace it? Learn how to calculate your AruHome Burden Ratio™ and stop throwing good money after bad.</p>
+<a class="read-more" href="burden-ratio.html">Read Article →</a>
+</div>
+</div>
+<!-- Article 2 -->
+<div class="blog-card reveal reveal-delay-2">
+<div class="blog-card-content">
+<span class="hero-tag" style="margin-bottom: 15px; background: rgba(139, 92, 246, 0.1); border-color: rgba(139, 92, 246, 0.3); color: #a78bfa;">Privacy &amp; Tech</span>
+<h2><a href="local-first.html">Is Home Data Safe in the Cloud? The Local-First Advantage</a></h2>
+<div class="blog-meta">
+<span>August 12, 2026</span>
+<span>5 min read</span>
+</div>
+<p class="blog-excerpt">In an era of data breaches, do you really want a third-party server holding a map of your home’s assets and serial numbers? Discover the Local-First advantage.</p>
+<a class="read-more" href="local-first.html">Read Article →</a>
+</div>
+</div>
+<!-- Article 3 -->
+<div class="blog-card reveal reveal-delay-3">
+<div class="blog-card-content">
+<span class="hero-tag" style="margin-bottom: 15px; background: rgba(37, 99, 235, 0.1); border-color: rgba(37, 99, 235, 0.3); color: var(--primary-bright);">Real Estate</span>
+<h2><a href="digital-manual.html">How to Increase Home Resale Value with a Digital Home Manual</a></h2>
+<div class="blog-meta">
+<span>August 8, 2026</span>
+<span>7 min read</span>
+</div>
+<p class="blog-excerpt">A clean home sells fast, but a well-documented home sells for more. Learn how a complete digital inventory can build buyer confidence and boost your asking price.</p>
+<a class="read-more" href="digital-manual.html">Read Article →</a>
+</div>
+</div>
+<!-- Article 4 -->
+<div class="blog-card reveal reveal-delay-1">
+<div class="blog-card-content">
+<span class="hero-tag" style="margin-bottom: 15px; background: rgba(245, 158, 11, 0.1); border-color: rgba(245, 158, 11, 0.3); color: #f59e0b;">Tech &amp; Tools</span>
+<h2><a href="ocr-smart-scanning.html">How to Find and Store Appliance Serial Numbers Using OCR Scanning</a></h2>
+<div class="blog-meta">
+<span>August 5, 2026</span>
+<span>4 min read</span>
+</div>
+<p class="blog-excerpt">Your dishwasher is leaking and you’re upside down with a flashlight trying to read a blurry metal label. There’s a better way to build your home inventory without typing a word.</p>
+<a class="read-more" href="ocr-smart-scanning.html">Read Article →</a>
+</div>
+</div>
+<!-- Article 5 -->
+<div class="blog-card reveal reveal-delay-2">
+<div class="blog-card-content">
+<span class="hero-tag" style="margin-bottom: 15px; background: rgba(59, 226, 154, 0.1); border-color: rgba(59, 226, 154, 0.3); color: var(--accent);">Seasonal Maintenance</span>
+<h2><a href="diy-vs-pro.html">DIY vs Professional Home Repair: When to Call a Contractor</a></h2>
+<div class="blog-meta">
+<span>August 1, 2026</span>
+<span>6 min read</span>
+</div>
+<p class="blog-excerpt">Some tasks save you $200; others end up costing you $2,000 in emergency repairs. How to accurately categorize tasks by skill level and prioritize safety first.</p>
+<a class="read-more" href="diy-vs-pro.html">Read Article →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA Section -->
+<section class="cta-section reveal" style="padding: 80px 0; background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(56, 189, 248, 0.05) 100%); border-top: 1px solid var(--border-accent); text-align: center;">
+<div class="container">
+<h2 style="font-size: clamp(2rem, 4vw, 3rem); color: var(--text-primary); margin-bottom: 20px;">Take control of your home</h2>
+<p style="font-size: 1.15rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto 40px auto; line-height: 1.6;">Keep your inventory, maintenance, warranties and records organized in one place.</p>
+<a class="nav-cta" href="#" style="display: inline-flex; align-items: center; justify-content: center; padding: 14px 28px; font-size: 1.1rem; font-weight: 600; color: #ffffff; background: linear-gradient(135deg, var(--primary) 0%, #a78bfa 100%); border-radius: 12px; text-decoration: none; box-shadow: 0 4px 14px rgba(139, 92, 246, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease; border: none;">
+<svg aria-hidden="true" fill="currentColor" style="width:24px;height:24px;margin-right:10px;" viewbox="0 0 24 24">
+<path d="M3.18 23.76c.35.2.75.24 1.13.1l12.09-6.96-2.76-2.76L3.18 23.76z"></path>
+<path d="M22.32 10.66a1.74 1.74 0 000-3.02l-2.88-1.66-3.06 3.06 3.06 3.06 2.88-1.44z"></path>
+<path d="M2.04 1.2A1.74 1.74 0 001 2.76v18.48c0 .66.36 1.26.9 1.56l.14.08 10.35-10.35L2.04 1.2z"></path>
+<path d="M16.4 5.1L4.31.14C3.93 0 3.53.04 3.18.24l10.46 10.46L16.4 5.1z"></path>
+</svg>
+                Get AruHome on Google Play
+            </a>
+</div>
+</section>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-bottom">
+<p>© 2026 AruHome. All rights reserved.</p>
+<div class="footer-links">
+<a href="../privacy.html">Privacy Policy</a>
+<a href="../terms.html">Terms of Service</a>
+<a href="../contact.html">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+<script src="../script.js"></script>
 </body>
 </html>
