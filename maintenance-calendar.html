@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The ultimate Homeowner's Maintenance Calendar. A seasonal checklist to keep your home safe, efficient, and valuable year-round.">
+    <title>Homeowner's Maintenance Calendar - AruHome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="Icon.png">
+</head>
+<body style="position: relative;">
+    <header id="site-header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="Icon.png" alt="AruHome Logo" style="width: 40px; height: 40px; border-radius: 12px; margin-right: 10px;">
+                    <h1><a href="index.html">AruHome</a></h1>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="maintenance-library.html">Library</a></li>
+                    <li><a href="maintenance-calendar.html">Calendar</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="nav-cta">Download App</a>
+            </nav>
+        </div>
+    </header>
+
+    <div style="padding-top: 150px; background: var(--bg-body); min-height: 100vh; padding-bottom: 80px;">
+        <div class="container" style="max-width: 1000px;">
+            <div class="section-header reveal" style="text-align: center; margin-bottom: 60px;">
+                <span class="eyebrow" style="background: rgba(37, 99, 235, 0.1); border-color: rgba(37, 99, 235, 0.3); color: var(--primary-bright);">Seasonal Checklist</span>
+                <h1 style="color: var(--text-primary); font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 20px;">Homeowner's Maintenance Calendar</h1>
+                <p style="color: var(--text-secondary); font-size: 1.15rem; max-width: 700px; margin: 0 auto;">A seasonal guide to protect your most valuable asset. Keep track of what to do and when to do it.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px;">
+                
+                <!-- Spring -->
+                <div class="feature-card reveal" style="background: var(--bg-card); padding: 40px; border-radius: var(--radius-lg); border: 1px solid rgba(59, 226, 154, 0.3); border-top: 4px solid var(--accent);">
+                    <h2 style="color: var(--text-primary); font-size: 2rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <span style="font-size: 2.5rem;">&#127793;</span> Spring
+                    </h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 30px;">Prepare your home for the rainy season and recover from winter damage.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 15px;"><a href="maintenance/clean-gutters.html" style="color: var(--accent); text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Clean gutters</a></li>
+                        <li style="margin-bottom: 15px;"><a href="maintenance/inspect-roof.html" style="color: var(--accent); text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Inspect roof</a></li>
+                        <li style="margin-bottom: 15px;"><a href="maintenance/check-sump-pump.html" style="color: var(--accent); text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Test sump pump</a></li>
+                        <li style="margin-bottom: 15px;"><a href="maintenance/clean-window-ac-filter.html" style="color: var(--accent); text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Service AC</a></li>
+                        <li style="margin-bottom: 15px;"><a href="maintenance/inspect-exterior-drainage.html" style="color: var(--accent); text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Clean exterior drains</a></li>
+                        <li><a href="maintenance/inspect-outdoor-faucets.html" style="color: var(--accent); text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Check outdoor faucets</a></li>
+                    </ul>
+                </div>
+
+                <!-- Summer -->
+                <div class="feature-card reveal reveal-delay-1" style="background: var(--bg-card); padding: 40px; border-radius: var(--radius-lg); border: 1px solid rgba(245, 158, 11, 0.3); border-top: 4px solid #f59e0b;">
+                    <h2 style="color: var(--text-primary); font-size: 2rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <span style="font-size: 2.5rem;">&#9728;&#65039;</span> Summer
+                    </h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 30px;">Focus on exterior upkeep and efficiency during the hottest months.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 15px;"><a href="maintenance/change-hvac-filter.html" style="color: #f59e0b; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; HVAC filter</a></li>
+                        <li style="margin-bottom: 15px;"><a href="maintenance/inspect-patio-porch.html" style="color: #f59e0b; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Deck inspection</a></li>
+                        <li style="margin-bottom: 15px;"><a href="maintenance/inspect-outdoor-faucets.html" style="color: #f59e0b; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Outdoor faucets</a></li>
+                        <li style="margin-bottom: 15px;"><a href="maintenance/dryer-vent-deep-clean.html" style="color: #f59e0b; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Dryer vent</a></li>
+                        <li><a href="maintenance/inspect-attic-for-pests.html" style="color: #f59e0b; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Pest inspection</a></li>
+                    </ul>
+                </div>
+
+                <!-- Fall -->
+                <div class="feature-card reveal" style="background: var(--bg-card); padding: 40px; border-radius: var(--radius-lg); border: 1px solid rgba(239, 68, 68, 0.3); border-top: 4px solid #ef4444;">
+                    <h2 style="color: var(--text-primary); font-size: 2rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <span style="font-size: 2.5rem;">&#127809;</span> Fall
+                    </h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 30px;">Winterize your home to prevent freezing pipes and drafts.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 15px;"><a href="maintenance/change-hvac-filter.html" style="color: #ef4444; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Furnace inspection</a></li>
+                        <li style="margin-bottom: 15px;"><a href="maintenance/clean-gutters.html" style="color: #ef4444; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Gutters</a></li>
+                        <li style="margin-bottom: 15px;"><a href="maintenance/inspect-door-sweep.html" style="color: #ef4444; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Weather stripping</a></li>
+                        <li style="margin-bottom: 15px;"><a href="maintenance/inspect-outdoor-faucets.html" style="color: #ef4444; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Winterize outdoor faucets</a></li>
+                        <li><a href="maintenance/replace-smoke-det.-battery.html" style="color: #ef4444; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Smoke/CO detectors</a></li>
+                    </ul>
+                </div>
+
+                <!-- Winter -->
+                <div class="feature-card reveal reveal-delay-1" style="background: var(--bg-card); padding: 40px; border-radius: var(--radius-lg); border: 1px solid rgba(56, 189, 248, 0.3); border-top: 4px solid #38bdf8;">
+                    <h2 style="color: var(--text-primary); font-size: 2rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <span style="font-size: 2.5rem;">&#10052;&#65039;</span> Winter
+                    </h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 30px;">Monitor interior conditions and maintain indoor air quality.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 15px;"><a href="maintenance/check-indoor-humidity.html" style="color: #38bdf8; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Monitor humidity</a></li>
+                        <li style="margin-bottom: 15px;"><a href="maintenance/inspect-under-sink-plumbing.html" style="color: #38bdf8; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Check pipes</a></li>
+                        <li style="margin-bottom: 15px;"><a href="maintenance/change-hvac-filter.html" style="color: #38bdf8; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Furnace filters</a></li>
+                        <li><a href="maintenance/emergency-go-bag-check.html" style="color: #38bdf8; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">&rarr; Emergency supplies</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="maintenance-library.html" class="btn-pill btn-pill-primary" style="font-size: 1.1rem; padding: 15px 30px;">Browse Full Maintenance Library</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container" style="text-align: center; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 40px;">
+            <p>&copy; 2024 AruHome. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.smartremotelabs.aruhome",
+      "sha256_cert_fingerprints": [
+        "13:14:18:D9:51:6B:3D:46:4F:79:78:6A:80:D1:E3:73:1C:EA:6F:FF:9A:0C:B9:34:27:D6:EF:BC:57:E9:D5:AD"
+      ]
+    }
+  }
+]

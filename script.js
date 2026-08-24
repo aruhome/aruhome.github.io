@@ -310,9 +310,8 @@ function initCalculator() {
         
         if (!cost || !repair) return;
         
-        // Basic heuristic: Burden increases with age. 
-        // 10% penalty per year of age.
-        let burdenRatio = (repair / cost) * (1 + (age * 0.1)) * 100;
+        // Update formula to match simple percentage example
+        let burdenRatio = (repair / cost) * 100;
         burdenRatio = Math.round(burdenRatio);
         
         const resultDiv = document.getElementById('calcResult');
@@ -322,12 +321,12 @@ function initCalculator() {
         scoreEl.innerText = burdenRatio + '%';
         
         if (burdenRatio >= 50) {
-            recEl.innerText = 'Recommendation: Replace It';
+            recEl.innerHTML = 'Consider replacing<br><span style="font-size: 0.95rem; font-weight: normal;">Your repair cost is approaching the replacement threshold.</span>';
             recEl.style.color = '#ff4d4d'; // red
             recEl.style.background = 'rgba(255, 77, 77, 0.1)';
             scoreEl.style.color = '#ff4d4d';
         } else {
-            recEl.innerText = 'Recommendation: Repair It';
+            recEl.innerHTML = 'Consider repairing<br><span style="font-size: 0.95rem; font-weight: normal;">This repair makes financial sense right now.</span>';
             recEl.style.color = 'var(--accent)';
             recEl.style.background = 'rgba(59, 226, 154, 0.1)';
             scoreEl.style.color = 'var(--text-primary)';
