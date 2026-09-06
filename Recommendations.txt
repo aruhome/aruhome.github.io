@@ -1,0 +1,1294 @@
+1. The biggest issue I found
+
+Your individual page template is good.
+
+For example, the refrigerator-coil page has:
+
+specific explanation
+specific safety instructions
+actual steps
+specific mistake
+cost
+AruHome CTA
+
+That's a reasonably useful page.
+
+But many other pages essentially contain:
+
+"Regular maintenance of your home assets prevents costly repairs..."
+
+followed by:
+
+"Gather all necessary tools..."
+
+and:
+
+"Follow the specific maintenance steps required..."
+
+That's not enough for an article targeting a specific Google search.
+
+I would not leave those pages like that and simply request indexing.
+
+2. My recommended page template
+
+I would upgrade every maintenance page to roughly this structure:
+
+H1
+
+How to Clean a Coffee Maker
+
+rather than simply:
+
+Clean Coffee Maker
+
+Intro / Quick Answer
+
+2–3 sentences answering the question immediately.
+
+Why It Matters
+
+Specific benefits/problems.
+
+How Often
+
+Explain the recommended interval and what changes it.
+
+What You'll Need
+
+Actual tools/supplies.
+
+Before You Start
+
+Task-specific safety.
+
+Step-by-Step
+
+4–8 genuinely useful steps.
+
+Signs It Needs Attention
+
+Very useful for SEO.
+
+Common Mistakes
+
+Task-specific.
+
+When to Call a Professional
+
+Where applicable.
+
+Cost
+
+Realistic DIY vs professional cost where relevant.
+
+Related Maintenance
+
+3–5 internal links.
+
+AruHome CTA
+
+Tie the task directly to the app.
+
+FAQ
+
+2–4 task-specific questions.
+
+This gives Google considerably more unique, useful content to understand.
+
+3. Full crawl results — page-by-page plan
+
+Below is my recommended treatment for every page I found.
+
+Priority:
+
+🔴 High = rewrite substantially
+🟠 Medium = expand/customize
+🟢 Low = useful niche page; don't spend much time yet
+Kitchen Appliances
+1. Clean Refrigerator Condenser Coils 🔴
+
+Current page is one of the better ones.
+
+Add:
+
+How often to clean coils
+Where coils are located on different refrigerator designs
+Tools needed
+Pet-hair/dust considerations
+Signs coils are dirty
+How to safely move refrigerator
+What not to spray on coils
+When to call an appliance technician
+Refrigerator maintenance checklist
+FAQ:
+How often should refrigerator coils be cleaned?
+Can dirty coils make a refrigerator stop cooling?
+Can I vacuum refrigerator coils?
+
+Target: how to clean refrigerator coils
+
+2. Clean Garbage Disposal 🔴
+
+You already have real instructions here, which is good.
+
+Add:
+
+How to clean the rubber splash guard
+How to remove trapped debris safely
+Bad odor troubleshooting
+What foods should never go down a disposal
+Whether ice actually sharpens blades
+Why grease should not be poured down drains
+Reset-button troubleshooting
+When the disposal should be replaced
+
+Target: how to clean garbage disposal
+
+3. Clean Range Hood Filter 🔴
+
+Current instructions are useful but need expansion.
+
+Add:
+
+Mesh vs baffle vs charcoal filters
+Which filters can go in dishwasher
+How often to clean based on cooking frequency
+Heavy frying vs light cooking
+Cleaning the hood interior
+When charcoal filters must be replaced
+Grease-fire prevention
+Signs the filter is clogged
+
+Target: how to clean range hood filter
+
+4. Clean Coffee Maker 🔴
+
+Currently generic.
+
+Add:
+
+Descaling vs cleaning
+Vinegar vs commercial descaler
+Step-by-step descaling
+Cleaning reservoir
+Cleaning carafe
+Cleaning reusable filter
+Cleaning single-serve machines
+How hard water affects coffee makers
+How often to descale
+Signs of mineral buildup
+
+Target: how to clean coffee maker
+
+5. Descale Electric Kettle 🔴
+
+Add:
+
+Why mineral scale forms
+Vinegar method
+Citric-acid method
+Rinse procedure
+Frequency based on water hardness
+Signs descaling is needed
+What NOT to use
+Stainless vs plastic kettle considerations
+
+Target: how to descale electric kettle
+
+6. Clean Air Fryer 🔴
+
+Add:
+
+Basket cleaning
+Heating-element cleaning
+Interior cleaning
+Grease buildup
+Odor removal
+What can/cannot go in dishwasher
+Electrical safety
+Why aggressive scrubbing can damage coating
+Fire-risk prevention
+
+Target: how to clean an air fryer
+
+4. Plumbing
+7. Flush Water Heater 🔴🔴
+
+This is one of the pages I would prioritize heavily.
+
+The current page has only generic execution instructions despite the task being potentially complex and safety-sensitive.
+
+Add:
+
+Tank vs tankless distinction
+Gas vs electric differences
+Required tools
+Shutoff procedure
+Fuel/energy source shutdown
+Cooling/scalding warning
+Drain-hose setup
+Flushing procedure
+How to know water is clear
+Refill procedure
+Electric-element dry-fire warning
+When NOT to flush an older tank
+When to call a plumber
+Signs of sediment buildup
+Maintenance frequency
+
+Target: how to flush a water heater
+
+This could be one of your highest-value pages.
+
+8. Check Sump Pump 🔴
+
+Your current page already has a useful basic test.
+
+Add:
+
+Primary pump test
+Float switch test
+Discharge pipe inspection
+Check valve
+Backup battery
+Backup pump
+Alarm
+What to do if pump doesn't activate
+What to do during power outage
+Warning signs of failure
+
+Target: how to test a sump pump
+
+9. Clean Faucet Aerator 🔴
+
+Add:
+
+Symptoms of clogged aerator
+Removing different aerator types
+Vinegar soak
+Cleaning screen
+Reinstalling without cross-threading
+Low-flow troubleshooting
+When replacement is better
+
+Target: how to clean faucet aerator
+
+10. Descale Showerhead 🔴
+
+Add:
+
+Vinegar method
+Removable vs fixed showerheads
+Alternative descaling method
+Cleaning spray nozzles
+How often
+Low-pressure symptoms
+Finish/material considerations
+
+Target: how to clean showerhead
+
+11. Clean Sink Drain 🔴
+
+Important: I would not recommend presenting baking soda/vinegar as a universal clog-removal solution.
+
+Instead explain:
+
+Drain maintenance vs clog removal
+Hair/food/grease differences
+P-trap
+Drain stopper
+Mechanical removal
+When plunging helps
+When chemical drain cleaners should be avoided
+When to call plumber
+
+Target: how to clean sink drain
+
+12. Inspect Under-Sink Plumbing 🔴
+
+Add:
+
+Supply valves
+Supply lines
+P-trap
+Drain connections
+Dishwasher connection
+Garbage disposal connection
+Cabinet-floor water damage
+Mold/odor
+Slow leaks
+What requires a plumber
+
+Target: how to check for leaks under sink
+
+13. Check for Toilet Leaks 🔴
+
+Add:
+
+Food-coloring test
+Flapper
+Fill valve
+Tank water level
+Supply connection
+Base leak
+Running toilet
+Silent leaks
+Water-waste explanation
+
+Target: how to check toilet for leaks
+
+14. Inspect Washer Hoses 🔴
+
+This is a strong SEO topic.
+
+Add:
+
+Rubber vs braided stainless
+Bulges
+Cracks
+Corrosion
+Connection points
+Shutoff valves
+Replacement intervals
+Flood-prevention valve
+Signs of imminent failure
+
+Target: washing machine hose inspection
+
+15. Inspect Dishwasher Hose 🔴
+
+Add:
+
+Supply line
+Drain hose
+High loop / air gap
+Connection points
+Leaks
+Cracks
+Cabinet water damage
+Replacement guidance
+
+Target: how to check dishwasher hose for leaks
+
+16. Check Water Pressure 🔴
+
+Your library currently says pressure should be under 80 PSI.
+
+Expand significantly:
+
+How to attach gauge
+Where to test
+Static vs dynamic pressure
+Typical residential range
+High-pressure symptoms
+Pressure-reducing valve
+Expansion tank considerations
+When plumber is needed
+
+Target: how to check home water pressure
+
+17. Clean Shower Drain 🔴
+
+Add:
+
+Hair removal
+Drain cover
+Trap cleaning
+Slow-drain diagnosis
+Mechanical snake
+What not to pour down drain
+When clog indicates deeper plumbing issue
+18. Inspect Tub/Shower Drain 🔴
+
+Currently generic.
+
+Add:
+
+Drain speed test
+Stopper inspection
+Standing water
+Grate
+Caulk/seal
+Odor
+Slow drain vs clog
+Water damage around tub/shower
+5. HVAC
+
+These are high-priority SEO pages because homeowners actively search for HVAC maintenance.
+
+19. Change HVAC Air Filter 🔴🔴
+
+This page already has useful basics.
+
+Add:
+
+1", 2", 4" filter differences
+How to find filter size
+MERV explanation
+MERV 8/11/13 discussion
+Pets
+Allergies
+How often to change
+Signs filter is dirty
+Furnace vs AC considerations
+Correct airflow direction
+
+Target: how often change HVAC filter
+
+20. Clean HVAC Return Grilles 🔴
+
+Currently generic.
+
+Add:
+
+Return vs supply vents
+Removing grille
+Vacuuming
+Washing metal grille
+Filter distinction
+Dust accumulation
+Signs of airflow problems
+21. Clean Supply Vents 🔴
+
+Add:
+
+Remove/register cleaning
+Vacuuming ducts vs vent covers
+Dust buildup
+Pet hair
+When professional duct cleaning is warranted
+Difference between cleaning registers and ducts
+22. Clean Portable AC Filter 🔴
+
+Add:
+
+Filter types
+Washing vs vacuuming
+Drying completely
+Coil cleaning
+Water tank/drain
+Signs of restricted airflow
+Seasonal storage
+23. Clean Window AC Filter 🔴
+
+Add:
+
+Filter removal
+Washing
+Drying
+Coil/fins
+Outdoor debris
+Condensate drain
+Seasonal storage
+24. Clean Dehumidifier 🔴
+
+Add:
+
+Bucket cleaning
+Filter
+Coil
+Intake/outlet
+Drain hose
+Mold prevention
+Humidity target
+When to replace filter
+Seasonal cleaning
+25. Clean Air Purifier Filter 🔴
+
+Add:
+
+Pre-filter vs HEPA
+Washable vs non-washable
+Activated carbon
+Filter replacement indicators
+Vacuuming precautions
+Filter lifespan
+CADR context
+26. Clean Ceiling Fan Blades 🟠
+
+Add:
+
+Dusting methods
+Blade balance
+Motor housing
+Direction setting
+Summer/winter direction
+Ladder safety
+27. Check Indoor Humidity 🔴
+
+This has strong informational SEO potential.
+
+Add:
+
+Hygrometer
+30–50% range
+Winter vs summer
+Mold
+Condensation
+Dry-air symptoms
+Humidifier
+Dehumidifier
+Room-to-room variation
+
+Target: ideal indoor humidity
+
+6. Electrical / Safety
+
+These need careful safety-focused writing, rather than generic DIY instructions.
+
+28. Test AFCI Protection 🔴🔴
+
+Currently generic.
+
+Add:
+
+What AFCI is
+Breaker vs receptacle
+TEST button
+RESET behavior
+Expected result
+What failure means
+Don't open electrical panel
+When electrician is needed
+29. Inspect Extension Cords 🔴
+
+Add:
+
+Fraying
+Exposed wires
+Heat damage
+Plug damage
+Indoor/outdoor rating
+Gauge/ampacity
+Daisy chaining
+Replacement criteria
+30. Inspect Power Strips 🔴
+
+Add:
+
+Overloading
+Joule rating
+Surge protector vs power strip
+Heat damage
+Daisy chaining
+Expiration/replacement considerations
+High-wattage appliances
+31. Replace Smoke Detector Battery 🔴🔴
+
+Your library says test alarms monthly and replace standard batteries annually.
+
+Add:
+
+Battery types
+10-year sealed alarms
+Test button
+Chirping
+Full alarm replacement
+Placement
+Smoke vs combination alarms
+Don't disable alarm because of nuisance alarms
+32. Replace CO Detector Battery 🔴
+
+Add:
+
+CO vs smoke detector differences
+Battery replacement
+Test procedure
+End-of-life warning
+Placement
+What to do when CO alarm sounds
+33. Test Emergency Lighting 🟠
+
+Add:
+
+Test procedure
+Battery backup
+Runtime
+Charging indicator
+Replacement battery
+Emergency-use scenarios
+34. Check Outlet/Switch Condition 🔴
+
+Add:
+
+Warm outlets
+Buzzing
+Burning smell
+Loose plugs
+Discoloration
+Sparks
+GFCI/AFCI distinction
+Immediate electrician warning
+35. Review Emergency Contacts 🟢
+
+Add:
+
+Family
+Utility
+Plumber
+HVAC
+Electrician
+Insurance
+Poison control
+Veterinarian
+Emergency services
+
+This is less of an SEO priority.
+
+7. Exterior / Windows / Doors
+36. Clean Window Screens 🟠
+
+Currently generic.
+
+Add:
+
+Removal
+Vacuuming
+Gentle washing
+Drying
+Frame inspection
+Tears
+Re-screening
+Seasonal timing
+37. Clean Window Weep Holes 🔴
+
+Add:
+
+What weep holes do
+Where to find them
+Clearing method
+Don't seal them
+Signs of blocked drainage
+Water intrusion
+38. Lubricate Door Hinges 🟠
+
+Add:
+
+Silicone vs oil
+Hinge-pin method
+Excess lubricant cleanup
+Squeaking causes
+Loose hinge screws
+Door alignment
+39. Lubricate Sliding Door Tracks 🔴
+
+Add:
+
+Track cleaning first
+Roller inspection
+Dry silicone vs grease
+Door alignment
+Avoiding sticky lubricants
+40. Inspect Door Sweep 🟠
+
+Add:
+
+Draft test
+Light-gap test
+Pest intrusion
+Weather stripping
+Replacement options
+Threshold adjustment
+41. Inspect Interior Caulking 🔴
+
+Add:
+
+Bathroom caulk
+Kitchen sinks
+Windows
+Cracking
+Separation
+Mold
+Silicone vs acrylic
+Removal/reapplication
+Water-damage warning
+42. Touch Up Wall Damage 🟢
+
+Add:
+
+Nail holes
+Small dents
+Matching paint
+Primer
+Touch-up technique
+When repainting is better
+43. Inspect Flooring for Damage 🟠
+
+Add separate guidance for:
+
+Hardwood
+Laminate
+Vinyl
+Tile
+Carpet
+
+Include trip hazards, moisture, lifting and loose tiles.
+
+44. Inspect Exterior Drainage 🔴🔴
+
+Very good SEO opportunity.
+
+Add:
+
+Soil slope
+Downspout extensions
+Splash blocks
+Standing water
+Foundation moisture
+Gutter connection
+French drains
+Signs of drainage failure
+
+Target: how to improve drainage around house
+
+45. Clean Exterior Light Fixtures 🟢
+
+Add:
+
+Power-off procedure
+Insects
+Glass
+Weather seals
+Corrosion
+Bulb replacement
+Moisture intrusion
+46. Inspect Outdoor Faucets 🔴
+
+Add:
+
+Leaks
+Hose bib
+Shutoff
+Freeze damage
+Backflow protection
+Winterization
+47. Inspect Patio/Porch 🔴
+
+Add:
+
+Wood rot
+Loose boards
+Nails/screws
+Railings
+Stairs
+Pavers
+Drainage
+Structural concerns
+48. Check Outdoor Furniture 🟢
+
+Add:
+
+Rust
+Fasteners
+Wood
+Cushions
+Mold
+Storage
+UV damage
+49. Inspect Attic for Pests 🔴🔴
+
+Add:
+
+Droppings
+Gnaw marks
+Nesting material
+Insulation disturbance
+Roof leaks
+Mold
+Entry points
+When not to enter attic
+Professional pest control
+8. Laundry
+50. Clean Washing Machine Drum 🔴
+
+Currently generic.
+
+Add:
+
+Front-load vs top-load
+Tub-clean cycle
+Commercial washer cleaner
+Vinegar limitations
+Mold
+Door gasket
+Detergent buildup
+Odor prevention
+
+Target: how to clean washing machine drum
+
+51. Clean Detergent Drawer 🔴
+
+Add:
+
+Remove drawer
+Soak
+Brush
+Mold
+Dispenser channels
+HE detergent considerations
+How often
+52. Clean Dryer Lint Screen 🔴
+
+Add:
+
+Every-load cleaning
+Deep-clean method
+Soap/water to remove residue
+Airflow test
+Lint-screen damage
+Fire safety
+53. Inspect Dryer Vent Hose 🔴🔴
+
+Add:
+
+Flexible vs rigid vent
+Kinks
+Crushing
+Lint
+Exterior flap
+Fire risk
+Vent length
+Professional cleaning
+54. Dryer Vent Deep Clean 🔴🔴
+
+This is one of your strongest pages from a search perspective because the query has obvious homeowner intent.
+
+Add:
+
+Lint trap vs vent distinction
+Symptoms of blocked vent
+Exterior exhaust inspection
+Cleaning tools
+How often
+Fire-risk explanation
+When professional cleaning is appropriate
+9. Dishwasher / Refrigerator
+55. Clean Dishwasher Spray Arms 🔴
+
+Add:
+
+Remove arms
+Clear holes
+Toothpick/soft brush
+Mineral buildup
+Check rotation
+Spray-arm bearing
+Poor cleaning symptoms
+56. Clean Refrigerator Seals 🔴
+
+Add:
+
+Door-gasket test
+Cleaning
+Mold
+Cracks
+Loose gasket
+Paper-test method
+When replacement is necessary
+57. Clean Fridge Drain Hole 🔴
+
+Add:
+
+Location
+Symptoms of blockage
+Defrost drain vs ice maker drain
+Clearing method
+Avoid sharp objects
+Repeated blockage troubleshooting
+10. Pet pages
+
+These pages are useful but should be handled differently because they're not really "home maintenance."
+
+58. Pet Vaccine Records 🟠
+
+Currently generic.
+
+I'd rename/reposition it:
+
+Pet Vaccine Record Review & Renewal
+
+Add:
+
+Vaccine record storage
+Expiration/due dates
+Vet records
+Rabies certificate
+Boarding/daycare requirements
+Travel documentation
+
+Avoid giving medical vaccination recommendations; link users to their veterinarian.
+
+59. Flea/Tick/Heartworm 🔴
+
+Currently generic.
+
+Add:
+
+Reminder tracking
+Medication records
+Vet instructions
+Product expiration
+Missed-dose handling: follow veterinarian/product instructions
+Multi-pet tracking
+
+I would not publish specific medication dosing schedules.
+
+60. Pet Gear Sanitation 🟠
+
+Add:
+
+Bedding
+Crates
+Toys
+Bowls
+Leashes
+Washing instructions
+Material-specific cleaning
+Drying
+Replacement criteria
+11. Outdoor / Hobby
+61. Solar Panel Cleaning 🔴🔴
+
+Currently generic.
+
+Add:
+
+When cleaning is actually necessary
+Dust/pollen/bird droppings
+Rain effectiveness
+Cleaning equipment
+Panel manufacturer instructions
+Roof safety
+Avoid abrasive materials
+Performance monitoring
+When professional cleaning is better
+
+Target: how to clean solar panels
+
+62. Pool Chemistry Balance 🔴🔴
+
+The current page has specific pH/chlorine instructions, which is a good starting point.
+
+Add:
+
+pH
+alkalinity
+free chlorine
+combined chlorine
+calcium hardness
+stabilizer/CYA
+Testing order
+Pool volume
+Chemical-label instructions
+Chemical storage
+Safety
+
+Also fix the current wording around mixing chemicals. This is an area where precision matters.
+
+63. Bicycle Tune-up 🟠
+
+Currently generic.
+
+Add:
+
+Tire pressure
+Chain
+Brakes
+Gears
+Wheel inspection
+Bolts
+Bearings
+Safety test ride
+64. Grill Gas Leak Test 🔴
+
+Currently generic.
+
+Add:
+
+Propane vs natural gas
+Hose inspection
+Regulator
+Connections
+Soapy-water test
+Bubble interpretation
+Never use a flame to test for leaks
+What to do if leak detected
+Cylinder inspection
+Professional service
+12. Financial / Legal
+
+These deserve completely different content from the physical maintenance pages.
+
+65. Credit Report Review 🔴
+
+Currently generic.
+
+Add:
+
+What to check
+Personal information
+Accounts
+Hard inquiries
+Collections
+Errors
+Fraud indicators
+Dispute process
+Where consumers can obtain reports
+
+This could become an excellent informational page, but be careful with legal/financial claims.
+
+66. Property Inventory Update 🔴🔴
+
+This is highly relevant to AruHome.
+
+Add:
+
+Room-by-room inventory
+Photos
+Serial numbers
+Receipts
+Purchase dates
+Replacement value
+Insurance documentation
+Video walkthrough
+Cloud/local backup
+Annual update checklist
+
+This could link directly into your Home Inventory content.
+
+67. Wills & Directives Review 🔴
+
+Add:
+
+Beneficiaries
+Executor
+Power of attorney
+Healthcare directives
+Guardianship
+Address/name changes
+Major life events
+Document location
+
+But include a clear disclaimer that laws vary by state and users should consult qualified legal professionals.
+
+13. Luxury / niche
+68. Instrument Humidity Check 🟠
+
+Add separate considerations for:
+
+Acoustic guitars
+Pianos
+Violins
+Wood instruments
+
+Explain hygrometer use, humidifier/dehumidifier, seasonal changes and damage signs.
+
+69. Septic Tank Pumping 🔴🔴
+
+Add:
+
+What septic pumping does
+Typical interval depends on household/tank/use
+Warning signs
+Drainfield protection
+What not to flush
+Tank location
+Inspection vs pumping
+Professional service
+
+Don't present "every 3–5 years" as universal.
+
+70. Sump Pump Battery Test 🔴
+
+Add:
+
+Battery type
+Test procedure
+Backup pump
+Alarm
+Charging
+Battery age
+Replacement signs
+Power outage scenario
+14. Remaining pages
+71. Emergency Go-Bag Check 🟠
+
+Add:
+
+Water
+Food
+Flashlight
+Batteries
+First aid
+Medications
+Copies of documents
+Pet supplies
+Seasonal updates
+Family-specific needs
+72. First Aid Kit Restock 🟠
+
+Add:
+
+Inventory checklist
+Expiration dates
+Bandages
+Antiseptic
+Gloves
+Gauze
+Thermometer
+Emergency contacts
+73. Medicine Cabinet Purge 🔴
+
+Add:
+
+Expired medication identification
+Safe disposal
+Child safety
+Original containers
+Don't flush unless official instructions say to
+Sharps disposal
+Pharmacy/take-back guidance
+
+This page needs particularly careful wording.
+
+74. Home Router Security Audit 🔴🔴
+
+This is actually a great SEO opportunity and currently lacks specific content.
+
+Add:
+
+Router firmware
+Admin password
+Wi-Fi password
+WPA2/WPA3
+Guest network
+Connected-device review
+Remote administration
+WPS
+Default SSID/password
+Firmware updates
+Router replacement age
+
+Target: home router security checklist
+
+75. Subscription Audit 🟠
+
+Add:
+
+Bank/card statements
+App-store subscriptions
+Streaming services
+Cloud storage
+Gym memberships
+Free trials
+Duplicate services
+Annual price increases
+76. Personal Cloud Backup Verification 🔴
+
+Add:
+
+iCloud
+Google Drive
+OneDrive
+Photos
+Documents
+Sync status
+Storage limits
+Restore test
+Offline/local backup
+77. Digital Legacy Setup 🔴
+
+Add:
+
+Legacy contacts
+Password manager emergency access
+Important documents
+Device access
+Digital assets
+Family instructions
+
+Be careful about legal/estate claims.
+
+78. Emergency Contacts Review 🟢
+
+Already a useful concept. Keep it short, but make it a checklist.
+
+79. Digital Legacy / Home Records ecosystem 🔴
+
+I'd actually connect the above digital pages together with a new hub:
+
+Digital Home Records & Security Checklist
+
+Then link:
+
+Router security
+Cloud backup
+Digital legacy
+Emergency contacts
+Property inventory
+Important documents
+
+That gives Google a stronger topical cluster.
+
+15. There is a second major issue: incorrect frequency labels
+
+During the crawl I noticed several places where the Library's displayed frequency and the actual task may need reconsideration.
+
+For example, Pool Chemistry Balance is shown as "Bi-Annual" in the library even though the actual page says weekly testing.
+
+Similarly, Pet Vaccine Records and Flea/Tick/Heartworm are shown as bi-annual in the individual page metadata despite the library describing the latter as monthly.
+
+This isn't merely cosmetic.
+
+It can create:
+
+user trust issues
+incorrect maintenance reminders
+inconsistent structured data
+poor SEO content signals
+I would audit all 79 frequency values before asking Google to index them.
+16. Another issue: "Related Maintenance Tasks" is effectively empty
+
+This appears on the individual pages as:
+
+Related Maintenance Tasks
+
+followed by essentially another CTA rather than actual related links.
+
+This is a big missed opportunity.
+
+For example, on:
+
+Clean Refrigerator Condenser Coils
+
+show:
+
+Related Refrigerator Maintenance
+
+Clean Refrigerator Seals
+Clean Fridge Drain Hole
+Replace Refrigerator Water Filter
+
+Then:
+
+See all Refrigerator Maintenance →
+
+This creates a strong internal-linking network.
+
+17. I would also change the generic CTA
+
+Currently many pages essentially repeat:
+
+"Add this task to your digital maintenance schedule..."
+
+That's fine, but it could be much more specific.
+
+For example:
+
+Never forget refrigerator maintenance
+
+AruHome lets you schedule recurring refrigerator maintenance, record when you completed it, save receipts, and keep appliance information together.
+
+[Get AruHome]
+
+The CTA should reflect the specific problem the page just solved.
