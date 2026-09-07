@@ -140,37 +140,106 @@
 <div style="margin-bottom: 40px;">
 <h3 style="color: var(--text-primary); margin-bottom: 20px; font-size: 1.4rem; border-bottom: 1px solid var(--border); padding-bottom: 10px;">Before You Start</h3>
 <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-secondary);">
-<li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 15px; font-size: 1.1rem;">
-<svg fill="none" height="24" stroke="#a78bfa" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;" viewbox="0 0 24 24" width="24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                Ensure you have access to a web browser (not just your phone app) to verify the data independently.
-                            </li>
-</ul>
+              <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 15px; font-size: 1.1rem;">
+                <svg fill="none" height="24" stroke="#ff4d4d" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"
+                  viewbox="0 0 24 24" width="24">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                  </path>
+                  <line x1="12" x2="12" y1="9" y2="13"></line>
+                  <line x1="12" x2="12.01" y1="17" y2="17"></line>
+                </svg>
+                Know which files are considered critical.
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 15px; font-size: 1.1rem;">
+                <svg fill="none" height="24" stroke="#ff4d4d" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"
+                  viewbox="0 0 24 24" width="24">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                  </path>
+                  <line x1="12" x2="12" y1="9" y2="13"></line>
+                  <line x1="12" x2="12.01" y1="17" y2="17"></line>
+                </svg>
+                Have access to your cloud-storage account.
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 15px; font-size: 1.1rem;">
+                <svg fill="none" height="24" stroke="#ff4d4d" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"
+                  viewbox="0 0 24 24" width="24">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                  </path>
+                  <line x1="12" x2="12" y1="9" y2="13"></line>
+                  <line x1="12" x2="12.01" y1="17" y2="17"></line>
+                </svg>
+                Verify that backups are actually configured rather than assuming synchronization equals backup.
+              </li>
+            </ul>
 </div>
 <!-- Step-by-Step Guide -->
 <div>
 <h3 style="color: var(--text-primary); margin-bottom: 25px; font-size: 1.4rem; border-bottom: 1px solid var(--border); padding-bottom: 10px;">Step-by-Step Guide</h3>
-<div style="margin-bottom: 25px; display: flex; gap: 20px;">
-<div style="background: #a78bfa; color: #000; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
-<div>
-<h4 style="color: var(--white); font-size: 1.2rem; margin-bottom: 5px;">Take a Test Photo</h4>
-<p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">Take a new photo on your smartphone or create a new test document on your computer to trigger the sync process.</p>
-</div>
-</div>
-<div style="margin-bottom: 25px; display: flex; gap: 20px;">
-<div style="background: #a78bfa; color: #000; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
-<div>
-<h4 style="color: var(--white); font-size: 1.2rem; margin-bottom: 5px;">Log in via Web</h4>
-<p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">Go to icloud.com, drive.google.com, or onedrive.com on a separate device or web browser. Do not rely on the local app.</p>
-</div>
-</div>
-<div style="margin-bottom: 40px; display: flex; gap: 20px;">
-<div style="background: #a78bfa; color: #000; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
-<div>
-<h4 style="color: var(--white); font-size: 1.2rem; margin-bottom: 5px;">Verify the Test File</h4>
-<p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">Confirm the test photo or document is visible on the web interface. Also, check your storage quota to ensure you aren't nearing the limit.</p>
-</div>
-</div>
-<!-- Content Toggle / Hook -->
+            <div style="margin-bottom: 25px; display: flex; gap: 20px;">
+              <div
+                style="background: var(--accent); color: #000; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                1</div>
+              <div>
+                <h4 style="color: var(--white); font-size: 1.2rem; margin-bottom: 5px;">Review which devices and folders are included in the backup.</h4>
+              </div>
+            </div>
+            <div style="margin-bottom: 25px; display: flex; gap: 20px;">
+              <div
+                style="background: var(--accent); color: #000; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                2</div>
+              <div>
+                <h4 style="color: var(--white); font-size: 1.2rem; margin-bottom: 5px;">Check the most recent successful backup date.</h4>
+              </div>
+            </div>
+            <div style="margin-bottom: 25px; display: flex; gap: 20px;">
+              <div
+                style="background: var(--accent); color: #000; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                3</div>
+              <div>
+                <h4 style="color: var(--white); font-size: 1.2rem; margin-bottom: 5px;">Open the cloud service and confirm important files are present.</h4>
+              </div>
+            </div>
+            <div style="margin-bottom: 25px; display: flex; gap: 20px;">
+              <div
+                style="background: var(--accent); color: #000; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                4</div>
+              <div>
+                <h4 style="color: var(--white); font-size: 1.2rem; margin-bottom: 5px;">Select a few files and download them to verify they can be restored.</h4>
+              </div>
+            </div>
+            <div style="margin-bottom: 25px; display: flex; gap: 20px;">
+              <div
+                style="background: var(--accent); color: #000; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                5</div>
+              <div>
+                <h4 style="color: var(--white); font-size: 1.2rem; margin-bottom: 5px;">Check available storage space.</h4>
+              </div>
+            </div>
+            <div style="margin-bottom: 25px; display: flex; gap: 20px;">
+              <div
+                style="background: var(--accent); color: #000; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                6</div>
+              <div>
+                <h4 style="color: var(--white); font-size: 1.2rem; margin-bottom: 5px;">Review version history or deleted-file recovery options.</h4>
+              </div>
+            </div>
+            <div style="margin-bottom: 25px; display: flex; gap: 20px;">
+              <div
+                style="background: var(--accent); color: #000; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                7</div>
+              <div>
+                <h4 style="color: var(--white); font-size: 1.2rem; margin-bottom: 5px;">Update backup settings if important folders are missing.</h4>
+              </div>
+            </div>
+            <div style="margin-bottom: 25px; display: flex; gap: 20px;">
+              <div
+                style="background: var(--accent); color: #000; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                8</div>
+              <div>
+                <h4 style="color: var(--white); font-size: 1.2rem; margin-bottom: 5px;">Record when the backup was successfully verified.</h4>
+              </div>
+            </div>
+            <!-- Content Toggle / Hook -->
 <div style="background: linear-gradient(to top, var(--bg-body), transparent); text-align: center; margin-top: -60px; position: relative; padding-top: 80px; padding-bottom: 20px;">
 <div style="background: var(--bg-card); border: 1px solid var(--accent); padding: 30px; border-radius: var(--radius-lg); display: inline-block; max-width: 100%;">
 <h4 style="color: var(--text-primary); margin-bottom: 10px; font-size: 1.3rem;">Track 'Personal Cloud Backup Verification' with AruHome</h4>
@@ -193,17 +262,17 @@
 <!-- DIY vs Pro -->
 <div style="background: var(--bg-card); padding: 25px; border-radius: var(--radius-md); border: 1px solid var(--border); margin-bottom: 30px;">
 <h3 style="color: var(--white); font-size: 1.2rem; margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px;">Cost Estimate</h3>
-<div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
-<span style="color: var(--text-secondary);">DIY Cost</span>
-<span style="color: var(--accent); font-weight: bold;">Free</span>
-</div>
-<p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">(Just your time)</p>
-<div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
-<span style="color: var(--text-secondary);">Data Recovery</span>
-<span style="color: #ff4d4d; font-weight: bold;">$500+</span>
-</div>
-<p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0;">(If you lose unbacked data)</p>
-</div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+              <span style="color: var(--text-secondary);">DIY Cost</span>
+              <span style="color: var(--accent); font-weight: bold;">$0–$20/month depending on storage requirements.</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;"></p>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+              <span style="color: var(--text-secondary);">Professional</span>
+              <span style="color: #ff4d4d; font-weight: bold;">Usually unnecessary for basic household backup.</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0;"></p>
+          </div>
 <!-- App Features Teaser -->
 <div style="background: var(--bg-elevated); padding: 25px; border-radius: var(--radius-md); border: 1px solid var(--border); margin-bottom: 30px;">
 <h3 style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 15px;">The AruHome Advantage</h3>
