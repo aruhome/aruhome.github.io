@@ -1,0 +1,16 @@
+{
+ "applinks": {
+   "apps": [],
+   "details": [
+     {
+       "appIDs": ["364LAS39LD.com.smartremotelabs.AruHome"],
+       "components": [
+         { "/": "/app", "?": { "asset": "*" } },
+         { "/": "/asset/*" }
+       ]
+     }
+   ]
+ }
+}
+
+
