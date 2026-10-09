@@ -3,7 +3,7 @@
    "apps": [],
    "details": [
      {
-       "appIDs": ["364LAS39LD.com.smartremotelabs.AruHome"],
+       "appIDs": ["364LAS39LD.com.smartremotelabs.aruhome"],
        "components": [
          { "/": "/app", "?": { "asset": "*" } },
          { "/": "/asset/*" }
