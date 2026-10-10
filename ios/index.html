@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="theme-color" content="#f4f7f5">
+   <title>AruHome for iPhone: Home Inventory &amp; Maintenance</title>
+   <meta name="description" content="Track belongings, warranties, documents, maintenance, and home expenses on iPhone. Works offline. Optional iCloud sync. No account required.">
+   <link rel="canonical" href="https://aruhome.github.io/ios/">
+   <link rel="icon" type="image/png" href="https://aruhome.github.io/Icon.png">
+   <meta property="og:title" content="AruHome for iPhone: Home Inventory &amp; Maintenance">
+   <meta property="og:description" content="Track belongings, warranties, documents, maintenance, and home expenses on iPhone. Works offline. Optional iCloud sync.">
+   <meta property="og:url" content="https://aruhome.github.io/ios/">
+   <meta property="og:type" content="website">
+   <meta property="og:site_name" content="AruHome">
+   <meta property="og:image" content="https://aruhome.github.io/Icon.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "SoftwareApplication",
+     "name": "AruHome",
+     "applicationCategory": "ProductivityApplication",
+     "operatingSystem": "iOS",
+     "description": "Home inventory and maintenance for iPhone. Track appliances, warranties, documents, expenses, and recurring tasks.",
+     "url": "https://aruhome.github.io/ios/",
+     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+   }
+   </script>
+   <style>
+       :root {
+           --primary: #194778;
+           --primary-bright: #296bb2;
+           --accent: #0e8f5f;
+           --accent-fill: #3be29a;
+           --bg-body: #f4f7f5;
+           --bg-card: #ffffff;
+           --bg-elevated: #eef3f0;
+           --border: rgba(25, 71, 120, 0.12);
+           --text-primary: #16324a;
+           --text-secondary: #5b6b75;
+           --text-muted: #7a8790;
+           --white: #ffffff;
+           --shadow-md: 0 8px 28px rgba(22, 50, 74, 0.08);
+           --shadow-lg: 0 22px 50px rgba(22, 50, 74, 0.12);
+           --radius-sm: 8px;
+           --radius-lg: 20px;
+           --danger: #c23b3b;
+       }
+       * { box-sizing: border-box; margin: 0; padding: 0; }
+       html { scroll-behavior: smooth; }
+       body {
+           font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+           background: var(--bg-body);
+           color: var(--text-primary);
+           line-height: 1.6;
+       }
+       body::before {
+           content: "";
+           position: fixed;
+           inset: 0 auto 0 -200px;
+           width: 600px;
+           background: radial-gradient(ellipse at left center, rgba(25, 71, 120, 0.08), transparent 70%);
+           pointer-events: none;
+           z-index: 0;
+       }
+       img { max-width: 100%; }
+       a { color: var(--primary-bright); text-decoration: none; }
+       a:hover { color: var(--primary); }
+       .container { width: min(1120px, calc(100% - 40px)); margin: 0 auto; position: relative; z-index: 1; }
+       h1, h2, h3 { font-family: "Space Grotesk", sans-serif; line-height: 1.15; color: var(--text-primary); }
+       h1 { font-size: clamp(2.4rem, 6vw, 4rem); }
+       h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 1rem; }
+       p { color: var(--text-secondary); }
+       .accent { color: var(--primary); }
+       .eyebrow {
+           display: inline-block;
+           margin-bottom: 12px;
+           padding: 6px 12px;
+           border-radius: 999px;
+           border: 1px solid rgba(14, 143, 95, 0.22);
+           background: rgba(59, 226, 154, 0.16);
+           color: var(--accent);
+           font-size: 0.75rem;
+           font-weight: 600;
+           letter-spacing: 0.08em;
+           text-transform: uppercase;
+       }
+       .section { padding: 96px 0; }
+       .section-header { text-align: center; max-width: 720px; margin: 0 auto 48px; }
+       .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+       .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+       .grid-5 { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; }
+       .card {
+           background: var(--bg-card);
+           border: 1px solid var(--border);
+           border-radius: var(--radius-lg);
+           padding: 28px;
+           box-shadow: var(--shadow-md);
+       }
+       .check { color: var(--accent); font-weight: 700; margin-right: 8px; }
+       .store-badge {
+           display: inline-flex;
+           align-items: center;
+           gap: 10px;
+           background: #000;
+           color: #fff;
+           border: 1px solid rgba(255,255,255,0.18);
+           border-radius: 10px;
+           padding: 8px 14px 8px 12px;
+           min-height: 52px;
+       }
+       .store-badge:hover { color: #fff; }
+       .store-badge svg { width: 22px; height: 22px; flex-shrink: 0; }
+       .store-badge small { display: block; font-size: 0.62rem; letter-spacing: 0.04em; font-weight: 500; line-height: 1.1; }
+       .store-badge strong { display: block; font-size: 1.05rem; letter-spacing: -0.02em; font-weight: 600; line-height: 1.15; }
+       .pill-btn {
+           display: inline-flex;
+           align-items: center;
+           justify-content: center;
+           padding: 14px 22px;
+           border-radius: 999px;
+           background: var(--accent-fill);
+           color: #062013;
+           font-weight: 700;
+           border: 0;
+           cursor: pointer;
+           font-size: 1rem;
+       }
+       .pill-btn:hover { color: #062013; filter: brightness(1.05); }
+
+
+       .announce {
+           text-align: center;
+           padding: 10px 16px;
+           background: var(--primary);
+           border-bottom: 0;
+           color: #e8eef4;
+           font-size: 0.9rem;
+           position: relative;
+           z-index: 2;
+       }
+       header {
+           position: sticky;
+           top: 0;
+           z-index: 20;
+           background: rgba(244, 247, 245, 0.9);
+           backdrop-filter: blur(16px);
+           border-bottom: 1px solid var(--border);
+       }
+       nav {
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           gap: 20px;
+           padding: 14px 0;
+       }
+       .logo { display: flex; align-items: center; gap: 10px; color: var(--primary); font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 1.2rem; }
+       .logo:hover { color: var(--primary); }
+       .logo img { width: 40px; height: 40px; border-radius: 12px; }
+       .nav-links { display: flex; gap: 22px; list-style: none; }
+       .nav-links a { color: var(--text-secondary); font-weight: 500; }
+       .nav-links a:hover { color: var(--primary); }
+       .nav-toggle { display: none; background: none; border: 0; color: var(--primary); font-size: 1.4rem; }
+
+
+       .hero { padding: 72px 0 40px; }
+       .hero-layout { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+       .hero-sub { font-size: 1.15rem; max-width: 36rem; margin: 18px 0 28px; }
+       .hero-ctas { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+       .hero-checks { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; color: var(--text-secondary); }
+        .app-screenshot {
+            width: 100%;
+            max-width: 280px;
+            margin: 24px auto 0;
+            display: block;
+        }
+        .hero-screenshot {
+            max-width: 320px;
+            margin: 0 auto;
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease;
+        }
+        .hero-screenshot:hover {
+            transform: rotate(0);
+        }
+
+
+       .steps { text-align: center; }
+       .step-num {
+           width: 60px; height: 60px; margin: 0 auto 16px;
+           border-radius: 50%; background: var(--accent-fill); color: #062013;
+           display: grid; place-items: center; font-weight: 800; font-size: 1.4rem;
+       }
+       .split { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+       .checklist { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+       .checklist li { display: flex; align-items: center; color: var(--text-primary); }
+       input, button { font: inherit; }
+       input[type="number"] {
+           width: 100%;
+           padding: 14px;
+           border-radius: var(--radius-sm);
+           border: 1px solid var(--border);
+           background: var(--white);
+           color: var(--text-primary);
+       }
+       label { display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500; }
+       .field { margin-bottom: 18px; }
+       #calcResult { margin-top: 28px; text-align: center; padding-top: 24px; border-top: 1px solid var(--border); }
+       footer { border-top: 1px solid var(--border); padding: 36px 0; color: var(--text-muted); }
+       .footer-row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+       .footer-links { display: flex; flex-wrap: wrap; gap: 16px; }
+       @media (max-width: 860px) {
+           .hero-layout, .split, .grid-2, .grid-4, .grid-5, .checklist { grid-template-columns: 1fr; }
+           .nav-toggle { display: block; }
+           .nav-links {
+               display: none;
+               position: absolute;
+               top: 68px; left: 0; right: 0;
+               background: #ffffff;
+               flex-direction: column;
+               padding: 16px 24px 24px;
+               border-bottom: 1px solid var(--border);
+           }
+           .nav-links.open { display: flex; }
+           .hero { padding-top: 40px; }
+       }
+   </style>
+</head>
+<body>
+   <div class="announce">Private by design — your records stay on your iPhone, with optional iCloud sync</div>
+   <header>
+       <div class="container">
+           <nav>
+               <a class="logo" href="#top">
+                   <img src="https://aruhome.github.io/Icon.png" alt="AruHome icon">
+                   AruHome
+               </a>
+               <button class="nav-toggle" type="button" aria-label="Open menu" id="navToggle">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#how-it-works">How it works</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="../maintenance-library.html">Maintenance Library</a></li>
+                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li><a href="#privacy">Privacy</a></li>
+                    <li><a href="#toolkit">Toolkit</a></li>
+                    <li><a href="https://aruhome.github.io/">Android</a></li>
+                </ul>
+               <a class="store-badge" href="https://apps.apple.com/search?term=AruHome" aria-label="Download on the App Store">
+                   <svg viewBox="0 0 16 20" aria-hidden="true"><path fill="currentColor" d="M13.2 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.9-3.5.9s-1.8-.8-3-.8c-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.3 3 2.3s1.7-.8 3.2-.8 1.9.8 3.2.8 2.1-1.2 2.9-2.3c.9-1.3 1.3-2.6 1.3-2.6s-2.3-.9-2.3-3.8zM11 3.8c.7-.9 1.2-2.1 1.1-3.3-1 .1-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.2.1 2.4-.6 3-1.5z"/></svg>
+                   <span><small>Download on the</small><strong>App Store</strong></span>
+               </a>
+           </nav>
+       </div>
+   </header>
+
+
+   <main id="top">
+       <section class="hero">
+           <div class="container hero-layout">
+               <div>
+                   <span class="eyebrow">Complete home management</span>
+                   <h1>Your Home’s Digital<br><span class="accent">Owner’s Manual</span></h1>
+                   <p class="hero-sub">AruHome helps you track appliances, warranties, documents, expenses, and recurring maintenance — all in one iPhone app.</p>
+                   <p class="hero-sub" style="margin-top:-12px; color: var(--text-muted);">Your home. Organized. Maintained. Protected.</p>
+                   <div class="hero-ctas">
+                       <a class="store-badge" href="https://apps.apple.com/search?term=AruHome">
+                           <svg viewBox="0 0 16 20" aria-hidden="true"><path fill="currentColor" d="M13.2 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.9-3.5.9s-1.8-.8-3-.8c-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.3 3 2.3s1.7-.8 3.2-.8 1.9.8 3.2.8 2.1-1.2 2.9-2.3c.9-1.3 1.3-2.6 1.3-2.6s-2.3-.9-2.3-3.8zM11 3.8c.7-.9 1.2-2.1 1.1-3.3-1 .1-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.2.1 2.4-.6 3-1.5z"/></svg>
+                           <span><small>Download on the</small><strong>App Store</strong></span>
+                       </a>
+                       <a href="https://aruhome.github.io/privacy-policy-iOS/">View privacy policy →</a>
+                   </div>
+                   <ul class="hero-checks">
+                       <li><span class="check">✓</span>Home inventory</li>
+                       <li><span class="check">✓</span>Maintenance reminders</li>
+                       <li><span class="check">✓</span>Warranty tracking</li>
+                       <li><span class="check">✓</span>Documents &amp; receipts</li>
+                       <li><span class="check">✓</span>Expense tracking</li>
+                       <li><span class="check">✓</span>Works offline</li>
+                       <li><span class="check">✓</span>Optional iCloud sync</li>
+                   </ul>
+               </div>
+                <div style="text-align: center;">
+                    <img src="../images/ios/aruhome-dashboard-organize-entire-home.webp" alt="AruHome Dashboard" class="app-screenshot hero-screenshot">
+                </div>
+           </div>
+       </section>
+
+
+       <section class="section" id="how-it-works" style="background:var(--bg-card); border-top:1px solid var(--border);">
+           <div class="container">
+               <div class="section-header">
+                   <span class="eyebrow">Getting started</span>
+                   <h2>How it <span class="accent">works</span></h2>
+                   <p>AruHome makes it simple to digitize and manage your home in five steps.</p>
+               </div>
+               <div class="grid-5">
+                   <div class="steps">
+                       <div class="step-num">1</div>
+                       <h3>Add your home</h3>
+                       <p>Create your property and start adding assets.</p>
+                   </div>
+                   <div class="steps">
+                       <div class="step-num">2</div>
+                       <h3>Scan &amp; organize</h3>
+                       <p>Point the camera at a label. On-device OCR can fill brand, model, and serial. Attach receipts, photos, and warranties.</p>
+                   </div>
+                   <div class="steps">
+                       <div class="step-num">3</div>
+                       <h3>Stay on schedule</h3>
+                       <p>Use maintenance templates and reminders so routine upkeep does not slip.</p>
+                   </div>
+                   <div class="steps">
+                       <div class="step-num">4</div>
+                       <h3>Know your home</h3>
+                       <p>Track expenses, service history, utilities, and what is due next.</p>
+                   </div>
+                   <div class="steps">
+                       <div class="step-num">5</div>
+                       <h3>Keep your records</h3>
+                       <p>Export a backup or generate reports for insurance, taxes, or a sale.</p>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+
+       <section class="section" id="use-cases">
+           <div class="container">
+               <div class="section-header">
+                   <span class="eyebrow">Built for homeowners</span>
+                   <h2>One app for every stage of <span class="accent">home ownership</span></h2>
+               </div>
+               <div class="grid-4">
+                   <div class="card">
+                       <h3 class="accent" style="margin-bottom:10px;">New homeowner</h3>
+                       <p>Get appliances, systems, warranties, and documents organized from day one.</p>
+                   </div>
+                   <div class="card">
+                       <h3 class="accent" style="margin-bottom:10px;">Established homeowner</h3>
+                       <p>Stay ahead of maintenance and keep a complete history of the home.</p>
+                   </div>
+                   <div class="card">
+                       <h3 class="accent" style="margin-bottom:10px;">Preparing to sell</h3>
+                       <p>Share a clear record of assets, improvements, and professional work.</p>
+                   </div>
+                   <div class="card">
+                       <h3 class="accent" style="margin-bottom:10px;">Renters</h3>
+                       <p>Document the apartment, keep appliance info, and store move-in / move-out records.</p>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+
+       <section class="section" id="features" style="background:var(--bg-card); border-top:1px solid var(--border);">
+           <div class="container">
+               <div class="section-header">
+                   <span class="eyebrow">Powerful tools</span>
+                   <h2>Everything for <span class="accent">proactive homeowners</span></h2>
+                   <p>Move from reactive repairs to a home you can actually manage.</p>
+               </div>
+                <div class="grid-2">
+                    <div class="card" style="text-align: center;">
+                        <h3 style="margin-bottom:12px;">Know what’s in your home</h3>
+                        <p style="margin-bottom: 24px;">Store brand, model, serial numbers, purchase dates, and rooms. Scan a label to capture the plate instead of typing it.</p>
+                        <img src="../images/ios/aruhome-home-inventory-warranties.webp" alt="Home inventory" class="app-screenshot">
+                    </div>
+                    <div class="card" style="text-align: center;">
+                        <h3 style="margin-bottom:12px;">Never miss maintenance</h3>
+                        <p style="margin-bottom: 24px;">Built-in templates for HVAC, appliances, and more — with difficulty, checklists, and why the task matters.</p>
+                        <img src="../images/ios/aruhome-maintenance-tasks.webp" alt="Maintenance tracking" class="app-screenshot">
+                    </div>
+                    <div class="card" style="text-align: center;">
+                        <h3 style="margin-bottom:12px;">Know when to repair or replace</h3>
+                        <p style="margin-bottom: 24px;">Track repair cost against the asset’s value with the AruHome Burden Ratio so you can see when a replacement is the smarter spend.</p>
+                        <img src="../images/ios/aruhome-health-history-performance.webp" alt="Health and performance" class="app-screenshot">
+                    </div>
+                    <div class="card" style="text-align: center;">
+                        <h3 style="margin-bottom:12px;">Keep your records organized</h3>
+                        <p style="margin-bottom: 24px;">Get alerts before warranties end. Attach photos and documents to each item. Export when you need a copy off the phone.</p>
+                        <img src="../images/ios/aruhome-document-storage.webp" alt="Document storage" class="app-screenshot">
+                    </div>
+               </div>
+           </div>
+       </section>
+
+
+       <section class="section" id="renters">
+           <div class="container split">
+               <div>
+                   <span class="eyebrow">For renters</span>
+                   <h2>Renting? AruHome <span class="accent">works for you too.</span></h2>
+                   <p>Document the apartment, keep appliance information organized, store important papers, and keep a record you can take with you.</p>
+               </div>
+               <div class="card">
+                    <ul class="checklist" style="margin-bottom: 24px;">
+                        <li><span class="check">✓</span>Appliance inventory</li>
+                        <li><span class="check">✓</span>Receipts</li>
+                        <li><span class="check">✓</span>Move-in documentation</li>
+                        <li><span class="check">✓</span>Documents</li>
+                        <li><span class="check">✓</span>Photos</li>
+                        <li><span class="check">✓</span>Property information</li>
+                        <li><span class="check">✓</span>Maintenance records</li>
+                        <li><span class="check">✓</span>Move-out records</li>
+                    </ul>
+                    <div style="text-align: center;">
+                        <img src="../images/ios/aruhome-expense-tracker.webp" alt="Expense and rent tracker" class="app-screenshot">
+                    </div>
+               </div>
+           </div>
+       </section>
+
+
+       <section class="section" id="calculator" style="background:var(--bg-card); border-top:1px solid var(--border);">
+           <div class="container">
+               <div class="section-header">
+                   <span class="eyebrow">Smart decisions</span>
+                   <h2>Repair vs. <span class="accent">Replace</span></h2>
+                   <p>Calculate your AruHome Burden Ratio to see when buying new beats another repair.</p>
+               </div>
+               <form class="card" id="burdenCalculator" style="max-width:560px; margin:0 auto;">
+                   <div class="field">
+                       <label for="calcCost">Original asset cost ($)</label>
+                       <input id="calcCost" type="number" min="1" value="1500" required>
+                   </div>
+                   <div class="field">
+                       <label for="calcAge">Age of asset (years)</label>
+                       <input id="calcAge" type="number" min="0" value="8" required>
+                   </div>
+                   <div class="field">
+                       <label for="calcRepair">Current repair quote ($)</label>
+                       <input id="calcRepair" type="number" min="1" value="650" required>
+                   </div>
+                   <button class="pill-btn" type="submit" style="width:100%;">Calculate burden ratio</button>
+                   <div id="calcResult">
+                       <h3 id="calcScore" style="font-size:2.5rem; color:var(--danger);">43%</h3>
+                       <p style="font-size:0.85rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-muted);">AruHome Burden Ratio</p>
+                       <p id="calcRecommendation" style="margin-top:16px; padding:14px; border-radius:8px; background:rgba(255,77,77,0.1); color:var(--danger); font-weight:600;">
+                           Consider replacing<br>
+                           <span style="font-weight:400; font-size:0.95rem;">Your repair cost is approaching the replacement threshold.</span>
+                       </p>
+                   </div>
+               </form>
+           </div>
+       </section>
+
+
+       <section class="section" id="privacy">
+           <div class="container">
+               <div class="section-header">
+                   <span class="eyebrow">Private by design</span>
+                   <h2>Your home data <span class="accent">stays with you</span></h2>
+               </div>
+               <div class="card" style="max-width:640px; margin:0 auto;">
+                   <ul style="list-style:none; display:grid; gap:14px; color:var(--text-primary);">
+                       <li><span class="check">✓</span>No AruHome account.</li>
+                       <li><span class="check">✓</span>No ads or tracking.</li>
+                       <li><span class="check">✓</span>We do not host your inventory on our servers.</li>
+                       <li><span class="check">✓</span>Works offline.</li>
+                       <li><span class="check">✓</span>Optional iCloud sync and iCloud Drive backup use your Apple ID. We cannot see those records.</li>
+                       <li><span class="check">✓</span>Purchases go through Apple. We never see your card or Apple ID.</li>
+                       <li><span class="check">✓</span>Label scanning runs on the device.</li>
+                       <li><span class="check">✓</span>Export a backup whenever you want.</li>
+                   </ul>
+                   <p style="margin-top:22px; padding-top:18px; border-top:1px solid var(--border); text-align:center;">
+                       <a href="https://aruhome.github.io/privacy-policy-iOS/">Read the iOS privacy policy →</a>
+                   </p>
+               </div>
+           </div>
+       </section>
+
+
+       <section class="section" id="iphone" style="background:var(--bg-card); border-top:1px solid var(--border);">
+           <div class="container">
+               <div class="section-header">
+                   <span class="eyebrow">On iPhone</span>
+                   <h2>Built for <span class="accent">iOS</span></h2>
+               </div>
+               <div class="grid-4">
+                   <div class="card"><h3 style="margin-bottom:10px;">Home Screen widget</h3><p>See the next due task without opening the app.</p></div>
+                   <div class="card"><h3 style="margin-bottom:10px;">Utilities</h3><p>Track meters and readings alongside the rest of the home.</p></div>
+                   <div class="card"><h3 style="margin-bottom:10px;">QR labels</h3><p>Print a label and open that item again later from the camera.</p></div>
+                   <div class="card"><h3 style="margin-bottom:10px;">Reports</h3><p>Insurance, inventory, warranty, tax, and home-sale style PDFs.</p></div>
+               </div>
+               <p style="text-align:center; margin-top:28px;">Requires iPhone with iOS 18 or later.</p>
+           </div>
+       </section>
+
+
+       <section class="section" id="toolkit">
+           <div class="container">
+               <div class="section-header">
+                   <span class="eyebrow">Homeowner Toolkit</span>
+                   <h2>Free to download. <span class="accent">Optional one-time unlock.</span></h2>
+                   <p>Not a subscription. One-time payment. Lifetime access.</p>
+               </div>
+               <div class="grid-2">
+                   <div class="card">
+                       <h3 style="margin-bottom:14px;">Free includes</h3>
+                       <ul style="list-style:none; display:grid; gap:10px;">
+                           <li><span class="check">✓</span>1 home</li>
+                           <li><span class="check">✓</span>Up to 10 assets</li>
+                           <li><span class="check">✓</span>2 photos and 2 documents per asset</li>
+                           <li><span class="check">✓</span>6 months of history</li>
+                           <li><span class="check">✓</span>Tasks, meters, warranties, reminders</li>
+                           <li><span class="check">✓</span>Home inventory PDF</li>
+                       </ul>
+                   </div>
+                   <div class="card">
+                       <h3 style="margin-bottom:14px;">Toolkit unlocks</h3>
+                       <ul style="list-style:none; display:grid; gap:10px;">
+                           <li><span class="check">✓</span>Unlimited homes and assets</li>
+                           <li><span class="check">✓</span>Full history</li>
+                           <li><span class="check">✓</span>Extra PDF reports</li>
+                           <li><span class="check">✓</span>QR labels</li>
+                           <li><span class="check">✓</span>CSV import / export</li>
+                           <li><span class="check">✓</span>Custom categories and bulk edit</li>
+                       </ul>
+                   </div>
+               </div>
+               <p style="text-align:center; margin-top:28px;">Unlock the Toolkit in the app after you download AruHome.</p>
+           </div>
+       </section>
+   </main>
+
+
+   <footer>
+       <div class="container footer-row">
+           <p>© 2026 AruHome. For iPhone.</p>
+           <div class="footer-links">
+               <a href="https://apps.apple.com/search?term=AruHome">App Store</a>
+               <a href="https://aruhome.github.io/privacy-policy-iOS/">Privacy Policy</a>
+               <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+               <a href="mailto:aruhomeapp@gmail.com">Support</a>
+               <a href="https://aruhome.github.io/">Android</a>
+           </div>
+       </div>
+   </footer>
+
+
+   <script>
+       const navToggle = document.getElementById("navToggle");
+       const navLinks = document.getElementById("navLinks");
+       navToggle.addEventListener("click", () => navLinks.classList.toggle("open"));
+       navLinks.querySelectorAll("a").forEach((link) => {
+           link.addEventListener("click", () => navLinks.classList.remove("open"));
+       });
+
+
+       document.getElementById("burdenCalculator").addEventListener("submit", (event) => {
+           event.preventDefault();
+           const cost = parseFloat(document.getElementById("calcCost").value);
+           const repair = parseFloat(document.getElementById("calcRepair").value);
+           if (!cost || !repair) return;
+           const ratio = Math.round((repair / cost) * 100);
+           const score = document.getElementById("calcScore");
+           const rec = document.getElementById("calcRecommendation");
+           score.textContent = ratio + "%";
+           if (ratio >= 50) {
+               score.style.color = "#ff4d4d";
+               rec.style.color = "#ff4d4d";
+               rec.style.background = "rgba(255, 77, 77, 0.1)";
+               rec.innerHTML = "Consider replacing<br><span style='font-weight:400;font-size:0.95rem;'>Your repair cost is approaching the replacement threshold.</span>";
+           } else {
+               score.style.color = "#16324a";
+               rec.style.color = "#0e8f5f";
+               rec.style.background = "rgba(14, 143, 95, 0.1)";
+               rec.innerHTML = "Consider repairing<br><span style='font-weight:400;font-size:0.95rem;'>This repair makes financial sense right now.</span>";
+           }
+       });
+   </script>
+</body>
+</html>
+
+
+
+
