@@ -881,51 +881,21 @@ header.scrolled {
     transform: scale(1.02);
 }
 
-.screenshot-slide.active .phone-frame {
+.screenshot-slide.active img {
     transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 0 0 1px rgba(139, 92, 246, 0.25), var(--shadow-glow), var(--shadow-lg);
 }
 
-/* Phone frame */
-.phone-frame {
-    position: relative;
+/* Screenshot image */
+.screenshot-slide img {
     width: 200px;
-    height: 430px;
-    background: #111122;
-    border-radius: 36px;
-    border: 2px solid rgba(255, 255, 255, 0.12);
-    overflow: hidden;
-    box-shadow:
-        0 0 0 1px rgba(255, 255, 255, 0.05),
-        var(--shadow-lg),
-        inset 0 0 0 1px rgba(0, 0, 0, 0.5);
-    transition: transform var(--transition), box-shadow var(--transition);
-}
-
-.phone-frame:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 0 0 1px rgba(139, 92, 246, 0.3), var(--shadow-glow), var(--shadow-lg);
-}
-
-/* Notch */
-.phone-frame::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 26px;
-    background: #080810;
-    border-radius: 0 0 16px 16px;
-    z-index: 2;
-}
-
-.phone-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     display: block;
+    margin: 0 auto;
+    transition: transform var(--transition);
+}
+
+.screenshot-slide img:hover {
+    transform: translateY(-8px) scale(1.03);
 }
 
 .screenshot-label {
