@@ -297,18 +297,22 @@ header.scrolled {
     border-radius: 8px;
 }
 
-.logo h1 {
+.logo h1,
+.logo .logo-name {
     font-size: 1.25rem;
     margin: 0;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
+    line-height: 1.2;
 }
 
-.logo h1 a {
+.logo h1 a,
+.logo .logo-name a {
     color: var(--text-primary);
 }
 
-.logo h1 a:hover {
+.logo h1 a:hover,
+.logo .logo-name a:hover {
     color: var(--white);
     text-decoration: none;
 }
