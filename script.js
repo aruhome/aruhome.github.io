@@ -320,13 +320,19 @@ function initCalculator() {
         
         scoreEl.innerText = burdenRatio + '%';
         
+        const replaceTitle = recEl.dataset.replaceTitle || 'Consider replacing';
+        const replaceDetail = recEl.dataset.replaceDetail || 'Your repair cost is approaching the replacement threshold.';
+        const repairTitle = recEl.dataset.repairTitle || 'Consider repairing';
+        const repairDetail = recEl.dataset.repairDetail || 'This repair makes financial sense right now.';
+        const recommendation = (title, detail) => title + '<br><span style="font-size: 0.95rem; font-weight: normal;">' + detail + '</span>';
+
         if (burdenRatio >= 50) {
-            recEl.innerHTML = 'Consider replacing<br><span style="font-size: 0.95rem; font-weight: normal;">Your repair cost is approaching the replacement threshold.</span>';
+            recEl.innerHTML = recommendation(replaceTitle, replaceDetail);
             recEl.style.color = '#ff4d4d'; // red
             recEl.style.background = 'rgba(255, 77, 77, 0.1)';
             scoreEl.style.color = '#ff4d4d';
         } else {
-            recEl.innerHTML = 'Consider repairing<br><span style="font-size: 0.95rem; font-weight: normal;">This repair makes financial sense right now.</span>';
+            recEl.innerHTML = recommendation(repairTitle, repairDetail);
             recEl.style.color = 'var(--accent)';
             recEl.style.background = 'rgba(59, 226, 154, 0.1)';
             scoreEl.style.color = 'var(--text-primary)';

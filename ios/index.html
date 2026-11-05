@@ -7,6 +7,13 @@
    <title>AruHome for iPhone: Home Inventory &amp; Maintenance</title>
    <meta name="description" content="Track belongings, warranties, documents, maintenance, and home expenses on iPhone. Works offline. Optional iCloud sync. No account required.">
    <link rel="canonical" href="https://aruhome.github.io/ios/">
+<link rel="alternate" hreflang="en" href="https://aruhome.github.io/ios/" />
+<link rel="alternate" hreflang="es" href="https://aruhome.github.io/es/ios/" />
+<link rel="alternate" hreflang="pt-BR" href="https://aruhome.github.io/pt/ios/" />
+<link rel="alternate" hreflang="x-default" href="https://aruhome.github.io/ios/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="es_LA" />
+<meta property="og:locale:alternate" content="pt_BR" />
    <link rel="icon" type="image/png" href="https://aruhome.github.io/Icon.png">
    <meta property="og:title" content="AruHome for iPhone: Home Inventory &amp; Maintenance">
    <meta property="og:description" content="Track belongings, warranties, documents, maintenance, and home expenses on iPhone. Works offline. Optional iCloud sync.">
@@ -149,14 +156,7 @@
 
 
        .announce {
-           text-align: center;
-           padding: 10px 16px;
-           background: var(--primary);
-           border-bottom: 0;
-           color: #e8eef4;
-           font-size: 0.9rem;
-           position: relative;
-           z-index: 2;
+           display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px 18px; text-align: center; padding: 10px 16px; background: var(--primary); border-bottom: 0; color: #e8eef4; font-size: 0.9rem; position: relative; z-index: 2;
        }
        header {
            position: sticky;
@@ -177,8 +177,11 @@
        .logo:hover { color: var(--primary); }
        .logo img { width: 40px; height: 40px; border-radius: 12px; }
        .nav-links { display: flex; gap: 22px; list-style: none; }
-       .nav-links a { color: var(--text-secondary); font-weight: 500; }
+       .nav-links a { color: var(--text-secondary); font-weight: 500; white-space: nowrap; }
        .nav-links a:hover { color: var(--primary); }
+       .lang-switch { display: flex; align-items: center; gap: 4px; }
+       .lang-switch a { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; padding: 4px 6px; border-radius: 6px; color: var(--text-muted); }
+       .lang-switch a[aria-current="page"] { color: var(--text-primary); background: var(--bg-elevated); } .announce .lang-switch a { color: #e8eef4; } .announce .lang-switch a[aria-current="page"] { color: #ffffff; background: rgba(255,255,255,0.18); }
        .nav-toggle { display: none; background: none; border: 0; color: var(--primary); font-size: 1.4rem; }
 
 
@@ -228,7 +231,7 @@
        footer { border-top: 1px solid var(--border); padding: 36px 0; color: var(--text-muted); }
        .footer-row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
        .footer-links { display: flex; flex-wrap: wrap; gap: 16px; }
-       @media (max-width: 860px) {
+       @media (max-width: 1040px) {
            .hero-layout, .split, .grid-2, .grid-4, .grid-5, .checklist { grid-template-columns: 1fr; }
            .nav-toggle { display: block; }
            .nav-links {
@@ -246,7 +249,7 @@
    </style>
 </head>
 <body>
-   <div class="announce">Private by design — your records stay on your iPhone, with optional iCloud sync</div>
+   <div class="announce"><span class="announce-text">Private by design — your records stay on your iPhone, with optional iCloud sync</span><span class="lang-switch" aria-label="Language"><a href="https://aruhome.github.io/ios/" hreflang="en" lang="en" aria-current="page">EN</a><a href="https://aruhome.github.io/es/ios/" hreflang="es" lang="es">ES</a><a href="https://aruhome.github.io/pt/ios/" hreflang="pt-BR" lang="pt-BR">PT</a></span></div>
    <header>
        <div class="container">
            <nav>
