@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://aruhome.github.io/blog/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -147,6 +147,24 @@
   <url>
     <loc>https://aruhome.github.io/renters-home-inventory-checklist.html</loc>
     <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aruhome.github.io/blog/home-inventory-list-for-insurance.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aruhome.github.io/blog/what-to-record-after-buying-a-house.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aruhome.github.io/blog/what-to-save-for-an-appliance-warranty.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

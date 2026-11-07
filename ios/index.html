@@ -114,6 +114,7 @@
        .section { padding: 96px 0; }
        .section-header { text-align: center; max-width: 720px; margin: 0 auto 48px; }
        .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+       .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
        .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
        .grid-5 { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; }
        .card {
@@ -122,6 +123,14 @@
            border-radius: var(--radius-lg);
            padding: 28px;
            box-shadow: var(--shadow-md);
+       }
+       a.card {
+           display: block;
+           color: inherit;
+           text-decoration: none;
+       }
+       a.card:hover {
+           border-color: var(--border-accent);
        }
        .check { color: var(--accent); font-weight: 700; margin-right: 8px; }
        .store-badge {
@@ -232,7 +241,7 @@
        .footer-row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
        .footer-links { display: flex; flex-wrap: wrap; gap: 16px; }
        @media (max-width: 1040px) {
-           .hero-layout, .split, .grid-2, .grid-4, .grid-5, .checklist { grid-template-columns: 1fr; }
+           .hero-layout, .split, .grid-2, .grid-3, .grid-4, .grid-5, .checklist { grid-template-columns: 1fr; }
            .nav-toggle { display: block; }
            .nav-links {
                display: none;
@@ -536,6 +545,30 @@
                    </div>
                </div>
                <p style="text-align:center; margin-top:28px;">Unlock the Toolkit in the app after you download AruHome.</p>
+           </div>
+       </section>
+
+       <section class="section" id="guides">
+           <div class="container">
+               <div class="section-header">
+                   <span class="eyebrow">Guides</span>
+                   <h2>Checklists for the week <span class="accent">you actually need them</span></h2>
+                   <p>A home inventory is easiest to start at closing, before a claim, or when a warranty is about to end.</p>
+               </div>
+               <div class="grid-3">
+                   <a class="card" href="../blog/home-inventory-list-for-insurance.html">
+                       <h3 style="margin-bottom:10px;">Home inventory list for insurance</h3>
+                       <p>What to record for each item, room by room, so a claim is not a guessing game.</p>
+                   </a>
+                   <a class="card" href="../blog/what-to-record-after-buying-a-house.html">
+                       <h3 style="margin-bottom:10px;">What to record after buying a house</h3>
+                       <p>Model plates, shutoffs, warranties, and the seller’s paperwork from the first month.</p>
+                   </a>
+                   <a class="card" href="../blog/what-to-save-for-an-appliance-warranty.html">
+                       <h3 style="margin-bottom:10px;">What to save for a warranty</h3>
+                       <p>The receipt, the serial plate, and the end date — before the box goes to recycling.</p>
+                   </a>
+               </div>
            </div>
        </section>
    </main>
