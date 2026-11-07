@@ -294,7 +294,20 @@ header.scrolled {
 
 .nav-stores a,
 .store-pair a {
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
     margin-left: 0 !important;
+}
+
+.nav-stores img,
+.store-pair img {
+    display: block;
+    width: auto;
+}
+
+.nav-stores img {
+    height: 40px;
 }
 
 .store-pair {
@@ -336,19 +349,26 @@ header.scrolled {
 
 .nav-links {
     display: flex;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 6px;
+    gap: 4px;
+    flex-wrap: nowrap;
+}
+
+.nav-links li {
+    flex-shrink: 0;
 }
 
 .nav-links a {
     color: var(--text-secondary);
     font-size: 0.9rem;
     font-weight: 500;
-    padding: 6px 12px;
+    padding: 6px 8px;
     border-radius: var(--radius-sm);
     transition: all var(--transition);
+    white-space: nowrap;
 }
 
 .nav-links a:hover,
@@ -1942,7 +1962,22 @@ footer {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1400px) and (min-width: 1280px) {
+    .nav-links {
+        gap: 2px;
+    }
+
+    .nav-links a {
+        font-size: 0.82rem;
+        padding: 6px 6px;
+    }
+
+    .nav-stores img {
+        height: 36px !important;
+    }
+}
+
+@media (max-width: 1279px) {
     .nav {
         flex-wrap: wrap;
         row-gap: 8px;
