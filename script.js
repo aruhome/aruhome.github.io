@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initCalculator();
     initLibrarySearch();
     initMobileNav();
+    initToolkitReturn();
 });
 
 
@@ -297,6 +298,30 @@ console.log('%c  Free Roku remote for Android — smartremotelabs.github.io', 'f
 // ============================================
 // Repair vs Replace Calculator
 // ============================================
+function initToolkitReturn() {
+    const link = document.querySelector('.toolkit-return');
+    if (!link) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const fromParam = params.get('from') === 'toolkit';
+    let fromReferrer = false;
+    if (document.referrer) {
+        try {
+            fromReferrer = new URL(document.referrer).pathname.indexOf('/new-homeowner-toolkit') !== -1;
+        } catch (err) {
+            fromReferrer = false;
+        }
+    }
+    if (!fromParam && !fromReferrer) return;
+
+    link.hidden = false;
+    if (fromParam) {
+        params.delete('from');
+        const query = params.toString();
+        history.replaceState(null, '', window.location.pathname + (query ? '?' + query : '') + window.location.hash);
+    }
+}
+
 function initCalculator() {
     const form = document.getElementById('burdenCalculator');
     if (!form) return;
