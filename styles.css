@@ -2285,3 +2285,12 @@ footer {
 .store-badge svg { width: 22px; height: 22px; flex-shrink: 0; }
 .store-badge small { display: block; font-size: 0.62rem; letter-spacing: 0.04em; font-weight: 500; line-height: 1.1; }
 .store-badge strong { display: block; font-size: 1.05rem; letter-spacing: -0.02em; font-weight: 600; line-height: 1.15; }
+
+@media print {
+    body::before,
+    body::after {
+        display: none !important;
+        content: none !important;
+        background: none !important;
+    }
+}

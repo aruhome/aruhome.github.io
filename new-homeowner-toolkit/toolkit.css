@@ -526,21 +526,80 @@ details.tk-details summary:hover {
     }
 }
 
+.tk-agent {
+    margin: 16px 0 0;
+    font-size: 0.98rem;
+    font-weight: 600;
+}
+
+.tk-agent a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.tk-print-mark {
+    display: none;
+}
+
 @media print {
     header,
     footer,
     .tk-jump,
     .tk-noprint,
-    .skip-link {
+    .skip-link,
+    dialog,
+    .tk-meter,
+    img {
         display: none !important;
     }
 
-    body {
-        background: #fff;
+    body::before,
+    body::after {
+        display: none !important;
+        content: none !important;
+        background: none !important;
+    }
+
+    html,
+    body,
+    .tk-page,
+    .tk-hero,
+    .tk-section,
+    .tk-card,
+    .tk-group,
+    .tk-app,
+    .tk-task,
+    .container,
+    .worksheet,
+    details.tk-details {
+        background: #fff !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        color: #16324a !important;
     }
 
     .tk-page {
         padding: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    .tk-task-title,
+    .tk-intro,
+    p {
+        color: #16324a !important;
+    }
+
+    .tk-task-note {
+        color: #24384c !important;
+    }
+
+    #overall-count,
+    .tk-group > p[data-count],
+    #storage-note {
+        display: none !important;
     }
 
     .tk-section,
@@ -549,8 +608,6 @@ details.tk-details summary:hover {
     .tk-app,
     details.tk-details {
         break-inside: avoid;
-        background: #fff;
-        box-shadow: none;
     }
 
     details.tk-details {
@@ -563,10 +620,21 @@ details.tk-details summary:hover {
         text-decoration: none;
     }
 
+    .tk-print-mark {
+        display: block !important;
+        margin-top: 28px;
+        padding-top: 8px;
+        border-top: 1px solid #c5d0c8;
+        color: #3d5166 !important;
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
     .worksheet {
         break-before: page;
     }
 
+    body.is-partial-print .tk-hero,
     body.is-partial-print .tk-section {
         display: none !important;
     }

@@ -6,24 +6,23 @@
     var live = document.getElementById("checklist-live");
     var storageNote = document.getElementById("storage-note");
     var shareStatus = document.getElementById("share-status");
-    var refNote = document.getElementById("ref-note");
     var resetDialog = document.getElementById("reset-dialog");
     var canStore = true;
-
-    function safeRef() {
-        var params;
-        try {
-            params = new URLSearchParams(window.location.search);
-        } catch (err) {
-            return "";
-        }
-        var ref = params.get("ref") || "";
-        return /^[A-Za-z0-9_-]{1,40}$/.test(ref) ? ref : "";
-    }
+    var PDF_URL = CANONICAL + "first-week-checklist.pdf";
 
     function shareUrl() {
-        var ref = safeRef();
-        return ref ? CANONICAL + "?ref=" + encodeURIComponent(ref) : CANONICAL;
+        return CANONICAL;
+    }
+
+    try {
+        var leftover = new URLSearchParams(window.location.search);
+        if (leftover.has("ref")) {
+            leftover.delete("ref");
+            var leftoverQuery = leftover.toString();
+            history.replaceState(null, "", window.location.pathname + (leftoverQuery ? "?" + leftoverQuery : "") + window.location.hash);
+        }
+    } catch (err) {
+        /* An old shared link can keep its address. Sharing still copies the plain guide URL. */
     }
 
     function readStored() {
@@ -87,12 +86,6 @@
 
     if (!canStore && storageNote) {
         storageNote.textContent = "Checklist progress stays in this browser only when storage is available. Nothing is uploaded.";
-    }
-
-    var ref = safeRef();
-    if (ref && refNote) {
-        refNote.hidden = false;
-        refNote.textContent = "This link includes a share code. The code stays in the address bar so it can be passed along. Checklist progress is not sent with it.";
     }
 
     var resetOpen = document.getElementById("reset-open");
@@ -164,7 +157,7 @@
     var mail = document.getElementById("email-share");
     if (mail) {
         var subject = encodeURIComponent("New homeowner toolkit");
-        var body = encodeURIComponent("A free guide for organizing a new home and planning maintenance:\n" + shareUrl());
+        var body = encodeURIComponent("A free guide for organizing a new home and planning maintenance:\n" + shareUrl() + "\n\nFirst-week checklist (PDF):\n" + PDF_URL);
         mail.href = "mailto:?subject=" + subject + "&body=" + body;
     }
 
