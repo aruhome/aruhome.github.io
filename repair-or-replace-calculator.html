@@ -6,11 +6,11 @@
 <link href="styles.css" rel="stylesheet"/>
 <link href="Icon.png" rel="icon" type="image/png"/>
 <title>Repair or Replace Calculator | Is It Worth Fixing Your Appliance?</title>
-<meta content="Calculate your appliance burden ratio to determine if it is better to repair or replace your old appliances." name="description"/>
+<meta content="Compare a repair quote with the original price you paid. The percentage is a comparison, not a recommendation to repair or replace." name="description"/>
 <link href="https://aruhome.github.io/repair-or-replace-calculator.html" rel="canonical"/>
 <!-- Open Graph -->
 <meta content="Repair or Replace Calculator | Is It Worth Fixing Your Appliance?" property="og:title"/>
-<meta content="Calculate your appliance burden ratio to determine if it is better to repair or replace your old appliances." property="og:description"/>
+<meta content="Compare a repair quote with the original price you paid. The percentage is a comparison, not a recommendation to repair or replace." property="og:description"/>
 <meta content="https://aruhome.github.io/repair-or-replace-calculator.html" property="og:url"/>
 <meta content="website" property="og:type"/>
 <meta content="AruHome" property="og:site_name"/>
@@ -18,7 +18,7 @@
 <!-- Twitter -->
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Repair or Replace Calculator | Is It Worth Fixing Your Appliance?" name="twitter:title"/>
-<meta content="Calculate your appliance burden ratio to determine if it is better to repair or replace your old appliances." name="twitter:description"/>
+<meta content="Compare a repair quote with the original price you paid. The percentage is a comparison, not a recommendation to repair or replace." name="twitter:description"/>
 <meta content="https://aruhome.github.io/images/aruhome-preview.jpg" name="twitter:image"/>
 </head>
 <body>
@@ -59,38 +59,40 @@
 <div class="container">
 <div class="section-header reveal">
 <span class="eyebrow">Smart Decisions</span>
+<p style="margin: 0 0 12px;"><a href="new-homeowner-toolkit/">← New Homeowner Toolkit</a></p>
 <h1>Repair vs. <span class="accent">Replace</span></h1>
-<p style="margin-top: 15px; font-size: 1.1rem; color: var(--text-secondary);">Calculate your AruHome Burden Ratio™ to know exactly when it's smarter to buy new than to keep fixing.</p>
+<p style="margin-top: 15px; font-size: 1.1rem; color: var(--text-secondary);">Compare a repair quote with what you paid for the appliance. The percentage is a comparison, not a prediction of the next breakdown.</p>
 </div>
 <div class="calculator-card reveal reveal-delay-1" style="max-width: 600px; margin: 0 auto; background: var(--bg-card); padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-md);">
 <form id="burdenCalculator">
 <div style="margin-bottom: 20px;">
 <label for="calcCost" style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Original Asset Cost ($)</label>
-<input id="calcCost" min="1" placeholder="e.g. 1200" required="" style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--white); font-size: 1rem; font-family: 'Inter', sans-serif;" type="number" value="1500"/>
+<input id="calcCost" min="1" placeholder="e.g. 1200" required="" style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--text-primary); font-size: 1rem; font-family: 'Inter', sans-serif;" type="number" value="1500"/>
 </div>
 <div style="margin-bottom: 20px;">
 <label for="calcAge" style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Age of Asset (Years)</label>
-<input id="calcAge" min="0" placeholder="e.g. 6" required="" style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--white); font-size: 1rem; font-family: 'Inter', sans-serif;" type="number" value="8"/>
+<input id="calcAge" min="0" placeholder="e.g. 6" required="" style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--text-primary); font-size: 1rem; font-family: 'Inter', sans-serif;" type="number" value="8"/>
+<p style="margin: 6px 0 0; font-size: 0.9rem; color: var(--text-muted);">For your notes. Age is not used in the percentage.</p>
 </div>
 <div style="margin-bottom: 30px;">
 <label for="calcRepair" style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Current Repair Quote ($)</label>
-<input id="calcRepair" min="1" placeholder="e.g. 450" required="" style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--white); font-size: 1rem; font-family: 'Inter', sans-serif;" type="number" value="650"/>
+<input id="calcRepair" min="1" placeholder="e.g. 450" required="" style="width: 100%; padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg-elevated); color: var(--text-primary); font-size: 1rem; font-family: 'Inter', sans-serif;" type="number" value="650"/>
 </div>
 <button class="btn-pill btn-pill-primary" style="width: 100%; justify-content: center; font-size: 1.05rem;" type="submit">Calculate Burden Ratio</button>
 </form>
 <div id="calcResult" style="margin-top: 30px; text-align: center; display: none; padding-top: 25px; border-top: 1px solid var(--border);">
 <h3 id="calcScore" style="font-size: 2.5rem; margin-bottom: 5px; font-family: 'Space Grotesk', sans-serif; color: #ff4d4d;">43%</h3>
 <p style="font-size: 0.9rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">AruHome Burden Ratio™</p>
-<p id="calcRecommendation" style="font-size: 1.15rem; font-weight: 600; color: #ff4d4d; margin: 0; padding: 15px; background: rgba(255, 77, 77, 0.1); border-radius: var(--radius-sm);">
+<p id="calcRecommendation" data-replace-title="The quote is at least half of what you paid" data-replace-detail="That is a large repair relative to the original price. It does not tell you whether the appliance will fail again." data-repair-title="The quote is under half of what you paid" data-repair-detail="The repair is small compared with the original price. Age, safety, and the warranty still matter." style="font-size: 1.15rem; font-weight: 600; color: #ff4d4d; margin: 0; padding: 15px; background: rgba(255, 77, 77, 0.1); border-radius: var(--radius-sm);">
                         Consider replacing<br/><span style="font-size: 0.95rem; font-weight: normal;">Your repair cost is approaching the replacement threshold.</span>
 </p>
-<a href="https://play.google.com/store/apps/details?id=com.smartremotelabs.aruhome" style="display: inline-block; margin-top: 20px; color: var(--accent); font-weight: 600; text-decoration: none;">Track this decision in AruHome →</a>
+<p style="margin-top: 20px;"><a href="https://apps.apple.com/app/id6818357478" style="color: var(--accent); font-weight: 600; text-decoration: none;">Save the quote in AruHome on iPhone</a> · <a href="https://play.google.com/store/apps/details?id=com.smartremotelabs.aruhome" style="color: var(--accent); font-weight: 600; text-decoration: none;">Save the quote in AruHome on Android</a></p>
 </div>
 </div>
 <div style="margin-top: 60px; max-width: 800px; margin-left: auto; margin-right: auto; text-align: left; color: var(--text-secondary); line-height: 1.6;">
-    <h3 style="color: var(--text-primary); margin-bottom: 15px;">When should I repair or replace my appliance?</h3>
-    <p style="margin-bottom: 20px;">Deciding whether to repair or replace a household appliance can be tricky. A common rule of thumb is the 50% rule: if an appliance is more than halfway through its expected lifespan and a repair costs more than 50% of the price of a new one, you should probably replace it.</p>
-    <p>Using our AruHome Burden Ratio™ calculator, you can quickly make a data-driven decision. If your ratio approaches or exceeds 50%, replacement is often the more financially sound choice, considering the increased likelihood of future breakdowns.</p>
+    <h3 style="color: var(--text-primary); margin-bottom: 15px;">What the percentage is</h3>
+    <p style="margin-bottom: 20px;">The ratio is the repair quote divided by the original price you entered. At 50% or more, the note says the quote is large compared with that price. People sometimes use “about half the cost of a new one” as a rough talking point. This calculator uses the original price you type, not a current store price, and it does not know the appliance’s expected life.</p>
+    <p>Age is on the form so you can keep it next to the quote. It is not part of the percentage. A warranty that still covers the repair, a safety problem, or a technician’s advice can matter more than the number. This is not a recommendation to repair or replace.</p>
 </div>
 </div>
 </section>
